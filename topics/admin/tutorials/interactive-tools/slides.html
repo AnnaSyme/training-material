@@ -9,18 +9,14 @@
 
 
 
+
+
   <head>
     <meta charset="utf-8">
     <title>Galaxy Interactive Tools</title>
     
-        <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-45719423-18' , 'auto');
-    ga('send', 'pageview');
-</script>
+        <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
     
     <link rel="stylesheet" href="/training-material/assets/css/slides.css">
     <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
@@ -74,16 +70,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Galaxy Interactive Tools",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -113,6 +106,11 @@
   "name": "Slides for 'Galaxy Interactive Tools' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/interactive-tools/slides.html",
   "description": "The objectives are:\n - Learn the differences between Galaxy Interactive Environments and Galaxy Interactive Tools\n - Have an understanding of what Galaxy Interactive Tools are and how they work\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "hasPart": [
 
   ],
@@ -120,12 +118,28 @@
     {
       "@type": "Person",
       "name": "Nate Coraor"
+    },
+    {
+      "@type": "Person",
+      "name": "Estelle Ancelet"
+    },
+    {
+      "@type": "Person",
+      "name": "Anthony Bretaudeau"
     }
   ],
   "contributor": [
     {
       "@type": "Person",
       "name": "Nate Coraor"
+    },
+    {
+      "@type": "Person",
+      "name": "Estelle Ancelet"
+    },
+    {
+      "@type": "Person",
+      "name": "Anthony Bretaudeau"
     }
   ],
   "about": [
@@ -149,35 +163,87 @@ class: center, middle, inverse
 <div class="my-header"><span>
 <a href="/training-material/topics/admin" title="Return to topic page" ><i class="fa fa-level-up" aria-hidden="true"></i></a>
 
-<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/admin/tutorials/interactive-tools/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/interactive-tools/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 
 </span></div>
 
 <div class="my-footer"><span>
 
-<img src="/training-material/assets/images/GTN-60px.png" alt="Galaxy Training Network" style="height: 40px;"/>
+  
+<img src="/training-material/assets/images/gat.png" alt="page logo" style="height: 40px;"/>
+  
 
 </span></div>
 
 ---
 
+
+
+  
+<img src="/training-material/assets/images/gat.png" alt="page logo" class="cover-logo" />
+  
+
+
 # Galaxy Interactive Tools
 
 
+<div class="contributors-line">
 
-.footnote[Tip: press `P` to view the presenter notes]
+<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a>
+
+
+<a href="/training-material/hall-of-fame/eancelet/" class="contributor-badge contributor-eancelet"><img src="https://avatars.githubusercontent.com/eancelet?s=27" alt="Avatar">Estelle Ancelet</a>
+
+
+<a href="/training-material/hall-of-fame/abretaud/" class="contributor-badge contributor-abretaud"><img src="https://avatars.githubusercontent.com/abretaud?s=27" alt="Avatar">Anthony Bretaudeau</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+
+</div>
+
+
+<div class="footnote" style="bottom: 5.5em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: Apr 6, 2021</div>
+
+<div class="footnote" style="bottom: 4em;"><a href="/training-material/videos/watch.html?v=/admin/tutorials/interactive-tools/slides"><i class="far fa-play-circle" aria-hidden="true"></i><span class="visually-hidden">video-slides</span> View video slides for this lecture</a></div>
+
+<div class="footnote" style="bottom: 2.5em;"><i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a></div>
+<div class="footnote" style="bottom: 1em;"><strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes</div>
 
 ???
-Presenter notes contain extra information which might be useful if you
-intend to use these slides for teaching.
+Presenter notes contain extra information which might be useful if you intend to use these slides for teaching.
 
 Press `P` again to switch presenter notes off
 
 Press `C` to create a new window where the same presentation will be displayed.
 This window is linked to the main window. Changing slides on one will cause the
-slide to change on the other. Useful when presenting.
+slide to change on the other.
+
+Useful when presenting.
+
+
 
 ---
+
+
+
+
+
+
+
+
+
+### &lt;i class=&quot;fas fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
+
+
+- Learn the differences between Galaxy Interactive Environments and Galaxy Interactive Tools
+
+- Have an understanding of what Galaxy Interactive Tools are and how they work
+
+
+---
+
 
 # History
 
@@ -189,12 +255,25 @@ GIEs use Galaxy's *visualization framework* to run certain types of *interactive
 
 GIEs run in a docker container on the Galaxy server or a single remote Docker server
 
+???
+
+- Galaxy Interactive Environments were added to Galaxy in 2015.
+- They are a type of visualization in Galaxy.
+- Accessible through the “Visualize” menu or under the visualization button on a dataset with a specific datatype.
+- Back then, the docker container serving an interactive environment could not be run on a cluster.
+- More details within Galaxy Interactive Environment slides.
+
 ---
 # History
 
 ## 2016
 
 Support for Docker Swarm is added, allowing running a cluster for GIEs
+
+???
+
+- As of 2016, Docker includes swarm mode for natively managing a cluster of Docker Engines called a swarm.
+- This allowed to run Galaxy Interactive Environment on a cluster.
 
 ---
 # History
@@ -208,6 +287,13 @@ Building on the GIE concept, but run as *tools*
 Tools run just as any other Galaxy job (e.g. via Slurm, HTCondor)
 
 You will sometimes see Interactive Tools referred to as Interactive Environments version 2
+
+???
+
+- In 2019, were created the Galaxy Interactive Tools.
+- Like interactive environment, Galaxy Interactive Tools are built on docker containers and are accessible through the Galaxy interface.
+- But they are considered as tools.
+- They are launchable from the toolbox menu, on a predefined destination and prioritized as any other job.
 
 ---
 # Tool config syntax
@@ -226,6 +312,14 @@ You will sometimes see Interactive Tools referred to as Interactive Environments
 &lt;/tool&gt;
 ```
 
+???
+
+- Some settings are needed to configure an interactive tool wrapper.
+- The tool type must be set to interactive.
+- As a requirement, set the path to the repository where the container is to be pulled from.
+- The tool entry point on the container must be defined. 
+- For instance, for a Jupyter Notebook, you'll give the port the application is served on and the domain name suffix.
+
 ---
 # Mapping clients to containers
 
@@ -236,13 +330,30 @@ You will sometimes see Interactive Tools referred to as Interactive Environments
   - Pros: Needs no special credentials (can be shared)
   - Cons: Requires *wildcard* DNS entry and *wildcard* SSL certificate (not possible at many sites)
 
+???
+
+- Diverse infrastructures behind Galaxy Interactive Environments and Galaxy Interactive Tools induces various constraints and benefits.
+- Particularly in building the path between the browser and the container.
+
 ---
 # Anatomy of a running Interactive Tool
 
 ![Galaxy Interactive Tools Proxy Diagram](../../images/interactive-tools/gxit-proxy-diagram.png &quot;Galaxy Interactive Tools Proxy Diagram&quot;)
 
+.reduce70[.footnote[The source for this figure can be found at: https://docs.google.com/presentation/d/1_4PtfM6A4mOxOlgGh6OGWvzFcxD1bdw4CydEWtm5n8k/]]
+
 ???
-The source for this figure can be found at: https://docs.google.com/presentation/d/1_4PtfM6A4mOxOlgGh6OGWvzFcxD1bdw4CydEWtm5n8k/
+
+- This slide illustrates the steps allowing a client to interact with a Galaxy Interactive Tool.
+- We consider a Galaxy server running behind a reverse proxy (NGINX).
+- The client only ever speaks to NGINX on the Galaxy server, running on the standard HTTPS 443 port.
+- Based on the elements provided by the URL, NGINX redirects the requests to Galaxy over a unix domain socket as usual.
+- On the other hand, HTTP requests targetting interactive tools are redirected by NGINX to a proxy, called GIE Proxy, running on port 8000.
+- At this point, remember, when an docker container starts, it will be assigned a host (server or node) and a random port on that host (in our example, port 32768).
+- This information is stored by Galaxy in a sqlite database.
+- So the GIE proxy checks in this sqlite database to know which node and port the IT container is to be found.
+- The GIE proxy forwards the HTTP request to Docker on that node and port.
+- Docker, in turn, forwards it to the application (e.g. Jupyter) on the container's port, defined in the wrapper.
 
 ---
 # Galaxy configuration
@@ -255,6 +366,12 @@ interactivetools_enable: true
 interactivetools_map: /srv/galaxy/var/gie-proxy-sessions.sqlite
 ```
 
+???
+
+- A few settings are needed to get interactive tools running within your Galaxy instance.
+- In your galaxy configuration file, enable the use of interactive tools then set the path to the sqlite database storing the proxying data.
+- In the job configuration file, give to the tool a destination allowing the use of Docker (more details in the tutorial).
+
 ---
 # Proxy configuration
 
@@ -263,6 +380,11 @@ Use the uWSGI proxy configuration that ships with Galaxy
 Or the [Node.js-based proxy][usegalaxy_eu-gie_proxy]
 
 [usegalaxy_eu-gie_proxy]: https://galaxy.ansible.com/usegalaxy_eu/gie_proxy
+
+???
+
+- In production, you are likely to use the Node.js based proxy, set up by the Galaxy admin team.
+- During developement, you can use the uWSGI proxy configuration used by default by Galaxy.
 
 ---
 # Security
@@ -277,6 +399,12 @@ Solution: [Embedded Pulsar][job-conf-pulsar-embedded]
 
 [job-conf-pulsar-embedded]: https://github.com/galaxyproject/galaxy/blob/6622ad1acb91866febb3d2f229de7cfb8af3a9f6/lib/galaxy/config/sample/job_conf.xml.sample_advanced#L106
 
+???
+
+- As we have seen, interactive tools are launched in docker containers.
+- By default in galaxy, each container has full access to all user's data.
+- This is a security issue since a user could take control of an interactive tool and read, write or delete those data.
+
 ---
 # Embedded Pulsar
 
@@ -287,38 +415,58 @@ Runs a [Pulsar][pulsar] server within the Galaxy application to &quot;stage&quot
 
 [pulsar]: https://github.com/galaxyproject/pulsar
 
+???
+
+- A solution to this security issue is to use embedded pulsar.
+- This way, pulsar makes available only the job input data to the container.
+- Moreover, these data are read only.
+- You will have more details in the tutorial.
+
+
+
+
+
+
+
+
 
 ---
 
-## Thank you!
+## Thank You!
 
-This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://wiki.galaxyproject.org/Teach/GTN) and all the contributors!
+This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://training.galaxyproject.org) and all the contributors!
 
 
 <div class="contributors-line">
 
+<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a>
 
-<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/natefoo" alt="Nate Coraor">Nate Coraor</a>
+
+<a href="/training-material/hall-of-fame/eancelet/" class="contributor-badge contributor-eancelet"><img src="https://avatars.githubusercontent.com/eancelet?s=27" alt="Avatar">Estelle Ancelet</a>
+
+
+<a href="/training-material/hall-of-fame/abretaud/" class="contributor-badge contributor-abretaud"><img src="https://avatars.githubusercontent.com/abretaud?s=27" alt="Avatar">Anthony Bretaudeau</a>
 
 
 </div>
 
 
 
-<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
+  
+<img src="/training-material/assets/images/gat.png" alt="page logo" style="height: 100px;"/>
+  
 
 
-This material is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+This material is licensed under the Creative Commons Attribution 4.0 International License</a>.
 
-
-.footnote[Found a typo? Something is wrong in this tutorial? <br/>Edit it on [GitHub](https://github.com/galaxyproject/training-material/tree/master/topics/admin/tutorials/interactive-tools/slides.html)]
 
     </textarea>
 	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
     <script type="text/javascript">
-      var slideshow = remark.create({navigation: {scroll: false,}});
+      var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
         [].forEach.call(snippets,function(snippet){
@@ -328,5 +476,19 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         target:function(trigger){return trigger.parentElement;
       }});
     </script>
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('body').prepend("<div style='text-align: center'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+
   </body>
 </html>

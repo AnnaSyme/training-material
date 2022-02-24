@@ -6,14 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Proteogenomics 1: Database Creation</title>
         
-            <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-45719423-18' , 'auto');
-    ga('send', 'pageview');
-</script>
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -22,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -34,30 +29,8 @@
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
     </head>
     <body data-spy="scroll" data-target="#toc">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
@@ -70,39 +43,43 @@
             <div class="collapse navbar-collapse" id="top-navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        
                         <a class="nav-link" href="/training-material/topics/proteomics" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">topic</span> Proteomics
+                            <i class="far fa-folder" aria-hidden="true"></i> Proteomics
                         </a>
+                        
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
                         </a>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu dropdown-menu-right">
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteogenomics-dbcreation%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html&edit-text=&act=url">
+                            Français
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteogenomics-dbcreation%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html&edit-text=&act=url">
+                            日本語
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteogenomics-dbcreation%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html&edit-text=&act=url">
+                            Español
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteogenomics-dbcreation%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html&edit-text=&act=url">
+                            Português
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteogenomics-dbcreation%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html&edit-text=&act=url">
+                            العربية
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteogenomics-dbcreation%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html&edit-text=&act=url" title="">
+                            And more!
                             </a>
                         </div>
                     </li>
@@ -112,23 +89,60 @@
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/proteomics/faqs/" title="Check our FAQs for the Proteomics topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        
+            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+            </a>
+        
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -144,20 +158,53 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
+                </label>
+                <label data-value="straya" class="btn btn-secondary">
+                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
                 </label>
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-09-01/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html" title="Version 2020-09-01">2020-09-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-08-01/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html" title="Version 2020-08-01">2020-08-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
 
+                    <!-- Search bar-->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.md">
-                            <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
-                        </a>
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
                     </li>
                 </ul>
             </div>
@@ -165,9 +212,33 @@
     </nav>
 </header>
 
-<div class="container main-content">
-    <script type="application/ld+json">
+        <div class="container main-content" role="main">
         
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<script type="application/ld+json">
+    
 
 
 {
@@ -205,16 +276,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Proteogenomics 1: Database Creation",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -244,7 +312,13 @@
   "name": "Hands-on for 'Proteogenomics 1: Database Creation' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html",
   "timeRequired": "PT30M",
+  "keywords": "proteogenomics",
   "description": "The questions this  addresses are:\n - How to create a customized Protein Database from RNAseq data?\n\n\\nThe objectives are:\n - Generating a customized Protein sequence database with variants, indels, splice junctions and known sequences.\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "coursePrerequisites": [
     {
       "@type": "CreativeWork",
@@ -328,42 +402,65 @@
       "termCode": "topic_0121",
       "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_0121"
     }
-  ]
+  ],
+  "skillLevel": "Intermediate"
 }
-    </script>
+</script>
 
-    <section class="tutorial">
-        <h1 data-toc-skip>Proteogenomics 1: Database Creation</h1>
-        
+<section class="tutorial topic-proteomics">
+    <h1 data-toc-skip>Proteogenomics 1: Database Creation</h1>
+    
 
-        <div class="contributors-line">By: 
 
-<a href="/training-material/hall-of-fame/subinamehta/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/subinamehta" alt="Subina Mehta">Subina Mehta</a>, <a href="/training-material/hall-of-fame/timothygriffin/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/timothygriffin" alt="Timothy J. Griffin">Timothy J. Griffin</a>, <a href="/training-material/hall-of-fame/pratikdjagtap/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/pratikdjagtap" alt="Pratik Jagtap">Pratik Jagtap</a>, <a href="/training-material/hall-of-fame/jraysajulga/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/jraysajulga" alt="Ray Sajulga">Ray Sajulga</a>, <a href="/training-material/hall-of-fame/jj-umn/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/jj-umn" alt="James Johnson">James Johnson</a>, <a href="/training-material/hall-of-fame/pravs3683/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/pravs3683" alt="Praveen Kumar">Praveen Kumar</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/subinamehta/" class="contributor-badge contributor-subinamehta"><img src="https://avatars.githubusercontent.com/subinamehta?s=27" alt="Avatar">Subina Mehta</a>
+
+
+<a href="/training-material/hall-of-fame/timothygriffin/" class="contributor-badge contributor-timothygriffin"><img src="https://avatars.githubusercontent.com/timothygriffin?s=27" alt="Avatar">Timothy J. Griffin</a>
+
+
+<a href="/training-material/hall-of-fame/pratikdjagtap/" class="contributor-badge contributor-pratikdjagtap"><img src="https://avatars.githubusercontent.com/pratikdjagtap?s=27" alt="Avatar">Pratik Jagtap</a>
+
+
+<a href="/training-material/hall-of-fame/jraysajulga/" class="contributor-badge contributor-jraysajulga"><img src="https://avatars.githubusercontent.com/jraysajulga?s=27" alt="Avatar">Ray Sajulga</a>
+
+
+<a href="/training-material/hall-of-fame/jj-umn/" class="contributor-badge contributor-jj-umn"><img src="https://avatars.githubusercontent.com/jj-umn?s=27" alt="Avatar">James Johnson</a>
+
+
+<a href="/training-material/hall-of-fame/pravs3683/" class="contributor-badge contributor-pravs3683"><img src="https://avatars.githubusercontent.com/pravs3683?s=27" alt="Avatar">Praveen Kumar</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
-        <blockquote class="overview">
-            <h3>Overview</h3>
-            <strong><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</strong>
-            <ul>
-            
-            <li><p>How to create a customized Protein Database from RNAseq data?</p>
-</li>
-            
-            </ul>
 
-            <strong><i class="fas fa-bullseye" aria-hidden="true"></i><span class="visually-hidden">objectives</span> Objectives</strong>
-            <ul>
-            
-            <li><p>Generating a customized Protein sequence database with variants, indels, splice junctions and known sequences.</p>
+    <blockquote class="overview">
+        <h3>Overview</h3>
+        
+        <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
+        <ul>
+        
+        <li><p>How to create a customized Protein Database from RNAseq data?</p>
 </li>
-            
-            </ul>
+        
+        </ul>
 
-            
-            <strong><i class="fas fa-check-circle" aria-hidden="true"></i><span class="visually-hidden">requirements</span> Requirements</strong>
-            <ul>
-            
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
+        <ul>
+        
+        <li><p>Generating a customized Protein sequence database with variants, indels, splice junctions and known sequences.</p>
+</li>
+        
+        </ul>
+
+        
+        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements:</strong>
+        <ul>
+        
     <li>
     
         
@@ -373,55 +470,120 @@
     
     </li>
 
+        
+        </ul>
+        
+
+        
+        <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i> Time estimation:</strong> 30 minutes</div>
+        
+
+        
+        <div><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i> Level: </strong>
+        
+
+
+ Intermediate <span class="visually-hidden">Intermediate</span>
+<span class="level intermediate" title="Intermediate Tutorial">
+  <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+</span>
+
+</div>
+        
+
+        
+        
+
+        
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
+        <ul class="supporting_material">
             
-            </ul>
+                <li class="btn btn-default supporting_material"><a href="/training-material/topics/proteomics/slides/introduction.html" title="Topic Overview slides">
+                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
+                </a></li>
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 30 minutes</p>
-            
+                <li class="btn btn-default supporting_material">
 
-            
 
-            
-            
-
-            
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
-            <ul>
-                <div class="supporting_material">
-                
-
-                
-                    <li class="btn btn-default supporting_material">
-<a class="topic-icon" href="https://doi.org/10.5281/zenodo.1489208">
-    <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span> Datasets
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.1489208">
+    <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
 </li>
-                
+            
 
-                
-                    <li class="btn btn-default supporting_material">
+            
+                <li class="btn btn-default supporting_material">
+
+
     <a class="topic-icon" href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/workflows/" title="Workflows" alt="Proteogenomics 1: Database Creation workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> Workflows
+        <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
     </a>
 
 </li>
-                
+            
 
-                
+            
 
-                
-                    <li class="btn btn-default supporting_material">
+            
+
+            
+            
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/proteomics/proteogenomics-dbcreation/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
+
+            
+                <li class="btn btn-default supporting_material">
+
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/proteomics/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/proteomics/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
@@ -470,7 +632,15 @@
         
     
         
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
     
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
         
     
         
@@ -529,6 +699,48 @@
     
         
     
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
         
     
         
@@ -543,30 +755,37 @@
 
 
 </li>
-                
-                </div>
-            </ul>
             
+        </ul>
+        
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 18, 2020 </p>
-        </blockquote>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 31, 2021 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
+    </blockquote>
 
-        <div class="container">
-            <div class="row">
-                <!-- sidebar, which will move to the top on a small screen -->
-                <div class="col-sm-2">
-                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-                </div>
-                <div class="col-sm-10">
-                    <h1 class="no_toc" id="introduction">Introduction</h1>
+    <div class="container">
+        <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-2">
+                <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
+            </div>
+            <div class="col-sm-10">
+                 
+
+                <h1 class="no_toc" id="introduction">Introduction</h1>
 
 <p><strong>Proteogenomics</strong> involves the use of mass spectrometry (MS) based proteomics data against genomics and transcriptomics data to identify peptides and to understand protein-level evidence of gene <span class="notranslate">expression</span>. In the first section of the tutorial, we will create a protein database (FASTA) using <span class="notranslate">RNA</span>-sequencing files (FASTQ) and then perform sequence database searching using the resulting FASTA file with the MS data to identify peptides corresponding to novel proteoforms. Then, we will assign the genomic coordinates and annotations for these identified peptides and visualize the data for its spectral quality and genomic localization</p>
 
-<p><img src="../../images/potential_novel_publication.png" alt="Novel Peptides" /></p>
+<p><img src="../../images/potential_novel_publication.png" alt="Novel Peptides. " loading="lazy" /></p>
 
 <p>Proteogenomics integrates <strong><span class="notranslate">RNA</span>-Seq</strong> data for generating customized protein sequence databases with mass spectrometry-based proteomics data, which are matched to these databases to identify protein sequence variants. (Cancer Res. (2017); 77(21):e43-e46. doi: <a target="_blank" href="https://doi.org/10.1158/0008-5472.CAN-17-0331">10.1158/0008-5472.CAN-17-0331</a>).</p>
 
-<p><img src="../../images/workflow_objective1.png" alt="Proteogenomics" /></p>
+<p><img src="../../images/workflow_objective1.png" alt="Proteogenomics. " loading="lazy" /></p>
 
 <blockquote class="agenda">
   <h3 id="agenda">Agenda</h3>
@@ -574,7 +793,8 @@
   <p>In this tutorial, we will cover:</p>
 <ol id="markdown-toc">
   <li><a href="#data-upload" id="markdown-toc-data-upload">Data upload</a></li>
-  <li><a href="#aligning-fastq-files-to-the-human-genome" id="markdown-toc-aligning-fastq-files-to-the-human-genome">Aligning FASTQ files to the human genome</a></li>
+  <li><a href="#change-the-chromosome-names-in-the-ensembl-gtf-to-match-a-ucsc-genome-reference" id="markdown-toc-change-the-chromosome-names-in-the-ensembl-gtf-to-match-a-ucsc-genome-reference">Change the chromosome names in the Ensembl GTF to match a UCSC genome reference</a></li>
+  <li><a href="#aligning-fastq-files-to-the-mouse-genome" id="markdown-toc-aligning-fastq-files-to-the-mouse-genome">Aligning FASTQ files to the mouse genome</a></li>
   <li><a href="#variant-analysis" id="markdown-toc-variant-analysis">Variant Analysis</a>    <ol>
       <li><a href="#variant-calling" id="markdown-toc-variant-calling">Variant Calling</a></li>
       <li><a href="#variant-annotation-and-genome-mapping" id="markdown-toc-variant-annotation-and-genome-mapping">Variant annotation and Genome <span class="notranslate">Mapping</span></a></li>
@@ -589,6 +809,7 @@
   <li><a href="#creating-fasta-databases" id="markdown-toc-creating-fasta-databases">Creating FASTA Databases</a>    <ol>
       <li><a href="#genomic-mapping-database" id="markdown-toc-genomic-mapping-database">Genomic <span class="notranslate">mapping</span> database</a></li>
       <li><a href="#variant-annotations-database" id="markdown-toc-variant-annotations-database">Variant Annotations database</a></li>
+      <li><a href="#list-of-reference-protein-accession-names" id="markdown-toc-list-of-reference-protein-accession-names">List of Reference Protein Accession names</a></li>
     </ol>
   </li>
 </ol>
@@ -599,7 +820,7 @@
 
 <p>This tutorial focuses on creating a <strong>FASTA</strong> database generated from <span class="notranslate">RNA</span>-seq data. There are two outputs from this <span class="notranslate">workflow</span>: (1) a <strong>sequence database</strong> consisting of variants and known reference sequences and (2) <span class="notranslate">mapping</span> files containing <strong>genomic</strong> and <strong>variant</strong> <span class="notranslate">mapping</span> data.</p>
 
-<p><img src="../../images/database_creation.png" alt="Database creation" /></p>
+<p><img src="../../images/database_creation.png" alt="Database creation. " loading="lazy" /></p>
 
 <p>The first part of the tutorial deals with creating the FASTA file containing sequences with single amino acid variants (SAVs), insertions and deletions (indels). The second part of the <span class="notranslate">workflow</span> helps in creating a FASTA file with transcript assemblies (splicing variants).</p>
 
@@ -614,87 +835,86 @@
     <li>
       <p>Create a new history and name it something meaningful (e.g. <em>Proteogenomics DB creation</em>)</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
-    <li>Import the FASTQ file and the GTF file from Zenodo <a href="https://doi.org/10.5281/zenodo.1489208"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1489208.svg" alt="DOI" /></a>
-      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/1489208/files/FASTQ_ProB_22LIST.fastqsanger
+    <li>Import the Uniprot FASTA, FASTQ file and the GTF file from Zenodo <a href="https://doi.org/10.5281/zenodo.1489208"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1489208.svg" alt="DOI. " loading="lazy" /></a>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/api/files/bf8c34bc-ed55-4b1c-9b69-edfe0926ea84/Trimmed_ref_5000_uniprot_cRAP.fasta
+https://zenodo.org/record/1489208/files/FASTQ_ProB_22LIST.fastqsanger
 https://zenodo.org/record/1489208/files/Mus_musculus.GRCm38.86.gtf
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
     </li>
-    <li>Rename the datasets with more descriptive names (strip off the url prefixes)
-      <blockquote class="tip">
+    <li>
+      <p>Rename the datasets with more descriptive names (strip off the url prefixes)</p>
 
-        <h3 id="tip-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
-    <li>Make sure that the file <code class="language-plaintext highlighter-rouge">FASTQ_ProB_22List.fastqsanger</code>
-      <blockquote class="tip">
+    <li>
+      <p>Make sure that the datatype of file <code class="language-plaintext highlighter-rouge">FASTQ_ProB_22List.fastqsanger</code> is set to <code class="language-plaintext highlighter-rouge">fastqsanger</code></p>
 
-        <h3 id="tip-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Changing the datatype</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>
-          <li>Select <code class="language-plaintext highlighter-rouge">fastqsanger</code></li>
-          <li>Click the <strong>Change datatype</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">fastqsanger</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
-    <li>Make sure the Database/Build (dbkey) is set to <code class="language-plaintext highlighter-rouge">Mouse.Dec 2011 (GRCm38/mm10)(mm10)</code>
-      <blockquote class="tip">
+    <li>
+      <p>Make sure the Database/Build (dbkey) is set to <code class="language-plaintext highlighter-rouge">Mouse.Dec 2011 (GRCm38/mm10)(mm10)</code></p>
 
-        <h3 id="tip-tip-changing-databasebuild-dbkey"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Changing Database/Build (dbkey)</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Database/Build</strong> field</li>
-          <li>Select your desired database key from the dropdown list: <code class="language-plaintext highlighter-rouge">Mouse.Dec 2011 (GRCm38/mm10)(mm10)</code></li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-databasebuild-dbkey"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing database/build (dbkey)</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Database/Build</strong> field</li>  <li>Select your desired database key from the dropdown list: <code class="language-plaintext highlighter-rouge">Mouse.Dec 2011 (GRCm38/mm10)(mm10)</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
+    <li><strong>Note</strong>: If you are running the <span class="notranslate">workflow</span> taken from the <strong>GTN</strong>, then make sure the tool “<strong>Tabular-to-FASTA</strong>” (tool number 26)
+has Title Column labeled as “1” and Sequence Column as “2”.</li>
   </ol>
-
 </blockquote>
 
-<h1 id="aligning-fastq-files-to-the-human-genome">Aligning FASTQ files to the human genome</h1>
+<h1 id="change-the-chromosome-names-in-the-ensembl-gtf-to-match-a-ucsc-genome-reference">Change the chromosome names in the Ensembl GTF to match a UCSC genome reference</h1>
+
+<p>UCSC prefaces chromosome names with chr while Ensembl does not. To perform this action, we use the Replace Text in a specific column - a <a href="https://docs.python.org/3/library/re.html">regular <span class="notranslate">expression</span></a> tool.</p>
+
+<blockquote>
+  <h3 id="hands_on-hands-on-replace-text-in-a-specific-column"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Replace Text in a specific column</h3>
+  <ol>
+    <li><strong>Replace Text in a specific column</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:</li>
+    <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“File to process”</em>: <code class="language-plaintext highlighter-rouge">Mus_musculus.GRCm38.86.gtf</code></li>
+    <li>Change numbered chromosome names
+      <ul>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“in column”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Find pattern”</em>: <code class="language-plaintext highlighter-rouge">^([1-9][0-9]*)$</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Replace with</em>: <code class="language-plaintext highlighter-rouge">chr\\1</code></li>
+      </ul>
+    </li>
+    <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <em>Insert Replacement</em> to add another replacement option to change XY chromosomes
+      <ul>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“in column”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Find pattern”</em>: <code class="language-plaintext highlighter-rouge">^([XY])$</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Replace with</em>: <code class="language-plaintext highlighter-rouge">chr\\1</code></li>
+      </ul>
+    </li>
+    <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <em>Insert Replacement</em> to add another replacement option to change mitochondrial chromosome
+      <ul>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“in column”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Find pattern”</em>: <code class="language-plaintext highlighter-rouge">^MT$</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Replace with</em>: <code class="language-plaintext highlighter-rouge">chrM</code></li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote class="notranslate hands_on">
+  <ol>
+    <li>Rename the output to <code class="language-plaintext highlighter-rouge">Mus_musculus.GRCm38.86.fixed.gtf</code></li>
+  </ol>
+
+  <blockquote class="comment">
+    <h3 id="comment-note-on-chromosome-name-changes"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Note on chromosome name changes</h3>
+    <p>This step is necessary to help identify and correct errors due to inputs having non-identical chromosome identifiers and/or different chromosome sequence content. <a href="https://galaxyproject.org/support/chrom-identifiers/"><span class="notranslate">Galaxy</span> Support</a></p>
+  </blockquote>
+</blockquote>
+
+<h1 id="aligning-fastq-files-to-the-mouse-genome">Aligning FASTQ files to the mouse genome</h1>
 
 <p>The first tool in the <span class="notranslate">workflow</span> is the <a href="http://ccb.jhu.edu/software/hisat"><strong>HISAT2</strong></a> alignment tool. It maps next-generation sequence (NGS) <span class="notranslate">reads</span> to the reference genome. This tool requires an <span class="notranslate">RNA</span>-seq file (.FASTQ) and a reference genome file in Gene transfer format (GTF). This .gtf file is obtained from the Ensembl database. When successful, this tool outputs a .bam file (binary version of a SAM: <strong>S</strong>equence <strong>A</strong>lignment/<strong>M</strong>ap).</p>
 
@@ -737,27 +957,13 @@ where fr - first strand corresponds to R and RF; fr - second strand corresponds 
 
 <p><a href="https://github.com/ekg/freebayes">FreeBayes</a> is a Bayesian genetic variant detector designed to find small polymorphisms, specifically SNPs (single-nucleotide polymorphisms), indels (insertions and deletions), MNPs (multi-nucleotide polymorphisms), and complex events (composite insertion and substitution events) smaller than the length of a short-read sequencing alignment.</p>
 
-<p><img src="../../images/variant_calling.png" alt="Variant calling" /></p>
+<p><img src="../../images/variant_calling.png" alt="Variant calling. " loading="lazy" /></p>
 
-<p>Provided with some BAM dataset(s) and a reference sequence, FreeBayes will generate
-a VCF dataset describing SNPs, indels, and complex variants in samples in the input
-alignments. By default, FreeBayes will consider variants supported by at least two observations
-in a single sample (<code class="language-plaintext highlighter-rouge">-C</code>) and also by at least 20% of the <span class="notranslate">reads</span> from a single sample (<code class="language-plaintext highlighter-rouge">-F</code>). These
-settings are suitable for low to high depth sequencing in haploid and diploid samples, but
-users working with polyploid or pooled samples may adjust them depending on the characteristics
-of their sequencing data.</p>
+<p>Provided with some BAM dataset(s) and a reference sequence, FreeBayes will generate a VCF dataset describing SNPs, indels, and complex variants in samples in the input alignments. By default, FreeBayes will consider variants supported by at least two observations in a single sample (<code class="language-plaintext highlighter-rouge">-C</code>) and also by at least 20% of the <span class="notranslate">reads</span> from a single sample (<code class="language-plaintext highlighter-rouge">-F</code>). These settings are suitable for low to high depth sequencing in haploid and diploid samples, but users working with polyploid or pooled samples may adjust them depending on the characteristics of their sequencing data.</p>
 
-<p>FreeBayes is capable of calling variant haplotypes shorter than a read length where multiple
-polymorphisms segregate on the same read. The maximum distance between polymorphisms phased in
-this way is determined by the <code class="language-plaintext highlighter-rouge">--max-complex-gap</code>, which defaults to 3bp. In practice, this can
-comfortably be set to half the read length. Ploidy may be set to any level (<code class="language-plaintext highlighter-rouge">-p</code>), but by default
-all samples are assumed to be diploid. FreeBayes can model per-sample and per-region variation
-in copy-number (<code class="language-plaintext highlighter-rouge">-A</code>) using a copy-number variation map.</p>
+<p>FreeBayes is capable of calling variant haplotypes shorter than a read length where multiple polymorphisms segregate on the same read. The maximum distance between polymorphisms phased in this way is determined by the <code class="language-plaintext highlighter-rouge">--max-complex-gap</code>, which defaults to 3bp. In practice, this can comfortably be set to half the read length. Ploidy may be set to any level (<code class="language-plaintext highlighter-rouge">-p</code>), but by default all samples are assumed to be diploid. FreeBayes can model per-sample and per-region variation in copy-number (<code class="language-plaintext highlighter-rouge">-A</code>) using a copy-number variation map.</p>
 
-<p>FreeBayes can act as a frequency-based pooled caller and can describe variants and haplotypes in
-terms of observation frequency rather than called genotypes. To do so, use –pooled-continuous
-and set input filters to a suitable level. Allele observation counts will be described by AO
-and RO fields in the VCF output.</p>
+<p>FreeBayes can act as a frequency-based pooled caller and can describe variants and haplotypes in terms of observation frequency rather than called genotypes. To do so, use <code class="language-plaintext highlighter-rouge">--pooled-continuous</code> and set input filters to a suitable level. Allele observation counts will be described by AO and RO fields in the VCF output.</p>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-variant-calling-with-freebayes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Variant Calling with FreeBayes</h3>
@@ -821,7 +1027,7 @@ The reference protein set can be filtered by transcript <span class="notranslate
 create reference and variant protein sequences. <span class="notranslate">Galaxy</span> administrators can use the CustomProDB
 data manager to create these annotations to make them available for users.</p>
 
-<p><img src="../../images/CustomProDB.png" alt="customproDB" /></p>
+<p><img src="../../images/CustomProDB.png" alt="customproDB. " loading="lazy" /></p>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-generate-protein-fastas-from-exosome-or-transcriptome-data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Generate protein FASTAs from exosome or transcriptome data</h3>
@@ -848,18 +1054,19 @@ data manager to create these annotations to make them available for users.</p>
   </ol>
 </blockquote>
 
-<p>Three FASTA files are generated through the CustomProDB tool:</p>
+<p>There are 6 files are generated through the CustomProDB tool:</p>
 <ul>
-  <li>a variant FASTA file for short indels,</li>
-  <li>a Single Amino acid Variant (SAV) FASTA file</li>
-  <li>an Sqlite file (genome <span class="notranslate">mapping</span> and variant <span class="notranslate">mapping</span>)</li>
+  <li>rpkm.fasta: reference proteins filtered by transcript <span class="notranslate">expression</span> level (RPKM calculated from a BAM file)</li>
+  <li>snv.fasta: Single Nucleotide Variants detected by FreeBayes (.vcf file)</li>
+  <li>indel.fasta: Insertions/Deletions detected by FreeBayes (.vcf file)</li>
+  <li>Genomic_<span class="notranslate">mapping</span>.sqlite: <span class="notranslate">mapping</span> proteins to genome</li>
+  <li>Variant_annotation.sqlite: used to visualize the variants in the Multi-omics Visualization Platform</li>
+  <li>RData: set of annotation files (in RData format) to create reference and variant protein sequences</li>
 </ul>
 
-<p>for <span class="notranslate">mapping</span> proteins to genome and an RData file for variant protein coding sequences.
-Similar to the genomic <span class="notranslate">mapping</span>, a variant <span class="notranslate">mapping</span> file is also generated from CustomProDB.
-This SQLite file is also converted to tabular format and made SearchGUI-compatible. This
-variant annotation file will be used to visualize the variants in the Multi-omics Visualization
-Platform (in-house visualization platform developed by <span class="notranslate">Galaxy</span>-P senior developers).</p>
+<p>For <span class="notranslate">mapping</span> proteins to genome and an RData file for variant protein coding sequences. Similar to the genomic <span class="notranslate">mapping</span>, a variant <span class="notranslate">mapping</span> file
+is also generated from CustomProDB. This SQLite file is also converted to tabular format and made SearchGUI-compatible. This
+variant annotation file will be used to visualize the variants in the Multi-omics Visualization Platform (in-house visualization platform developed by <span class="notranslate">Galaxy</span>-P senior developers).</p>
 
 <h1 id="transcript-assembly">Transcript Assembly</h1>
 
@@ -875,12 +1082,12 @@ Platform (in-house visualization platform developed by <span class="notranslate"
   <ol>
     <li><strong>StringTie</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Input mapped <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">FASTQ_ProB_22LIST.BAM</code></li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Input mapped <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">HISAT_Output.BAM</code></li>
         <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Specify strand information”</em>: <code class="language-plaintext highlighter-rouge">Unstranded</code></li>
         <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Use a reference file to guide assembly?”</em>: <code class="language-plaintext highlighter-rouge">Use Reference GTF/GFF3</code>
           <ul>
             <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Reference file”</em>: <code class="language-plaintext highlighter-rouge">Use file from History</code></li>
-            <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“GTF/GFF3 dataset to guide assembly”</em>: <code class="language-plaintext highlighter-rouge">Mus_musculus.GRCm38.86.gtf</code></li>
+            <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“GTF/GFF3 dataset to guide assembly”</em>: <code class="language-plaintext highlighter-rouge">Mus_musculus.GRCm38.86.fixed.gtf</code></li>
             <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Use Reference transcripts only?”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
             <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Output files for differential <span class="notranslate">expression</span>?”</em>: <code class="language-plaintext highlighter-rouge">No additional output</code></li>
             <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Output coverage file?”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
@@ -889,40 +1096,23 @@ Platform (in-house visualization platform developed by <span class="notranslate"
       </ul>
     </li>
     <li>Inspect <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> the resulting files.</li>
-    <li>Rename the output to <code class="language-plaintext highlighter-rouge">Stringtie_outut.gtf</code>
-      <blockquote class="tip">
+    <li>
+      <p>Rename the output to <code class="language-plaintext highlighter-rouge">Stringtie_output.gtf</code></p>
 
-        <h3 id="tip-tip-renaming-a-dataset-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
-    <li>Make sure the datatype is <code class="language-plaintext highlighter-rouge">gtf</code>
-      <blockquote class="tip">
+    <li>
+      <p>Make sure the datatype is <code class="language-plaintext highlighter-rouge">gtf</code></p>
 
-        <h3 id="tip-tip-changing-the-datatype-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Changing the datatype</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>
-          <li>Select ``</li>
-          <li>Click the <strong>Change datatype</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select  your desired datatype</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
   </ol>
 
 </blockquote>
 
-<p>StringTie accepts a BAM (or SAM) file of paired-end <span class="notranslate">RNA</span>-seq <span class="notranslate">reads</span>, which must be
-sorted by genomic location (coordinate position). This file contains spliced read alignments
-and can be produced directly by programs such as HISAT2. We recommend using HISAT2 as it is a
-fast and accurate alignment program. Every spliced read alignment (i.e. an alignment across
-at least one junction) in the input BAM file must contain the tag XS to indicate the genomic
-strand that produced the <span class="notranslate">RNA</span> from which the read was sequenced. Alignments produced by HISAT2
-(when run with the <code class="language-plaintext highlighter-rouge">--dta</code> option) already include this tag, but if you use a different read mapper
+<p>StringTie accepts a BAM (or SAM) file of paired-end <span class="notranslate">RNA</span>-seq <span class="notranslate">reads</span>, which must be sorted by genomic location (coordinate position). This file contains spliced read alignments and can be produced directly by programs such as HISAT2. We recommend using HISAT2 as it is a fast and accurate alignment program. Every spliced read alignment (i.e. an alignment across at least one junction) in the input BAM file must contain the tag XS to indicate the genomic strand that produced the <span class="notranslate">RNA</span> from which the read was sequenced. Alignments produced by HISAT2 (when run with the <code class="language-plaintext highlighter-rouge">--dta</code> option) already include this tag, but if you use a different read mapper
 you should check that this XS tag is included for spliced alignments.</p>
 
 <blockquote class="details">
@@ -963,16 +1153,20 @@ annotated, such as human, mouse, or other model organisms.</p>
   <ol>
     <li><strong>GffCompare</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“GTF inputs for comparison”</em><code class="language-plaintext highlighter-rouge">Stringtie_outut.gtf</code></li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“GTF inputs for comparison”</em><code class="language-plaintext highlighter-rouge">Stringtie_output.gtf</code></li>
         <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Use Reference Annotation”</em>: <code class="language-plaintext highlighter-rouge">yes</code>
           <ul>
-            <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Reference Annotation”</em>: <code class="language-plaintext highlighter-rouge">Mus_musculus.GRCm38.86.gtf</code></li>
+            <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Choose the source for the reference annotation”</em>: <code class="language-plaintext highlighter-rouge">History</code>
+              <ul>
+                <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Reference Annotation”</em>: <code class="language-plaintext highlighter-rouge">Mus_musculus.GRCm38.86.gtf</code></li>
+              </ul>
+            </li>
             <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Ignore reference transcripts that are not overlapped by any input transfrags”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
             <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Ignore input transcripts that are not overlapped by any reference transcripts”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
           </ul>
         </li>
         <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Use Sequence Data”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
-        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“discard (ignore) single-exon transcripts”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Discard (ignore) single-exon transcripts”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Max. Distance for assessing exon accuracy”</em>: <code class="language-plaintext highlighter-rouge">100</code></li>
         <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Max distance for transcript grouping”</em>: <code class="language-plaintext highlighter-rouge">100</code></li>
         <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“discard intron-redundant transfrags sharing 5’“</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
@@ -1028,6 +1222,10 @@ no longer needed and is simply ignored when given).</p>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“A <span class="notranslate">BED</span> file with 12 columns”</em>: <code class="language-plaintext highlighter-rouge">Convert GffCompare-annotated GTF to <span class="notranslate">BED</span></code></li>
         <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Source for Genomic Sequence Data”</em>: <code class="language-plaintext highlighter-rouge">Locally cached File</code></li>
         <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Select reference 2bit file”</em>: <code class="language-plaintext highlighter-rouge">mm10</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Fasta ID Options”</em></li>
+      </ul>
+      <ul>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“fasta ID source, e.g. generic”</em>: <code class="language-plaintext highlighter-rouge">generic</code></li>
       </ul>
 
       <p>Finally, we convert a <span class="notranslate">BED</span> format file of the proteins from a proteomics search database into a tabular format for the Multiomics Visualization Platform (MVP).</p>
@@ -1066,13 +1264,17 @@ along with the UniProt and cRAP databases.</li>
   <h3 id="hands_on-hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
 
   <ol>
-    <li><strong>FASTA Merge Files and Filter Unique Sequences</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+    <li><strong>FASTA Merge Files and Filter Unique Sequences</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>
+      <ul>
+        <li>Click <i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <em>“Insert Input FASTA File(s)”</em> twice so that there are a total of three <em>“Input FASTA File(s)”</em> blocks.</li>
+        <li>Use the following parameters:</li>
+      </ul>
       <ul>
         <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <em>“Run in batch mode?”</em>: <code class="language-plaintext highlighter-rouge">Merge individual FASTAs (output collection if input is collection)</code></li>
-        <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input FASTA File(s)”</em> : <code class="language-plaintext highlighter-rouge">Input Custom ProDB Fasta File output</code>
-          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1.HISAT_Output.rpkm
- 2.HISAT_Output.snv
- 3.HISAT_Output.indel
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Input FASTA File(s)”</em> : <code class="language-plaintext highlighter-rouge">Input Custom ProDB Fasta File output</code>
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.HISAT_Output.rpkm
+2.HISAT_Output.snv
+3.HISAT_Output.indel
 </code></pre></div>          </div>
         </li>
         <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“How are sequences judged to be unique?”</em>: <code class="language-plaintext highlighter-rouge">Accession and Sequence</code></li>
@@ -1082,20 +1284,75 @@ along with the UniProt and cRAP databases.</li>
   </ol>
 
 </blockquote>
-
 <blockquote class="comment">
   <h3 id="comment-tool-parameters-explained"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Tool parameters explained</h3>
   <p>This tool concatenates FASTA database files together.</p>
   <ul>
     <li>If the uniqueness criterion is “Accession and Sequence”, only the first appearence of each unique sequence will appear in the output. Otherwise, duplicate sequences are allowed, but only the first appearance of each accession will appear in the output.</li>
     <li>The default accession parser will treat everything in the header before the first space as the accession.</li>
-    <li>Rename it as <strong>CustomProDB Merged Fasta</strong></li>
   </ul>
 </blockquote>
 
-<p><img src="../../images/Fasta_sequence.png" alt="Fasta sequence" /></p>
+<blockquote class="comment">
+  <h3 id="comment-customprodb-generated-protein-accession-names-need-to-be-changed-for-peptideshaker"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> CustomProDB generated protein Accession names need to be changed for PeptideShaker</h3>
+  <p>PeptideShaker does not allow greaterthan sign, comma, or spaces in the protein accession name.
+PeptideShaker also requires the FASTA ID to start with a source, e.g. <em>&gt;sp|Q8C4J7|</em> for SwissProt entries.  Nonstandard entries must be prefixed <em>generic|</em>.
+We will also need to similarily modify the accessions in the genomic <span class="notranslate">mapping</span> and and variant annotation outputs. For eg: ENSEMBL-PRO (output from CustomProDB) and STRG (from StringTie) are not standard format.</p>
+</blockquote>
+
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-fasta-to-tabular"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: FASTA to Tabular</h3>
+  <ol>
+    <li><strong>FASTA-to-Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>: with the default parameters
+      <ul>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Convert these sequences”</em>: <code class="language-plaintext highlighter-rouge">Merged and Filtered FASTA from (fasta)</code></li>
+      </ul>
+    </li>
+    <li><strong>Column Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+      <ul>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Select cells from”</em>: <code class="language-plaintext highlighter-rouge">FASTA-to-Tabular output</code> from previous step</li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Using”</em>: <code class="language-plaintext highlighter-rouge">column 1</code></li>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Check</strong>
+          <ul>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Find Regex”</em> : <code class="language-plaintext highlighter-rouge">^(ENS[^_]+_\d+:)([ACGTacgt]+)&gt;([ACGTacgt]+)\s*</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Replacement”</em>: <code class="language-plaintext highlighter-rouge">\1\2_\3</code></li>
+          </ul>
+        </li>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Check</strong>
+          <ul>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Find Regex”</em>:  <code class="language-plaintext highlighter-rouge">,([A-Y]\d+[A-Y]?)\s*</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Replacement”</em>: <code class="language-plaintext highlighter-rouge">.\1</code></li>
+          </ul>
+        </li>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Check</strong>
+          <ul>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Find Regex”</em>: <code class="language-plaintext highlighter-rouge">^(ENS[^ |]*)\s*</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Replacement”</em>: <code class="language-plaintext highlighter-rouge">generic|\1</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><strong>Tabular-to-FASTA</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+      <ul>
+        <li><em>“Title column”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+        <li><em>“Sequence Column”</em>:<code class="language-plaintext highlighter-rouge">2</code>
+     - Rename it as <strong>CustomProDB Merged Fasta</strong></li>
+      </ul>
+    </li>
+  </ol>
+
+</blockquote>
+<blockquote class="comment">
+  <h3 id="comment-fasta-to-tabular-and-tabular-to-fasta-versions"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> <strong>FASTA-to-Tabular</strong> and <strong>Tabular-to-FASTA</strong> versions</h3>
+  <p>Please make sure the tool version is 1.1.1
+Also, while running the <span class="notranslate">workflow</span>, the Title column for <strong>Tabular-to-FASTA</strong> might come empty, so please make sure you select Title Column as “1”.</p>
+</blockquote>
+
+<p><img src="../../images/Fasta_sequence.png" alt="Fasta sequence. " loading="lazy" /></p>
 
 <p>For visualization purposes we also use the concatenate tool to concatenate the genomic <span class="notranslate">mapping</span> with the protein <span class="notranslate">mapping</span> dataset. This output will be used for visualization in MVP to view the genomic coordinates of the variant peptide.</p>
+
+<p>We also need to modify the CustomProDB protein accessions the same as was done for the FASTA database.</p>
 
 <p>An SQLite database containing the genomic <span class="notranslate">mapping</span> SQLite, variant annotation and information from the protein <span class="notranslate">mapping</span> file is concatenated to form a single genomic <span class="notranslate">mapping</span> SQLite database later used as an input for the ‘Peptide Genomic Coordinate’ tool. For that we need to follow the steps below:</p>
 
@@ -1117,18 +1374,14 @@ along with the UniProt and cRAP databases.</li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Omit column headers from tabular output”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
       </ul>
     </li>
-    <li>Rename output to <code class="language-plaintext highlighter-rouge">genomic_<span class="notranslate">mapping</span>_sqlite</code>
-      <blockquote class="tip">
+    <li>
+      <p>Rename output to <code class="language-plaintext highlighter-rouge">genomic_<span class="notranslate">mapping</span>_sqlite</code></p>
 
-        <h3 id="tip-tip-renaming-a-dataset-2"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
 
-      <p>The output is further processed so that the results are compatible with the Multiomics Visualization Platform.</p>
+      <p>The output is further processed so that the results are compatible with the Multiomics Visualization Platform.
+We need to modify the CustomProDB protein accessions the same as was done for the FASTA database.</p>
     </li>
     <li><strong>Column Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
       <ul>
@@ -1142,7 +1395,7 @@ along with the UniProt and cRAP databases.</li>
         </li>
         <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Check</strong>
           <ul>
-            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Find Regex”</em>:  <code class="language-plaintext highlighter-rouge">,([A-Z]\d+[A-Z])\s*</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Find Regex”</em>:  <code class="language-plaintext highlighter-rouge">,([A-Y]\d+[A-Y]?)\s*</code></li>
             <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Replacement”</em>: <code class="language-plaintext highlighter-rouge">.\1</code></li>
           </ul>
         </li>
@@ -1196,7 +1449,7 @@ along with the UniProt and cRAP databases.</li>
     <li>
       <p>Rename the output as <strong>“genomic_<span class="notranslate">mapping</span>_sqlite”</strong></p>
 
-      <p><img src="../../images/genomic_mapping_file.png" alt="genomic mapping" /></p>
+      <p><img src="../../images/genomic_mapping_file.png" alt="genomic mapping. " loading="lazy" /></p>
     </li>
   </ol>
 
@@ -1204,7 +1457,7 @@ along with the UniProt and cRAP databases.</li>
 
 <h2 id="variant-annotations-database">Variant Annotations database</h2>
 
-<p>We will repeat the process for the variant annotations</p>
+<p>We will repeat the process for the variant annotations (this file will be used as a input to the new updates that will be made on the Multiomics Visualization platform).  We need to modify the CustomProDB protein accessions the same as was done for the FASTA database.</p>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-create-database-for-variant-annotations"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Create database for variant annotations</h3>
@@ -1234,7 +1487,7 @@ FROM variant_annotation
         </li>
         <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Check</strong>:
           <ul>
-            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Find Regex”</em>: <code class="language-plaintext highlighter-rouge">,([A-Z]\d+[A-Z])\s*</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Find Regex”</em>: <code class="language-plaintext highlighter-rouge">,([A-Y]\d+[A-Y]?)\s*</code></li>
             <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Replacement”</em>: <code class="language-plaintext highlighter-rouge">.\1</code></li>
           </ul>
         </li>
@@ -1280,7 +1533,7 @@ FROM variant_annotation
 annotation information from the protein <span class="notranslate">mapping</span> file, will be utilized
 by MVP to visualize the genomic loci of any variant peptides.</p>
 
-<p><img src="../../images/viewing_SNP_Variant_IGV.png" alt="SNP variant" /></p>
+<p><img src="../../images/viewing_SNP_Variant_IGV.png" alt="SNP variant. " loading="lazy" /></p>
 
 <p>Finally, we can create a database which can be used to search Mass spectrometry (raw/mgf) files to identify peptides that match to this database.</p>
 
@@ -1310,109 +1563,187 @@ by MVP to visualize the genomic loci of any variant peptides.</p>
   <ul>
     <li>If the uniqueness criterion is “Accession and Sequence”, only the first appearence of each unique sequence will appear in the output. Otherwise, duplicate sequences are allowed, but only the first appearance of each accession will appear in the output.</li>
     <li>The default accession parser will treat everything in the header before the first space as the accession.</li>
+  </ul>
+</blockquote>
+
+<h2 id="list-of-reference-protein-accession-names">List of Reference Protein Accession names</h2>
+
+<p>Generate a list of Reference Proteins. Identify peptides that are contained in the reference proteins will be filtered out in the next tutorial.</p>
+
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-fasta-to-tabular-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: FASTA to Tabular</h3>
+  <ol>
+    <li><strong>FASTA-to-Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>: with the default parameters
+      <ul>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Convert these sequences”</em>: <code class="language-plaintext highlighter-rouge">HISAT_Output.rpkm (fasta)</code></li>
+      </ul>
+    </li>
+    <li><strong>Filter Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>: with these filters:
+      <ul>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Tabular Dataset to filter”</em>: <code class="language-plaintext highlighter-rouge">HISAT_Output.rpkm (tabular)</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Filter by”</em>: <code class="language-plaintext highlighter-rouge">select columns</code></li>
+      </ul>
+      <ul>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“enter column numbers to keep”</em>: <code class="language-plaintext highlighter-rouge">1</code>
+      - <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Filter by”</em>: <code class="language-plaintext highlighter-rouge">regex replace value in column</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“enter column number to replace”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“regex pattern”</em>: <code class="language-plaintext highlighter-rouge">^([^ |]+).*$</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“replacement <span class="notranslate">expression</span>”</em>: <code class="language-plaintext highlighter-rouge">\1</code></li>
+      </ul>
+    </li>
+    <li><strong>FASTA-to-Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>: with the default parameters
+      <ul>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Convert these sequences”</em>: <code class="language-plaintext highlighter-rouge">Trimmed_ref_5000_uniprot_cRAP.fasta (fasta)</code></li>
+      </ul>
+    </li>
+    <li><strong>Filter Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>: with these filters:
+      <ul>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Tabular Dataset to filter”</em>: <code class="language-plaintext highlighter-rouge">Trimmed_ref_5000_uniprot_cRAP.fasta (tabular)</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Filter by”</em>: <code class="language-plaintext highlighter-rouge">select columns</code></li>
+      </ul>
+      <ul>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“enter column numbers to keep”</em>: <code class="language-plaintext highlighter-rouge">1</code>
+      - <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“Filter by”</em>: <code class="language-plaintext highlighter-rouge">regex replace value in column</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“enter column number to replace”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“regex pattern”</em>: <code class="language-plaintext highlighter-rouge">^[^|]+[|]([^| ]+).*$</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>“replacement <span class="notranslate">expression</span>”</em>: <code class="language-plaintext highlighter-rouge">\1</code></li>
+      </ul>
+    </li>
+    <li><strong>Concatenate multiple datasets</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+      <ul>
+        <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Concatenate Datasets”</em>: Select the output from the previous 2 “Filter Tabular” outputs.</li>
+      </ul>
+    </li>
+  </ol>
+
+</blockquote>
+
+<blockquote class="comment">
+  <h3 id="comment-fasta-to-tabular-and-tabular-to-fasta-versions-1"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> <strong>FASTA-to-Tabular</strong> and <strong>Tabular-to-FASTA</strong> versions</h3>
+  <p>Please make sure the tool version is 1.1.1</p>
+</blockquote>
+
+<blockquote class="comment">
+  <h3 id="comment-tool-versions"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Tool versions</h3>
+  <ul>
     <li>All the tools mentioned in this tutorial are subjected to change when the tool version is upgraded .</li>
   </ul>
 </blockquote>
 
+<h1 class="no_toc" id="conclusion"><strong>Conclusion</strong></h1>
+
+<p>This completes the walkthrough of the proteogenomics database creation <span class="notranslate">workflow</span>. This tutorial is a guide to have a database and <span class="notranslate">mapping</span> files ready for  Database searching and novel peptide analysis. Researchers can use this <span class="notranslate">workflow</span> with their data also, please note that the tool parameters, reference genomes and the <span class="notranslate">workflow</span> will be needed to be modified accordingly.</p>
+
+<p>This <span class="notranslate">workflow</span> was developed by the <span class="notranslate">Galaxy</span>-P team at the University of Minnesota. For more information about <span class="notranslate">Galaxy</span>-P or our ongoing work, please visit us at <a href="https://galaxyp.org"><span class="notranslate">galaxy</span>p.org</a></p>
 
 
-                    
-                    <blockquote class="key_points">
-                        <h3><i class="fas fa-key" aria-hidden="true"></i><span class="visually-hidden">keypoints</span> Key points</h3>
-                        <ul>
-                            
-                            <li><p>Generating variant protein database</p>
+
+                
+                <blockquote class="key_points">
+                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <ul>
+                        
+                        <li><p>Generating variant protein database</p>
 </li>
-                            
-                            <li><p>Generating genomic and variant mapping files for visualization</p>
+                        
+                        <li><p>Generating genomic and variant mapping files for visualization</p>
 </li>
-                            
-                        </ul>
-                    </blockquote>
-                    
+                        
+                    </ul>
+                </blockquote>
+                
 
-                    
-                    <h1 data-toc-skip>Useful literature</h1>
-                    <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/proteomics#references">here</a>.</p>
-                    
+                <h1>Frequently Asked Questions</h1>
+                Have questions about this tutorial? Check out the  <a href="/training-material/topics/proteomics/faqs/">FAQ page for the Proteomics topic</a> to see if your question is listed there.
+                If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
-                    
+                
+                <h1 data-toc-skip>Useful literature</h1>
+                <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/proteomics#references">here</a>.</p>
+                
 
-                    <h1>Feedback</h1>
-                    <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                
 
-                    <div id="feedback-button">
-                        <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
-                    </div>
-                    <div id="feedback-form">
-                    </div>
-                    <script type="text/javascript">
-                        (function (window, document) {
-                            function onDocumentReady(fn) {
-                                if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-                                    fn();
-                                } else {
-                                    document.addEventListener('DOMContentLoaded', fn);
-                                }
+                
+
+                <h1>Feedback</h1>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
+
+                <div id="feedback-button">
+                    <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
+                </div>
+                <div id="feedback-form">
+                </div>
+                <script type="text/javascript">
+                    (function (window, document) {
+                        function onDocumentReady(fn) {
+                            if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                fn();
+                            } else {
+                                document.addEventListener('DOMContentLoaded', fn);
                             }
+                        }
 
-                            onDocumentReady(function () {
-                                $("#feedback-button").click(function(evt){
-                                    var e = $(evt.target)
-                                    e.hide();
+                        onDocumentReady(function () {
+                            $("#feedback-button").click(function(evt){
+                                var e = $(evt.target)
+                                e.hide();
 
-                                    $("#feedback-form").html(`
-                                        <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Proteogenomics 1: Database Creation (Proteomics)">Loading...</iframe>
-                                    `)
-                                })
-                            });
-                        })(window, document);
-                    </script>
-
-
-
-                    <h1>Citing this Tutorial</h1>
-                    <p>
-                        <ol>
-                            <li id="citation-text">Subina Mehta, Timothy J. Griffin, Pratik Jagtap, Ray Sajulga, James Johnson, Praveen Kumar, 2020 <b>Proteogenomics 1: Database Creation (Galaxy Training Materials)</b>. <a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html</a> Online; accessed TODAY
-                            </li>
-                            <li>
-                            Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
-                            </li>
-                        </ol>
-                    </p>
+                                $("#feedback-form").html(`
+                                    <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Proteogenomics 1: Database Creation (Proteomics)">Loading...</iframe>
+                                `)
+                            })
+                        });
+                    })(window, document);
+                </script>
 
 
-                    <blockquote class="details">
-                      <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                      <p style="display: none;">
 
-                    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                <h1>Citing this Tutorial</h1>
+                <p>
+                    <ol>
+                        <li id="citation-text">Subina Mehta, Timothy J. Griffin, Pratik Jagtap, Ray Sajulga, James Johnson, Praveen Kumar, 2021 <b>Proteogenomics 1: Database Creation (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html</a> Online; accessed TODAY
+                        </li>
+                        <li>
+                        Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                        </li>
+                    </ol>
+                </p>
+
+
+                <blockquote class="details">
+                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
+                  <p style="display: none;">
+
+                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code id="citation-code">@misc{proteomics-proteogenomics-dbcreation,
-    author = "Subina Mehta and Timothy J. Griffin and Pratik Jagtap and Ray Sajulga and James Johnson and Praveen Kumar",
-    title = "Proteogenomics 1: Database Creation (Galaxy Training Materials)",
-    year = "2020",
-    month = "06",
-    day = "18"
-    url = "\url{/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html}",
-    note = "[Online; accessed TODAY]"
+author = "Subina Mehta and Timothy J. Griffin and Pratik Jagtap and Ray Sajulga and James Johnson and Praveen Kumar",
+title = "Proteogenomics 1: Database Creation (Galaxy Training Materials)",
+year = "2021",
+month = "05",
+day = "31"
+url = "\url{https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html}",
+note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
-        doi = {10.1016/j.cels.2018.05.012},
-        url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-        year = 2018,
-        month = {jun},
-        publisher = {Elsevier {BV}},
-        volume = {6},
-        number = {6},
-        pages = {752--758.e1},
-        author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-        title = {Community-Driven Data Analysis Training for Biology},
-        journal = {Cell Systems}
+    doi = {10.1016/j.cels.2018.05.012},
+    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
+    year = 2018,
+    month = {jun},
+    publisher = {Elsevier {BV}},
+    volume = {6},
+    number = {6},
+    pages = {752--758.e1},
+    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
+    title = {Community-Driven Data Analysis Training for Biology},
+    journal = {Cell Systems}
 }</code>
-                    </pre></div></div>
-                    </p>
-                    </blockquote>
+                </pre></div></div>
+                </p>
+                </blockquote>
 
 
 <script type="text/javascript">
@@ -1422,19 +1753,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                </div>
-            </div>
-        </div>
+                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
 
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
-        <blockquote class="agenda follow-up">
-            <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
-            <ul>
                 
+
+                
+                <blockquote class="agenda follow-up">
+                    <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
+                    <ul>
+                        
     <li>
     
         
@@ -1443,6 +1770,94 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         
             <ul>
                 
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                            <li> Proteogenomics 2: Database Search:
+                            
+                            
+                                
+                                     <a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbsearch/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -1492,30 +1907,20 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
     
     </li>
 
-            </ul>
-        </blockquote>
-        
-    </section>
-</div>
+                    </ul>
+                </blockquote>
+                
 
-
-<footer>
-    <div class="container">
-        <p>
-            This material is the result of a collaborative work. Thanks to the
-            <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a>
-            and all the <a href="/training-material/hall-of-fame">contributors</a> (Subina Mehta, Timothy J. Griffin, Pratik Jagtap, Ray Sajulga, James Johnson, Praveen Kumar)!
-        </p>
-        <p>
-            Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.md">GitHub</a>.
-        </p>
-        <p>
-    The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-</p>
+            </div>
+        </div>
     </div>
-</footer>
+</section>
+<br/>
+<br/>
+<br/>
 
+        </div>
+        
     </body>
     <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
@@ -1538,4 +1943,17 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
     }});
     </script>
     
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
 </html>

@@ -9,18 +9,14 @@
 
 
 
+
+
   <head>
     <meta charset="utf-8">
     <title>Galaxy Monitoring with gxadmin</title>
     
-        <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-45719423-18' , 'auto');
-    ga('send', 'pageview');
-</script>
+        <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
     
     <link rel="stylesheet" href="/training-material/assets/css/slides.css">
     <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
@@ -74,16 +70,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Galaxy Monitoring with gxadmin",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -113,6 +106,11 @@
   "name": "Slides for 'Galaxy Monitoring with gxadmin' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/gxadmin/slides.html",
   "description": "The questions this  addresses are:\n - What is gxadmin\n - What can it do?\n - How to write a query?\n\n\\nThe objectives are:\n - Learn gxadmin basics\n - See some queries and learn how they help debug production issues\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "hasPart": [
 
   ],
@@ -173,35 +171,73 @@ class: center, middle, inverse
 <div class="my-header"><span>
 <a href="/training-material/topics/admin" title="Return to topic page" ><i class="fa fa-level-up" aria-hidden="true"></i></a>
 
-<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/admin/tutorials/gxadmin/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/gxadmin/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 
 </span></div>
 
 <div class="my-footer"><span>
 
-<img src="/training-material/assets/images/GTN-60px.png" alt="Galaxy Training Network" style="height: 40px;"/>
+  
+<img src="/training-material/assets/images/gat.png" alt="page logo" style="height: 40px;"/>
+  
 
 </span></div>
 
 ---
 
+
+
+  
+<img src="/training-material/assets/images/gat.png" alt="page logo" class="cover-logo" />
+  
+
+
 # Galaxy Monitoring with gxadmin
 
 
+<div class="contributors-line">
 
-.footnote[Tip: press `P` to view the presenter notes]
+<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a>
+
+
+<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
+
+
+<a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
+
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+
+</div>
+
+
+<div class="footnote" style="bottom: 5.5em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: Apr 6, 2021</div>
+
+<div class="footnote" style="bottom: 4em;"><a href="/training-material/videos/watch.html?v=/admin/tutorials/gxadmin/slides"><i class="far fa-play-circle" aria-hidden="true"></i><span class="visually-hidden">video-slides</span> View video slides for this lecture</a></div>
+
+<div class="footnote" style="bottom: 2.5em;"><i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a></div>
+<div class="footnote" style="bottom: 1em;"><strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes</div>
 
 ???
-Presenter notes contain extra information which might be useful if you
-intend to use these slides for teaching.
+Presenter notes contain extra information which might be useful if you intend to use these slides for teaching.
 
 Press `P` again to switch presenter notes off
 
 Press `C` to create a new window where the same presentation will be displayed.
 This window is linked to the main window. Changing slides on one will cause the
-slide to change on the other. Useful when presenting.
+slide to change on the other.
+
+Useful when presenting.
+
+
 
 ---
+
+
 
 
 
@@ -218,6 +254,7 @@ slide to change on the other. Useful when presenting.
 
 
 ---
+
 
 
 ### &lt;i class=&quot;fas fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
@@ -242,6 +279,13 @@ Can be very useful for:
 
 But consider: [`gxadmin`](https://github.com/usegalaxy-eu/gxadmin) and sharing your SQL
 
+???
+
+- Admins often need to run database queries.
+- Debugging the live application in production is difficult, but running queries is easy.
+- Additionally running SQL queries is commonly used for debuggin and reporting and analytics.
+- The community collects queries we commonly use in a program called gxadmin.
+
 ---
 # Database Queries
 
@@ -262,6 +306,12 @@ HAVING date_trunc('month', j.create_time) &gt;= '2016-09-01'
 AND date_trunc('month', j.create_time) &lt; '2016-11-01'
 ORDER BY month, j.state;
 ```
+
+???
+
+- We often get requests like how many jobs were run in a time period, and did they finish successfully.
+- So we write some SQL like this.
+- As an admin, you'll want to understand SQL.
 
 ---
 # Database Queries
@@ -285,6 +335,25 @@ ORDER BY month, j.state;
  2016-10-01 00:00:00 | waiting |        17
 (14 rows)
 ```
+
+???
+
+- Here is the output of such a query.
+- SQL is very powerful for extracting data and graphs for reporting.
+
+---
+# gxadmin
+
+- It's unpleasant to write queries every time you need them.
+- So the community collects SQL in `gxadmin`.
+- It's a giant bash script full of SQL and some magic ✨
+- [github.com/usegalaxy-eu/gxadmin](https://github.com/usegalaxy-eu/gxadmin)
+
+???
+
+- We often re-run the same queries.
+- gxadmin makes it easier by storing the useful queries.
+- everyone is welcome to contribute to it.
 
 ---
 # Database Queries
@@ -310,6 +379,13 @@ ORDER BY r_count DESC
 LIMIT 12;
 ```
 
+???
+
+- However, some of these queries we run over and over.
+- And those we include in gxadmin.
+- This way every admin has access to all of the interesting queries we run.
+- And we don't get repetitive strain injury typing SQL.
+
 ---
 # Database Queries
 
@@ -330,6 +406,10 @@ LIMIT 12;
  iracooke                                 |      30
 (12 rows)
 ```
+
+???
+
+- Example output from the previous query.
 
 ---
 
@@ -361,6 +441,12 @@ request_cpus            |   `20`
 request_memory          |   `64G`
 ```
 
+???
+
+- Another extremely common query is: what is the status of this job?
+- There is a gxadmin command which aggregates information about jobs.
+- This can help you debug job failure to run issues.
+
 ---
 
 # Database Queries
@@ -385,6 +471,12 @@ FROM galaxy_user
 ORDER BY create_time desc
 LIMIT 40
 ```
+
+???
+
+- Another common query, who has recently joined our server?
+- This is an easy command to write, but it is also included in gxadmin.
+
 ---
 
 # Database Queries
@@ -410,6 +502,12 @@ LIMIT 40
  5567 | 2019-04-23 05:12:43+02 |            | xxx         | xxx         |              | t
 ```
 
+???
+
+- Example output of the previous query.
+- With SQL you can choose just the columns or data that is relevant to you.
+- This may not be so easily available in the interface.
+
 ---
 
 # Tabular Output
@@ -428,6 +526,12 @@ $ gxadmin tsvquery ...
 $ gxadmin csvquery ...
 ```
 
+???
+
+- However to reuse this data in other applications, the postgres format is not convenient.
+- There is special syntax you can use to output CSV.
+- gxadmin includes query variants to do this as well.
+
 ---
 
 # Monitoring
@@ -443,13 +547,11 @@ queue,tool_id=unicycler/0.4.7.0,state=running count=10
 queue,tool_id=hisat2/2.1.0+galaxy4,state=running count=9
 ```
 
----
+???
 
-# gxadmin
-
-- Many of these queries are interesting to most or all admins.
-- Most queries have versions already included in `gxadmin` with more detail than you might write.
-- Check first if [`gxadmin`](https://github.com/usegalaxy-eu/gxadmin/) already supports your query, and feel free to contribute back any changes or additions you might have.
+- For monitoring, many galaxy sites use Influx DB.
+- gxadmin supports exporting influx compatible format.
+- This makes it easy to add new data and graphs to your monitoring.
 
 
 
@@ -470,25 +572,36 @@ queue,tool_id=hisat2/2.1.0+galaxy4,state=running count=9
 
 ---
 
-## Thank you!
+## Thank You!
 
-This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://wiki.galaxyproject.org/Teach/GTN) and all the contributors!
+This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://training.galaxyproject.org) and all the contributors!
 
 
 <div class="contributors-line">
 
+<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a>
 
-<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/natefoo" alt="Nate Coraor">Nate Coraor</a>, <a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bgruening" alt="Björn Grüning">Björn Grüning</a>, <a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/slugger70" alt="Simon Gladman">Simon Gladman</a>, <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Helena Rasche">Helena Rasche</a>
+
+<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
+
+
+<a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
+
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
 
 
 </div>
 
 
 
-<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
+  
+<img src="/training-material/assets/images/gat.png" alt="page logo" style="height: 100px;"/>
+  
 
 
-This material is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+This material is licensed under the Creative Commons Attribution 4.0 International License</a>.
 
 
     </textarea>
@@ -496,7 +609,7 @@ This material is licensed under the <a rel="license" href="https://creativecommo
     <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
     <script type="text/javascript">
-      var slideshow = remark.create({navigation: {scroll: false,}});
+      var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
       var snippets = document.querySelectorAll('code.remark-code');
         [].forEach.call(snippets,function(snippet){
@@ -506,5 +619,19 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         target:function(trigger){return trigger.parentElement;
       }});
     </script>
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('body').prepend("<div style='text-align: center'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+
   </body>
 </html>

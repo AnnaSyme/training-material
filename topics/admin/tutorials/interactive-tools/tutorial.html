@@ -6,14 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Galaxy Interactive Tools</title>
         
-            <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-45719423-18' , 'auto');
-    ga('send', 'pageview');
-</script>
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -22,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -34,30 +29,8 @@
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
     </head>
     <body data-spy="scroll" data-target="#toc">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'galaxyproject/admins'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
@@ -70,39 +43,43 @@
             <div class="collapse navbar-collapse" id="top-navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        
                         <a class="nav-link" href="/training-material/topics/admin" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">topic</span> Galaxy Server administration
+                            <i class="far fa-folder" aria-hidden="true"></i> Galaxy Server administration
                         </a>
+                        
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
                         </a>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu dropdown-menu-right">
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Finteractive-tools%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/interactive-tools/tutorial.html&edit-text=&act=url">
+                            Français
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Finteractive-tools%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/interactive-tools/tutorial.html&edit-text=&act=url">
+                            日本語
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Finteractive-tools%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/interactive-tools/tutorial.html&edit-text=&act=url">
+                            Español
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Finteractive-tools%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/interactive-tools/tutorial.html&edit-text=&act=url">
+                            Português
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Finteractive-tools%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/interactive-tools/tutorial.html&edit-text=&act=url">
+                            العربية
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Finteractive-tools%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/interactive-tools/tutorial.html&edit-text=&act=url" title="">
+                            And more!
                             </a>
                         </div>
                     </li>
@@ -112,23 +89,60 @@
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/interactive-tools/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/admin/tutorials/interactive-tools/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        
+            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+            </a>
+        
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -144,20 +158,53 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
+                </label>
+                <label data-value="straya" class="btn btn-secondary">
+                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
                 </label>
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/admin/tutorials/interactive-tools/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-09-01/topics/admin/tutorials/interactive-tools/tutorial.html" title="Version 2020-09-01">2020-09-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-08-01/topics/admin/tutorials/interactive-tools/tutorial.html" title="Version 2020-08-01">2020-08-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
 
+                    <!-- Search bar-->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/admin/tutorials/interactive-tools/tutorial.md">
-                            <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
-                        </a>
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
                     </li>
                 </ul>
             </div>
@@ -165,9 +212,33 @@
     </nav>
 </header>
 
-<div class="container main-content">
-    <script type="application/ld+json">
+        <div class="container main-content" role="main">
         
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'galaxyproject/admins'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<script type="application/ld+json">
+    
 
 
 {
@@ -205,16 +276,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:42 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Galaxy Interactive Tools",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -244,8 +312,13 @@
   "name": "Hands-on for 'Galaxy Interactive Tools' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/interactive-tools/tutorial.html",
   "timeRequired": "PT2H",
-  "keywords": "ansible",
+  "keywords": "ansible, interactive-tools",
   "description": "The objectives are:\n - Understand what Galaxy Interactive Tools are and how they work\n - Be aware of the security implications of Interactive Tools\n - Have a basic understanding of the Interactive Tools (GxIT/GIE) Proxy, its purpose, and configuration\n - Be familiar with wildcard SSL certificates and how to get them from Let's Encrypt\n - Configure your Galaxy to serve Interactive Tools using an Ansible Playbook\n - Start, run, and use an Interactive Tool\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "coursePrerequisites": [
     {
       "@type": "Course",
@@ -302,6 +375,48 @@
         "name": "Galaxy Training Network",
         "url": "https://galaxyproject.org/teach/gtn/"
       }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/connect-to-compute-cluster/slides.html",
+      "name": "Connecting Galaxy to a compute cluster",
+      "description": "Slides for 'Connecting Galaxy to a compute cluster' tutorial",
+      "learningResourceType": "slides",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html",
+      "name": "Connecting Galaxy to a compute cluster",
+      "description": "Hands-on for 'Connecting Galaxy to a compute cluster' tutorial",
+      "learningResourceType": "hands-on tutorial",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/job-destinations/tutorial.html",
+      "name": "Mapping Jobs to Destinations",
+      "description": "Hands-on for 'Mapping Jobs to Destinations' tutorial",
+      "learningResourceType": "hands-on tutorial",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
     }
   ],
   "hasPart": [
@@ -319,6 +434,10 @@
     {
       "@type": "Person",
       "name": "Helena Rasche"
+    },
+    {
+      "@type": "Person",
+      "name": "Anthony Bretaudeau"
     }
   ],
   "contributor": [
@@ -333,6 +452,10 @@
     {
       "@type": "Person",
       "name": "Helena Rasche"
+    },
+    {
+      "@type": "Person",
+      "name": "Anthony Bretaudeau"
     }
   ],
   "about": [
@@ -344,53 +467,69 @@
     }
   ]
 }
-    </script>
+</script>
 
-    <section class="tutorial">
-        <h1 data-toc-skip>Galaxy Interactive Tools</h1>
-        
+<section class="tutorial topic-admin">
+    <h1 data-toc-skip>Galaxy Interactive Tools</h1>
+    
 
-        <div class="contributors-line">By: 
 
-<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/natefoo" alt="Nate Coraor">Nate Coraor</a>, <a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/slugger70" alt="Simon Gladman">Simon Gladman</a>, <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Helena Rasche">Helena Rasche</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a>
+
+
+<a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
+
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+
+<a href="/training-material/hall-of-fame/abretaud/" class="contributor-badge contributor-abretaud"><img src="https://avatars.githubusercontent.com/abretaud?s=27" alt="Avatar">Anthony Bretaudeau</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
-        <blockquote class="overview">
-            <h3>Overview</h3>
-            <strong><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</strong>
-            <ul>
-            
-            </ul>
 
-            <strong><i class="fas fa-bullseye" aria-hidden="true"></i><span class="visually-hidden">objectives</span> Objectives</strong>
-            <ul>
-            
-            <li><p>Understand what Galaxy Interactive Tools are and how they work</p>
-</li>
-            
-            <li><p>Be aware of the security implications of Interactive Tools</p>
-</li>
-            
-            <li><p>Have a basic understanding of the Interactive Tools (GxIT/GIE) Proxy, its purpose, and configuration</p>
-</li>
-            
-            <li><p>Be familiar with wildcard SSL certificates and how to get them from Let’s Encrypt</p>
-</li>
-            
-            <li><p>Configure your Galaxy to serve Interactive Tools using an Ansible Playbook</p>
-</li>
-            
-            <li><p>Start, run, and use an Interactive Tool</p>
-</li>
-            
-            </ul>
+    <blockquote class="overview">
+        <h3>Overview</h3>
+        
+        <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
+        <ul>
+        
+        </ul>
 
-            
-            <strong><i class="fas fa-check-circle" aria-hidden="true"></i><span class="visually-hidden">requirements</span> Requirements</strong>
-            <ul>
-            
-            
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
+        <ul>
+        
+        <li><p>Understand what Galaxy Interactive Tools are and how they work</p>
+</li>
+        
+        <li><p>Be aware of the security implications of Interactive Tools</p>
+</li>
+        
+        <li><p>Have a basic understanding of the Interactive Tools (GxIT/GIE) Proxy, its purpose, and configuration</p>
+</li>
+        
+        <li><p>Be familiar with wildcard SSL certificates and how to get them from Let’s Encrypt</p>
+</li>
+        
+        <li><p>Configure your Galaxy to serve Interactive Tools using an Ansible Playbook</p>
+</li>
+        
+        <li><p>Start, run, and use an Interactive Tool</p>
+</li>
+        
+        </ul>
+
+        
+        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements:</strong>
+        <ul>
+        
+        
     <li>
     
         
@@ -485,7 +624,17 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -572,56 +721,292 @@
                     
                         
                     
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                            <li> Connecting Galaxy to a compute cluster:
+                            
+                                <a href="/training-material/topics/admin/tutorials/connect-to-compute-cluster/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                
+                            
+                            
+                                
+                                    - <a href="/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                            <li> Mapping Jobs to Destinations:
+                            
+                            
+                                
+                                     <a href="/training-material/topics/admin/tutorials/job-destinations/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
             </ul>
         
     
     </li>
 
-            </ul>
+        </ul>
+        
+
+        
+        <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i> Time estimation:</strong> 2 hours</div>
+        
+
+        
+
+        
+        
+
+        
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
+        <ul class="supporting_material">
+            
+                <li class="btn btn-default"><a href="/training-material/topics/admin/tutorials/interactive-tools/slides.html" title="Slides for this tutorial">
+                    <i class="fab fa-slideshare" aria-hidden="true"></i> Slides
+                </a></li>
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 2 hours</p>
-            
 
             
 
             
-            
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
-            <ul>
-                <div class="supporting_material">
-                
-                    <li class="btn btn-default"><a href="/training-material/topics/admin/tutorials/interactive-tools/slides.html" title="Slides for this tutorial">
-                        <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Slides
-                    </a></li>
-                
 
-                
-
-                
-
-                
-
-                
-                </div>
-            </ul>
+            
+            
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 18, 2020 </p>
-        </blockquote>
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
 
-        <div class="container">
-            <div class="row">
-                <!-- sidebar, which will move to the top on a small screen -->
-                <div class="col-sm-2">
-                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-                </div>
-                <div class="col-sm-10">
-                    <blockquote class="warning">
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+        
+          
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/admin/interactive-tools/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
+            </a>
+        </li>
+        
+        
+    </ul>
+   </li>
+   
+
+
+
+            
+        </ul>
+        
+
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Feb 14, 2022 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
+    </blockquote>
+
+    <div class="container">
+        <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-2">
+                <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
+            </div>
+            <div class="col-sm-10">
+                 
+
+                <blockquote class="warning">
   <h3 id="warning-evolving-topic"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="visually-hidden">warning</span> Evolving Topic</h3>
   <p><span class="notranslate">Galaxy</span> Interactive Tools are a <strong>new feature</strong> and there are some rough edges. Work to improve the experience of deploying and using them is ongoing.</p>
 </blockquote>
@@ -702,7 +1087,7 @@
       <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">src</span><span class="pi">:</span> <span class="s">geerlingguy.docker</span>
   <span class="na">version</span><span class="pi">:</span> <span class="s">2.6.0</span>
 <span class="pi">-</span> <span class="na">src</span><span class="pi">:</span> <span class="s">use<span class="notranslate">galaxy</span>_eu.gie_proxy</span>
-  <span class="na">version</span><span class="pi">:</span> <span class="s">0.0.1</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">0.0.2</span>
 </code></pre></div>      </div>
     </li>
     <li>
@@ -816,12 +1201,12 @@
   <li>Requests for Interactive Tools are delivered from nginx to the Interactive Tools Proxy over (by default) <strong>port 8000</strong> (http)
     <ul>
       <li>GxIT http requests are forwarded by the proxy to Docker on the node on the container’s (randomly assigned) <strong>port 32768</strong></li>
-      <li>GxIT http requests are again forwarded by Docker to Jupyter on its in-container “published” <em>*port 8888</em></li>
+      <li>GxIT http requests are again forwarded by Docker to Jupyter on its in-container “published” <strong>port 8888</strong></li>
     </ul>
   </li>
 </ul>
 
-<figure id="figure-1"><img src="../../images/interactive-tools/gxit-proxy-diagram.png" alt="Galaxy Interactive Tools Proxy Diagram" /><figcaption><span class="figcaption-prefix">Figure 1:</span> <span class="notranslate">Galaxy</span> Interactive Tools Proxy Diagram</figcaption></figure>
+<figure id="figure-1"><img src="../../images/interactive-tools/gxit-proxy-diagram.png" alt="Galaxy Interactive Tools Proxy Diagram. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> <span class="notranslate">Galaxy</span> Interactive Tools Proxy Diagram</figcaption></figure>
 
 <p>As you can see, the client only ever speaks to nginx on the <span class="notranslate">Galaxy</span> server running on the standard https port (443), never directly to the interactive tool (which may be running on a node that does not even have a public IP address). The <span class="notranslate">mapping</span> of GxIT invocation and its corresponding host/port is kept in a SQLite database known as the <em>Interactive Tools Session Map</em>, and the path to this database is important, since both <span class="notranslate">Galaxy</span> and the proxy need access to it.</p>
 
@@ -861,7 +1246,7 @@
             <td>Whether to install Node.js, options are <code class="language-plaintext highlighter-rouge">package</code> and <code class="language-plaintext highlighter-rouge">nodeenv</code></td>
           </tr>
           <tr>
-            <td><code class="language-plaintext highlighter-rouge">gie_proxy_virtulenv_command</code></td>
+            <td><code class="language-plaintext highlighter-rouge">gie_proxy_virtualenv_command</code></td>
             <td>string</td>
             <td>Command to create virtualenv when using <code class="language-plaintext highlighter-rouge">nodeenv</code> method</td>
           </tr>
@@ -891,16 +1276,14 @@
       <p>Add the following lines to your <code class="language-plaintext highlighter-rouge">group_vars/<span class="notranslate">galaxy</span>servers.yml</code> file:</p>
 
       <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gie_proxy_dir</span><span class="pi">:</span> <span class="s">/srv/<span class="notranslate">galaxy</span>/gie-proxy/proxy</span>
-<span class="na">gie_proxy_git_version</span><span class="pi">:</span> <span class="s">ie2</span>
+<span class="na">gie_proxy_git_version</span><span class="pi">:</span> <span class="s">main</span>
 <span class="na">gie_proxy_setup_nodejs</span><span class="pi">:</span> <span class="s">nodeenv</span>
-<span class="na">gie_proxy_virtulenv_command</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">pip_virtualenv_command</span><span class="nv"> </span><span class="s">}}"</span>
+<span class="na">gie_proxy_virtualenv_command</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">pip_virtualenv_command</span><span class="nv"> </span><span class="s">}}"</span>
 <span class="na">gie_proxy_nodejs_version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">10.13.0"</span>
 <span class="na">gie_proxy_virtualenv</span><span class="pi">:</span> <span class="s">/srv/<span class="notranslate">galaxy</span>/gie-proxy/venv</span>
 <span class="na">gie_proxy_setup_service</span><span class="pi">:</span> <span class="s">systemd</span>
 <span class="na">gie_proxy_sessions_path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s"><span class="notranslate">galaxy</span>_mutable_data_dir</span><span class="nv"> </span><span class="s">}}/interactivetools_map.sqlite"</span>
 </code></pre></div>      </div>
-
-      <p>Note the value of <code class="language-plaintext highlighter-rouge">gie_proxy_git_version</code> is <code class="language-plaintext highlighter-rouge">ie2</code>: this is because the default branch only works with Interactive Environments, whereas the <code class="language-plaintext highlighter-rouge">ie2</code> branch has been updated for Interactive Tools. As Interactive Tools mature, this will likely be merged back to the default branch.</p>
 
       <p>We have chosen to install Node.js using <a href="https://github.com/ekalinin/nodeenv">nodeenv</a> because the version in the training image’s package manager is fairly old.</p>
     </li>
@@ -1019,12 +1402,20 @@ Feb 14 17:38:49 gcc-4 node[3679]: Watching path /srv/<span class="notranslate">g
 
 <p>During the <a href="/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html"><span class="notranslate">Galaxy</span> Installation with Ansible</a> tutorial, we acquired an SSL certificate for our <span class="notranslate">Galaxy</span> server from <a href="https://letsencrypt.org/">Let’s Encrypt</a>. This certificate was issued for the hostname of your <span class="notranslate">Galaxy</span> server (e.g. <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.example.org</code>). SSL certificates are valid <em>only for the name to which they were issued</em>. This presents a problem for us due to the way that <span class="notranslate">Galaxy</span> Interactive Tools work.</p>
 
-<p>In order to ensure each Interactive Tool’s cookies are unique, and to provide each tool with a unique entry point, they are served from a subdomain of your <span class="notranslate">Galaxy</span> server (e.g. <code class="language-plaintext highlighter-rouge">&lt;unique-id&gt;.interactivetoolentrypoint.interactivetool.<span class="notranslate">galaxy</span>.example.org</code>). Your SSL cert is not valid for this subdomain. Further, in order to support the random <code class="language-plaintext highlighter-rouge">&lt;unique-id&gt;</code> in the hostname, we need a <em>wildcard certificate</em> for <code class="language-plaintext highlighter-rouge">*.interactivetoolentrypoint.interactivetool.<span class="notranslate">galaxy</span>.example.org</code>. Let’s Encrypt wildcard certificates <a href="https://letsencrypt.org/docs/faq/">can only be generated using the DNS-01 challenge method</a>, which works by issuing a <a href="https://en.wikipedia.org/wiki/Dynamic_DNS">dynamic DNS</a> update to set the requested domain’s <code class="language-plaintext highlighter-rouge">TXT</code> record. As a result, this process is highly dependent on your site; specifically, your SSL certificate vendor, and your DNS server software or cloud provider.</p>
+<p>In order to ensure each Interactive Tool’s cookies are unique, and to provide each tool with a unique entry point, they are served from a subdomain of your <span class="notranslate">Galaxy</span> server (e.g. <code class="language-plaintext highlighter-rouge">&lt;unique-id&gt;.interactivetoolentrypoint.interactivetool.<span class="notranslate">galaxy</span>.example.org</code>). Your SSL cert is not valid for this subdomain. Further, in order to support the random <code class="language-plaintext highlighter-rouge">&lt;unique-id&gt;</code> in the hostname, we need a <em>wildcard certificate</em> for <code class="language-plaintext highlighter-rouge">*.interactivetoolentrypoint.interactivetool.<span class="notranslate">galaxy</span>.example.org</code>.</p>
 
-<p>If you are completing this tutorial as part of a <a href="https://github.com/galaxyproject/dagobah-training"><span class="notranslate">Galaxy</span> Admin Training</a> course, we have precreated a dynamic DNS server that you will use for this step. The <em>TSIG key</em> that allows you to perform dynamic DNS updates will be provided to you.</p>
+<p>This process is highly dependent on your site; specifically, your SSL certificate vendor, and your DNS server software or cloud provider.</p>
+
+<p>Let’s Encrypt, the SSL certificate vendor we use in our tutorials, <a href="https://letsencrypt.org/docs/faq/">can only generate wildcard certificates using the DNS-01 challenge method</a>, which works by issuing a <a href="https://en.wikipedia.org/wiki/Dynamic_DNS">dynamic DNS</a> update to set the requested domain’s <code class="language-plaintext highlighter-rouge">TXT</code> record.</p>
+
+<p>If you are completing this tutorial as part of a <a href="https://github.com/galaxyproject/dagobah-training"><span class="notranslate">Galaxy</span> Admin Training</a> course, we might have precreated a dynamic DNS server that you will use for this step. The <em>TSIG key</em> that allows you to perform dynamic DNS updates will be provided to you. Your instructor will also tell you which option to follow (1 or 2), depending on the DNS provider that was chosen for this course.</p>
+
+<p>As we use Let’s Encrypt in staging mode, the wildcard certificates generated with either option 1 or 2 will still be invalid, and you will still see a warning in your web browser when accessing an Interactive Tool. If this warning is not a problem for you, you can just skip this section of the tutorial, and move on to “Enabling Interactive Tools in <span class="notranslate">Galaxy</span>”.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-requesting-a-wildcard-certificate-with-certbot-using-ansible"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Requesting a Wildcard Certificate with Certbot using Ansible</h3>
+  <h3 id="hands_on-hands-on-requesting-a-wildcard-certificate-with-certbot-using-ansible---option-1-rfc2136"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Requesting a Wildcard Certificate with Certbot using Ansible - Option 1 (rfc2136)</h3>
+
+  <p>This method uses a DNS provider hosted by the <span class="notranslate">Galaxy</span> Project.</p>
 
   <ol>
     <li>
@@ -1128,9 +1519,143 @@ Feb 14 17:38:49 gcc-4 node[3679]: Watching path /srv/<span class="notranslate">g
 
 </blockquote>
 
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-requesting-a-wildcard-certificate-with-certbot-using-ansible---option-2-route53"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Requesting a Wildcard Certificate with Certbot using Ansible - Option 2 (route53)</h3>
+
+  <p>This method uses route53, the Amazon Web Services DNS provider. To manage connection to AWS, we will first install a specific role.</p>
+
+  <ol>
+    <li>
+      <p>In your working directory, add the aws_cli role to your <code class="language-plaintext highlighter-rouge">requirements.yml</code>:</p>
+
+      <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">src</span><span class="pi">:</span> <span class="s">use<span class="notranslate">galaxy</span>_eu.aws_cli</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">0.0.1</span>
+</code></pre></div>      </div>
+    </li>
+    <li>
+      <p>Install the requirements with <code class="language-plaintext highlighter-rouge">ansible-<span class="notranslate">galaxy</span></code>:</p>
+
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ansible-<span class="notranslate">galaxy</span> role install -p roles -r requirements.yml
+</code></pre></div>      </div>
+    </li>
+    <li>
+      <p>Open <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> with your text editor to add the role <code class="language-plaintext highlighter-rouge">use<span class="notranslate">galaxy</span>_eu.aws_cli</code> just before the nginx role:</p>
+
+      <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh">diff --git a/<span class="notranslate">galaxy</span>.yml b/<span class="notranslate">galaxy</span>.yml
+</span><span class="gd">--- a/<span class="notranslate">galaxy</span>.yml
+</span><span class="gi">+++ b/<span class="notranslate">galaxy</span>.yml
+</span><span class="p">@@ -21,6 +21,7 @@</span>
+       become: true
+       become_user: <span class="notranslate">galaxy</span>
+     - use<span class="notranslate">galaxy</span>_eu.<span class="notranslate">galaxy</span>_systemd
+<span class="gi">+    - use<span class="notranslate">galaxy</span>_eu.aws_cli
+</span>     - <span class="notranslate">galaxy</span>project.nginx
+     - geerlingguy.docker
+     - use<span class="notranslate">galaxy</span>_eu.gie_proxy
+</code></pre></div>      </div>
+    </li>
+    <li>
+      <p>Edit the group variables file, <code class="language-plaintext highlighter-rouge">group_vars/<span class="notranslate">galaxy</span>servers.yml</code>:</p>
+
+      <p>The relevant variables to set for this role are:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="language-plaintext highlighter-rouge">certbot_domains</code></td>
+            <td>list</td>
+            <td>List of domains to include as subject alte<span class="notranslate">rna</span>tive names (the first will also be the certificate’s <em>common name</em>)</td>
+          </tr>
+          <tr>
+            <td><code class="language-plaintext highlighter-rouge">certbot_dns_provider</code></td>
+            <td>string</td>
+            <td>Name of <a href="https://certbot.eff.org/docs/using.html#dns-plugins">Certbot DNS plugin</a> to use</td>
+          </tr>
+          <tr>
+            <td><code class="language-plaintext highlighter-rouge">certbot_dns_credentials</code></td>
+            <td>dictionary</td>
+            <td>Plugin-specific credentials for performing dynamic DNS updates</td>
+          </tr>
+          <tr>
+            <td><code class="language-plaintext highlighter-rouge">certbot_expand</code></td>
+            <td>boolean</td>
+            <td>Whether to “expand” an existing certificate (add new domain names to it)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ul>
+        <li>
+          <p>Add a new item to the <strong>existing</strong> <code class="language-plaintext highlighter-rouge">certbot_domains</code> list so it matches:</p>
+
+          <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">certbot_domains</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">inventory_hostname</span><span class="nv"> </span><span class="s">}}"</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">*.interactivetoolentrypoint.interactivetool.{{</span><span class="nv"> </span><span class="s">inventory_hostname</span><span class="nv"> </span><span class="s">}}"</span>
+</code></pre></div>          </div>
+        </li>
+        <li>
+          <p>Comment out the existing <code class="language-plaintext highlighter-rouge">certbot_auth_method</code> like so:</p>
+
+          <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#certbot_auth_method: --webroot</span>
+</code></pre></div>          </div>
+
+          <p>Although this is not explicitly required (setting <code class="language-plaintext highlighter-rouge">cerbot_dns_provider</code> as we do overrides this setting), doing so is less confusing in the future, since it makes it clear that the “webroot” method for Let’s Encrypt WEB-01 challenges is no longer in use for this server.</p>
+        </li>
+        <li>
+          <p>Add the following lines to your <code class="language-plaintext highlighter-rouge">group_vars/<span class="notranslate">galaxy</span>servers.yml</code> file:</p>
+
+          <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">certbot_dns_provider</span><span class="pi">:</span> <span class="s">route53</span>
+<span class="na">aws_cli_credentials</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">access_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;SECRET</span><span class="nv"> </span><span class="s">PROVIDED</span><span class="nv"> </span><span class="s">BY</span><span class="nv"> </span><span class="s">INSTRUCTOR&gt;"</span>
+    <span class="na">secret_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;SECRET</span><span class="nv"> </span><span class="s">PROVIDED</span><span class="nv"> </span><span class="s">BY</span><span class="nv"> </span><span class="s">INSTRUCTOR&gt;"</span>
+    <span class="na">homedir</span><span class="pi">:</span> <span class="s">/root</span>
+    <span class="na">owner</span><span class="pi">:</span> <span class="s">root</span>
+    <span class="na">group</span><span class="pi">:</span> <span class="s">root</span>
+</code></pre></div>          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Run the playbook <strong>with <code class="language-plaintext highlighter-rouge">certbot_expand</code></strong>:</p>
+
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ansible-playbook <span class="notranslate">galaxy</span>.yml -e certbot_expand=true
+</code></pre></div>      </div>
+
+      <blockquote class="question">
+        <h3 id="question-question-4"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+
+        <p>What is the <code class="language-plaintext highlighter-rouge">-e</code> flag to <code class="language-plaintext highlighter-rouge">ansible-playbook</code> and why did we use it?</p>
+
+        <blockquote class="solution">
+          <h3 id="solution-solution-4"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+
+          <p>As per <code class="language-plaintext highlighter-rouge">ansible-playbook --help</code>:</p>
+
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  -e EXTRA_VARS, --extra-vars EXTRA_VARS
+                        set additional variables as key=value or YAML/JSON, if
+                        filename prepend with @
+</code></pre></div>          </div>
+
+          <p>We used this flag because <code class="language-plaintext highlighter-rouge">certbot_expand</code> only needs to be set <em>once</em>, when we are adding a new domain to the certificate. It should not be enabled on subsequent runs of the playbook, or else we would request a new certificate on each run! Thus, it does not make sense to add it to a vars file.</p>
+
+        </blockquote>
+
+      </blockquote>
+    </li>
+  </ol>
+
+</blockquote>
+
 <p>You can verify that your certificate has been expanded using your browser’s developer tools:</p>
 
-<figure id="figure-2"><img src="../../images/interactive-tools/wildcard-cert.png" alt="Wildcard Certificate Dialog" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Wildcard Certificate Dialog</figcaption></figure>
+<figure id="figure-2"><img src="../../images/interactive-tools/wildcard-cert.png" alt="Wildcard Certificate Dialog. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Wildcard Certificate Dialog</figcaption></figure>
 
 <h2 id="enabling-interactive-tools-in-galaxy">Enabling Interactive Tools in <span class="notranslate">Galaxy</span></h2>
 
@@ -1141,7 +1666,7 @@ Feb 14 17:38:49 gcc-4 node[3679]: Watching path /srv/<span class="notranslate">g
 
   <ol>
     <li>
-      <p>Rather than modify the default tool configuration file, we’ll add a new one that only references the Interactive Tools. This way, the default set of tools will still load without us having to incorporate the entire default tool config in to our playbook.</p>
+      <p>Rather than modifying the default tool configuration file, we’ll add a new one that only references the Interactive Tools. This way, the default set of tools will still load without us having to incorporate the entire default tool config into our playbook.</p>
 
       <p>If the folder does not exist, create <code class="language-plaintext highlighter-rouge">templates/<span class="notranslate">galaxy</span>/config</code> next to your <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> (<code class="language-plaintext highlighter-rouge">mkdir -p templates/<span class="notranslate">galaxy</span>/config/</code>)</p>
 
@@ -1177,8 +1702,8 @@ Feb 14 17:38:49 gcc-4 node[3679]: Watching path /srv/<span class="notranslate">g
     <li>
       <p>Next, we need to configure the interactive tools destination. First, we explicitly set the destination to the default <code class="language-plaintext highlighter-rouge">local</code> destination since there will now be two destinations defined. Then we add a destination for submitting jobs as docker containers using the <a href="https://github.com/galaxyproject/galaxy/blob/6622ad1acb91866febb3d2f229de7cfb8af3a9f6/lib/galaxy/config/sample/job_conf.xml.sample_advanced#L410">advanced sample job configuration</a> as a guide. Finally, use the <a href="https://github.com/galaxyproject/galaxy/blob/6622ad1acb91866febb3d2f229de7cfb8af3a9f6/tools/interactive/interactivetool_ethercalc.xml">EtherCalc GxIT’s</a> tool ID to route executions of the EtherCalc GxIT to the newly created destination:</p>
 
-      <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- job_conf.xml.old
-</span><span class="gi">+++ job_conf.xml
+      <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
 </span>     &lt;plugins workers="4"&gt;
          &lt;plugin id="local" type="runner" load="<span class="notranslate">galaxy</span>.jobs.runners.local:LocalJobRunner"/&gt;
      &lt;/plugins&gt;
@@ -1365,8 +1890,8 @@ Feb 14 17:38:49 gcc-4 node[3679]: Watching path /srv/<span class="notranslate">g
         <p>If you are completing this tutorial as part of a <a href="https://github.com/galaxyproject/dagobah-training"><span class="notranslate">Galaxy</span> Admin Training</a> course, you will also need the <code class="language-plaintext highlighter-rouge">&lt;env&gt;</code> setting shown below to prevent problems with the untrusted SSL certificates in use during the course. <span class="notranslate">Galaxy</span> servers with valid SSL certificates <em>do not need this option</em>.</p>
       </blockquote>
 
-      <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- job_conf.xml.old
-</span><span class="gi">+++ job_conf.xml
+      <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
+</span><span class="gi">+++ b/templates/<span class="notranslate">galaxy</span>/config/job_conf.xml.j2
 </span>     &lt;destinations default="local"&gt;
          &lt;destination id="local" runner="local"/&gt;
 <span class="gd">-        &lt;destination id="interactive_local" runner="local"&gt;
@@ -1397,7 +1922,7 @@ Feb 14 17:38:49 gcc-4 node[3679]: Watching path /srv/<span class="notranslate">g
     <span class="na">dest</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s"><span class="notranslate">galaxy</span>_config_dir</span><span class="nv"> </span><span class="s">}}/pulsar_app.yml"</span>
 </code></pre></div>      </div>
 
-      <p>Addiitionally, you will need to set the <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>_infrastructure_url</code> config option:</p>
+      <p>Additionally, you will need to set the <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>_infrastructure_url</code> config option:</p>
 
       <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na"><span class="notranslate">galaxy</span>_config</span><span class="pi">:</span>
   <span class="na"><span class="notranslate">galaxy</span></span><span class="pi">:</span>
@@ -1423,12 +1948,12 @@ Feb 14 17:38:49 gcc-4 node[3679]: Watching path /srv/<span class="notranslate">g
 <p>Once the playbook run is complete and your <span class="notranslate">Galaxy</span> server has restarted, run the EtherCalc Interactive Tool again.</p>
 
 <blockquote class="question">
-  <h3 id="question-question-4"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+  <h3 id="question-question-5"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
 
   <p>Once EtherCalc is running, check the mounts of its container. What do you observe?</p>
 
   <blockquote class="solution">
-    <h3 id="solution-solution-4"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+    <h3 id="solution-solution-5"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
 
     <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>docker inspect <span class="si">$(</span>docker ps <span class="nt">-q</span><span class="si">)</span> | jq <span class="s1">'.[0].HostConfig.Binds'</span>
 <span class="go">[
@@ -1452,106 +1977,115 @@ Feb 14 17:38:49 gcc-4 node[3679]: Watching path /srv/<span class="notranslate">g
 
 
 
-                    
-                    <blockquote class="key_points">
-                        <h3><i class="fas fa-key" aria-hidden="true"></i><span class="visually-hidden">keypoints</span> Key points</h3>
-                        <ul>
-                            
-                            <li><p>Galaxy Interactive Tools run as jobs in largely the same manner as any other Galaxy job</p>
+                
+                <blockquote class="key_points">
+                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <ul>
+                        
+                        <li><p>Galaxy Interactive Tools run as jobs in largely the same manner as any other Galaxy job</p>
 </li>
-                            
-                            <li><p>nginx routes GxIT requests to the GxIT(/GIE) Proxy, which routes them to the node/port on which the GxIT is running</p>
+                        
+                        <li><p>nginx routes GxIT requests to the GxIT(/GIE) Proxy, which routes them to the node/port on which the GxIT is running</p>
 </li>
-                            
-                            <li><p>GxITs require wildcard SSL certificates</p>
+                        
+                        <li><p>GxITs require wildcard SSL certificates</p>
 </li>
-                            
-                            <li><p>GxITs expose your Galaxy server’s user datasets unless configured to use Pulsar</p>
+                        
+                        <li><p>GxITs expose your Galaxy server’s user datasets unless configured to use Pulsar</p>
 </li>
-                            
-                        </ul>
-                    </blockquote>
-                    
+                        
+                    </ul>
+                </blockquote>
+                
 
-                    
+                <h1>Frequently Asked Questions</h1>
+                Have questions about this tutorial? Check out the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
+                If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
-                    
+                
 
-                    <h1>Feedback</h1>
-                    <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                
 
-                    <div id="feedback-button">
-                        <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
-                    </div>
-                    <div id="feedback-form">
-                    </div>
-                    <script type="text/javascript">
-                        (function (window, document) {
-                            function onDocumentReady(fn) {
-                                if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-                                    fn();
-                                } else {
-                                    document.addEventListener('DOMContentLoaded', fn);
-                                }
+                
+
+                <h1>Feedback</h1>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
+
+                <div id="feedback-button">
+                    <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
+                </div>
+                <div id="feedback-form">
+                </div>
+                <script type="text/javascript">
+                    (function (window, document) {
+                        function onDocumentReady(fn) {
+                            if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                fn();
+                            } else {
+                                document.addEventListener('DOMContentLoaded', fn);
                             }
+                        }
 
-                            onDocumentReady(function () {
-                                $("#feedback-button").click(function(evt){
-                                    var e = $(evt.target)
-                                    e.hide();
+                        onDocumentReady(function () {
+                            $("#feedback-button").click(function(evt){
+                                var e = $(evt.target)
+                                e.hide();
 
-                                    $("#feedback-form").html(`
-                                        <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Galaxy Interactive Tools (Galaxy Server administration)">Loading...</iframe>
-                                    `)
-                                })
-                            });
-                        })(window, document);
-                    </script>
-
-
-
-                    <h1>Citing this Tutorial</h1>
-                    <p>
-                        <ol>
-                            <li id="citation-text">Nate Coraor, Simon Gladman, Helena Rasche, 2020 <b>Galaxy Interactive Tools (Galaxy Training Materials)</b>. <a href="/training-material/topics/admin/tutorials/interactive-tools/tutorial.html">/training-material/topics/admin/tutorials/interactive-tools/tutorial.html</a> Online; accessed TODAY
-                            </li>
-                            <li>
-                            Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
-                            </li>
-                        </ol>
-                    </p>
+                                $("#feedback-form").html(`
+                                    <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Galaxy Interactive Tools (Galaxy Server administration)">Loading...</iframe>
+                                `)
+                            })
+                        });
+                    })(window, document);
+                </script>
 
 
-                    <blockquote class="details">
-                      <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                      <p style="display: none;">
 
-                    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                <h1>Citing this Tutorial</h1>
+                <p>
+                    <ol>
+                        <li id="citation-text">Nate Coraor, Simon Gladman, Helena Rasche, Anthony Bretaudeau, 2022 <b>Galaxy Interactive Tools (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/interactive-tools/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/interactive-tools/tutorial.html</a> Online; accessed TODAY
+                        </li>
+                        <li>
+                        Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                        </li>
+                    </ol>
+                </p>
+
+
+                <blockquote class="details">
+                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
+                  <p style="display: none;">
+
+                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code id="citation-code">@misc{admin-interactive-tools,
-    author = "Nate Coraor and Simon Gladman and Helena Rasche",
-    title = "Galaxy Interactive Tools (Galaxy Training Materials)",
-    year = "2020",
-    month = "07",
-    day = "18"
-    url = "\url{/training-material/topics/admin/tutorials/interactive-tools/tutorial.html}",
-    note = "[Online; accessed TODAY]"
+author = "Nate Coraor and Simon Gladman and Helena Rasche and Anthony Bretaudeau",
+title = "Galaxy Interactive Tools (Galaxy Training Materials)",
+year = "2022",
+month = "02",
+day = "14"
+url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/interactive-tools/tutorial.html}",
+note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
-        doi = {10.1016/j.cels.2018.05.012},
-        url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-        year = 2018,
-        month = {jun},
-        publisher = {Elsevier {BV}},
-        volume = {6},
-        number = {6},
-        pages = {752--758.e1},
-        author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-        title = {Community-Driven Data Analysis Training for Biology},
-        journal = {Cell Systems}
+    doi = {10.1016/j.cels.2018.05.012},
+    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
+    year = 2018,
+    month = {jun},
+    publisher = {Elsevier {BV}},
+    volume = {6},
+    number = {6},
+    pages = {752--758.e1},
+    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
+    title = {Community-Driven Data Analysis Training for Biology},
+    journal = {Cell Systems}
 }</code>
-                    </pre></div></div>
-                    </p>
-                    </blockquote>
+                </pre></div></div>
+                </p>
+                </blockquote>
 
 
 <script type="text/javascript">
@@ -1561,36 +2095,22 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                </div>
+                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+
+                
+
+                
+
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
-    </section>
-</div>
-
-
-<footer>
-    <div class="container">
-        <p>
-            This material is the result of a collaborative work. Thanks to the
-            <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a>
-            and all the <a href="/training-material/hall-of-fame">contributors</a> (Nate Coraor, Simon Gladman, Helena Rasche)!
-        </p>
-        <p>
-            Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/admin/tutorials/interactive-tools/tutorial.md">GitHub</a>.
-        </p>
-        <p>
-    The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-</p>
     </div>
-</footer>
+</section>
+<br/>
+<br/>
+<br/>
 
+        </div>
+        
     </body>
     <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
@@ -1613,4 +2133,17 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
     }});
     </script>
     
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
 </html>
