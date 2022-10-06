@@ -17,6 +17,15 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Pangeo Notebook in Galaxy - Introduction to Xarray" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:08 +0000" />
+<meta name="DC.creator" content="Anne Fouilloux" />
 
         
         
@@ -24,9 +33,11 @@
         
         
         <meta name="description" content="Learn to analyze climate data through Galaxy." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Pangeo Notebook in Galaxy - Introduction to Xarray" />
         <meta property="og:description" content="Learn to analyze climate data through Galaxy." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -243,27 +254,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -276,7 +274,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:00:18 +0000",
+  "dateModified": "1970-01-01 00:00:08 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Pangeo Notebook in Galaxy - Introduction to Xarray",
   "interactivityType": "mixed",
@@ -301,28 +299,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Climate",
     "description": "Learn to analyze climate data through Galaxy.",
-    "url": "https://training.galaxyproject.org//training-material/topics/climate/"
+    "url": "https://training.galaxyproject.org/training-material/topics/climate/"
   },
-  "courseCode": "climate / pangeo-notebook / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Pangeo Notebook in Galaxy - Introduction to Xarray' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html",
   "timeRequired": "PT1H",
-  "keywords": "pangeo, interactive-tools, jupyter-notebook, jupyter-notebook",
+  "keywords": "climate, pangeo, interactive-tools, jupyter-notebook, jupyter-notebook",
   "description": "The questions this  addresses are:\n - What is Pangeo notebook?\n - How to start Pangeo Notebook in Galaxy?\n - What are the main software components of the Pangeo ecosystem?\n - What is Xarray?\n - How to manipulate Xarrays?\n - How to print metadata information?\n - How to make a selection?\n - How to visualize?\n - How to filter?\n - How to make reduction operations (mean, max, min)?\n - How to resample my data?\n - Where to go next?\n\n\\nThe objectives are:\n - Learn to get metadata information using Xarray Galaxy Tools\n - Learn to select data\n - Learn to visualize data\n - Learn to filter, make reduction operations (mean, max, min)\n - Learn to resample my data\n - Learn to cite and contribute to Pangeo\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -333,8 +349,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-basics/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-basics/tutorial.html",
       "name": "Introduction to Python",
       "description": "Hands-on for 'Introduction to Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -347,8 +364,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-plotting/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-plotting/tutorial.html",
       "name": "Plotting in Python",
       "description": "Hands-on for 'Plotting in Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -361,8 +379,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
       "name": "Advanced Python",
       "description": "Hands-on for 'Advanced Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -380,19 +399,50 @@
       "name": "Data Carpentry Geospatial Workshop"
     }
   ],
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -400,7 +450,7 @@
       "@type": "CreativeWork",
       "name": "Climate",
       "description": "Learn to analyze climate data through Galaxy.",
-      "url": "https://training.galaxyproject.org//training-material/topics/climate/"
+      "url": "https://training.galaxyproject.org/training-material/topics/climate/"
     }
   ]
 }
@@ -410,12 +460,15 @@
     <h1 data-toc-skip>Pangeo Notebook in Galaxy - Introduction to Xarray</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -527,6 +580,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Introduction to Python:
                             
@@ -536,6 +591,34 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -588,6 +671,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Plotting in Python:
                             
@@ -597,6 +682,34 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -621,6 +734,36 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -721,6 +864,14 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/climate/tutorials/pangeo-notebook/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
 
             <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
             
@@ -735,10 +886,12 @@
 
 
 
+
+
   
   <li class="btn btn-default supporting_material">
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>&nbsp;Recordings
     </a>
     <ul class="dropdown-menu">
         
@@ -756,6 +909,7 @@
         
         
         
+        
     </ul>
    </li>
    
@@ -767,7 +921,7 @@
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -1164,7 +1318,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Feb 18, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 8, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -1182,9 +1336,12 @@
             <div class="col-sm-10">
                  
                      
+                     
+                     
+                     
                     
                         
-                        <!--SNIPPET--><blockquote class="comment">  <h3 data-toc-skip id="comment-this-is-best-viewed-in-pangeo-jupyter-lab"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> This is best viewed in Pangeo Jupyter Lab</h3>  <ol>    <li>      <p>Create a history</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-create-history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Create history</h3>        <ol>          <li>Make sure you start from an empty analysis history.</li>          <li><strong>Rename your history</strong> to be meaningful and easy to find. For instance, you can choose <strong>Xarray with Pangeo notebook</strong> as the name of your new history.</li>        </ol>      </blockquote>    </li>    <li>      <p>Upload CAMS PM2.5 data</p>      <p>Data can be retrieved directly from <a href="https://ads.atmosphere.copernicus.eu/">Copernicus Atmosphere Monitoring Service</a> but to make it easier, you can download the tutorial data from <a href="https://zenodo.org/record/5805953/files/CAMS-PM2_5-20211222.netcdf">Zenodo</a>.</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>        <ol>          <li>Create a new history for this tutorial</li>          <li>            <p>Import the files from <a href="https://doi.org/10.5281/zenodo.5805953">Zenodo</a> or fromthe shared data library (<code class="language-plaintext highlighter-rouge">GTN - Material</code> -&gt; <code class="language-plaintext highlighter-rouge">Climate</code> -&gt; <code class="language-plaintext highlighter-rouge">Pangeo Notebook in Galaxy - Introduction to Xarray</code>):</p>            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/5805953/files/CAMS-PM2_5-20211222.netcdf</code></pre></div>            </div>          </li>          <li>Rename the dataset to <strong>CAMS-PM2_5-20211222.netcdf</strong></li>          <li>Check that the datatype is <strong>netcdf</strong></li>        </ol>      </blockquote>    </li>    <li>      <p>Starting Galaxy Pangeo JupyterLab</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-launch-pangeo-notebook-jupyterlab-in-galaxy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Launch Pangeo notebook JupyterLab in Galaxy</h3>        <p>Currently Pangeo notebook in Galaxy is available on <a href="https://usegalaxy.eu">useGalaxy.eu</a> only. Make sure you login to Galaxy and search for Pangeo notebook and not the default JupyterLab in Galaxy to make sure you ahve all the Pangeo Software stack available. The default JupyterLab in Galaxy would not be sufficient for executing all the tasks in this tutorial.</p>        <ol>          <li>Open the <span class="tool" data-tool="interactive_tool_pangeo_notebook" title="Tested with interactive_tool_pangeo_notebook"><strong>Pangeo Notebook</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_pangeo_notebook</span></span>  by clicking <a href="https://usegalaxy.eu/?tool_id=interactive_tool_pangeo_notebook" target="_blank">here</a></li>          <li><em>Include data into the environment</em>: <code class="language-plaintext highlighter-rouge">CAMS-PM2_5-20211222.netcdf</code></li>          <li>Click on <strong>Execute</strong>: the tool will start running and will stay running</li>          <li>Click on the <strong>User</strong> menu at the top and go to <strong>Active Interactive Tools</strong> and locate the Pangeo JupyterLab instance you started.</li>          <li>Click on your Pangeo JupyterLab instance</li>        </ol>      </blockquote>    </li>    <li>      <p>Once the notebook has started, open a Terminal in Jupyter <strong>File → New → Terminal</strong></p>    </li>    <li>      <p>Run the following command:</p>      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/climate-pangeo-notebook.ipynb</code></pre></div>      </div>    </li>    <li>      <p>Switch to the Notebook that appears in the list of files on the left</p>    </li>  </ol></blockquote>
+                        <!--SNIPPET--><blockquote class="comment">  <h3 data-toc-skip id="comment-this-is-best-viewed-in-pangeo-jupyter-lab"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> This is best viewed in Pangeo Jupyter Lab</h3>  <ol>    <li>      <p>Create a history</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-create-history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Create history</h3>        <ol>          <li>Make sure you start from an empty analysis history.</li>          <li><strong>Rename your history</strong> to be meaningful and easy to find. For instance, you can choose <strong>Xarray with Pangeo notebook</strong> as the name of your new history.</li>        </ol>      </blockquote>    </li>    <li>      <p>Upload CAMS PM2.5 data</p>      <p>Data can be retrieved directly from <a href="https://ads.atmosphere.copernicus.eu/">Copernicus Atmosphere Monitoring Service</a> but to make it easier, you can download the tutorial data from <a href="https://zenodo.org/record/5805953/files/CAMS-PM2_5-20211222.netcdf">Zenodo</a>.</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>        <ol>          <li>Create a new history for this tutorial</li>          <li>            <p>Import the files from <a href="https://doi.org/10.5281/zenodo.5805953">Zenodo</a> or fromthe shared data library (<code class="language-plaintext highlighter-rouge">GTN - Material</code> -&gt; <code class="language-plaintext highlighter-rouge">Climate</code> -&gt; <code class="language-plaintext highlighter-rouge">Pangeo Notebook in Galaxy - Introduction to Xarray</code>):</p>            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/5805953/files/CAMS-PM2_5-20211222.netcdf<br></code></pre></div>            </div>          </li>          <li>Rename the dataset to <strong>CAMS-PM2_5-20211222.netcdf</strong></li>          <li>Check that the datatype is <strong>netcdf</strong></li>        </ol>      </blockquote>    </li>    <li>      <p>Starting Galaxy Pangeo JupyterLab</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-launch-pangeo-notebook-jupyterlab-in-galaxy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Launch Pangeo notebook JupyterLab in Galaxy</h3>        <p>Currently Pangeo notebook in Galaxy is available on <a href="https://usegalaxy.eu">useGalaxy.eu</a> only. Make sure you login to Galaxy and search for Pangeo notebook and not the default JupyterLab in Galaxy to make sure you ahve all the Pangeo Software stack available. The default JupyterLab in Galaxy would not be sufficient for executing all the tasks in this tutorial.</p>        <ol>          <li>Open the <span class="tool" data-tool="interactive_tool_pangeo_notebook" title="Tested with interactive_tool_pangeo_notebook"><strong>Pangeo Notebook</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_pangeo_notebook</span></span>  by clicking <a href="https://usegalaxy.eu/?tool_id=interactive_tool_pangeo_notebook">here</a></li>          <li><em>Include data into the environment</em>: <code class="language-plaintext highlighter-rouge">CAMS-PM2_5-20211222.netcdf</code></li>          <li>Click on <strong>Execute</strong>: the tool will start running and will stay running</li>          <li>Click on the <strong>User</strong> menu at the top and go to <strong>Active Interactive Tools</strong> and locate the Pangeo JupyterLab instance you started.</li>          <li>Click on your Pangeo JupyterLab instance</li>        </ol>      </blockquote>    </li>    <li>      <p>Once the notebook has started, open a Terminal in Jupyter <strong>File → New → Terminal</strong></p>    </li>    <li>      <p>Run the following command:</p>      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/climate-pangeo-notebook.ipynb<br></code></pre></div>      </div>    </li>    <li>      <p>Switch to the Notebook that appears in the list of files on the left</p>    </li>  </ol></blockquote>
                     
                  
 
@@ -1468,15 +1625,15 @@ Attributes:
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
- 
+
 <span class="c1"># We're using cartopy to project our data.
 # (see documentation on cartopy)
 </span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="p">.</span><span class="n">Mercator</span><span class="p">())</span>
 <span class="n">ax</span><span class="p">.</span><span class="n">coastlines</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s">'10m'</span><span class="p">)</span>
-  
+
 <span class="c1"># We need to project our data to the new projection and for this we use `transform`.
 # we set the original data projection in transform (here PlateCarree)
-</span><span class="n">dset</span><span class="p">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="s">'D'</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="p">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="s">'h'</span><span class="p">)))[</span><span class="s">'pm2p5_conc'</span><span class="p">].</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> 
+</span><span class="n">dset</span><span class="p">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="s">'D'</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="p">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="s">'h'</span><span class="p">)))[</span><span class="s">'pm2p5_conc'</span><span class="p">].</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
                                                                                     <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="p">.</span><span class="n">PlateCarree</span><span class="p">(),</span>
                                                                                     <span class="n">vmin</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span> <span class="o">=</span> <span class="mi">35</span><span class="p">,</span>
                                                                                     <span class="n">cmap</span><span class="o">=</span><span class="n">cmc</span><span class="p">.</span><span class="n">roma_r</span><span class="p">)</span>
@@ -1513,11 +1670,11 @@ Attributes:
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
-  
+
 <span class="c1"># We're using cartopy to project our data.
 # (see documentation on cartopy)
 </span><span class="n">proj_plot</span> <span class="o">=</span> <span class="n">ccrs</span><span class="p">.</span><span class="n">Mercator</span><span class="p">()</span>
-  
+
 <span class="c1"># We need to project our data to the new projection and for this we use `transform`.
 # we set the original data projection in transform (here PlateCarree)
 </span><span class="n">p</span> <span class="o">=</span> <span class="n">dset</span><span class="p">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s">'h'</span><span class="p">),</span><span class="n">np</span><span class="p">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s">'D'</span><span class="p">)))[</span><span class="s">'pm2p5_conc'</span><span class="p">].</span><span class="n">plot</span><span class="p">(</span><span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="p">.</span><span class="n">PlateCarree</span><span class="p">(),</span>
@@ -1552,7 +1709,7 @@ Attributes:
     <h3 id="solution-solution-2"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
     <p>We will select a sub-area: 11. East to 15.0 East and 40. N to 43. N. PM2.5 will increase and reach values close to 35 μm.m-3.
 We will use <code class="language-plaintext highlighter-rouge">slice</code> to select the area and we slice latitudes with <code class="language-plaintext highlighter-rouge">latitude=slice(47.3, 36.5)</code> and not <code class="language-plaintext highlighter-rouge">latitude=slice(36.5, 47.3)</code>.
-The reason is that when using slice, you need to specify values using the same order as in the coordinates. Latitudes are specified in 
+The reason is that when using slice, you need to specify values using the same order as in the coordinates. Latitudes are specified in
 decreasing order for CAMS.</p>
 
     <blockquote class="code-in">
@@ -1598,7 +1755,7 @@ decreasing order for CAMS.</p>
 
 <blockquote class="comment">
   <h3 id="comment-what-happened"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> What happened?</h3>
-  <p>Each element of the dataset where the criteria within the <code class="language-plaintext highlighter-rouge">where</code> statement is not met, e.g. when PM2.5 &lt;= 25, will be set to <code class="language-plaintext highlighter-rouge">nan</code>. 
+  <p>Each element of the dataset where the criteria within the <code class="language-plaintext highlighter-rouge">where</code> statement is not met, e.g. when PM2.5 &lt;= 25, will be set to <code class="language-plaintext highlighter-rouge">nan</code>.
 You may not see any changes when printing the dataset but if you look carefuly at <code class="language-plaintext highlighter-rouge">pm2p5_conc</code> values, you will see many <code class="language-plaintext highlighter-rouge">nan</code>.</p>
 
 </blockquote>
@@ -1610,12 +1767,12 @@ You may not see any changes when printing the dataset but if you look carefuly a
 ######################
 </span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
- 
+
 <span class="c1"># We're using cartopy to project our data.
 # (see documentation on cartopy)
 </span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="p">.</span><span class="n">Mercator</span><span class="p">())</span>
 <span class="n">ax</span><span class="p">.</span><span class="n">coastlines</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s">'10m'</span><span class="p">)</span>
-  
+
 <span class="c1"># We need to project our data to the new projection and for this we use `transform`.
 # we set the original data projection in transform (here PlateCarree)
 </span><span class="n">dset</span><span class="p">.</span><span class="n">where</span><span class="p">(</span><span class="n">dset</span><span class="p">[</span><span class="s">'pm2p5_conc'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">).</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">0</span><span class="p">)[</span><span class="s">'pm2p5_conc'</span><span class="p">].</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
@@ -1633,11 +1790,11 @@ You may not see any changes when printing the dataset but if you look carefuly a
 <h3 id="multi-plot-over-italy-using-a-mask">Multi-plot over Italy using a mask</h3>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
- 
+
 <span class="c1"># We're using cartopy to project our data.
 # (see documentation on cartopy)
 </span><span class="n">proj_plot</span> <span class="o">=</span> <span class="n">ccrs</span><span class="p">.</span><span class="n">Mercator</span><span class="p">()</span>
-  
+
 <span class="c1"># We need to project our data to the new projection and for this we use `transform`.
 # we set the original data projection in transform (here PlateCarree)
 </span><span class="n">p</span> <span class="o">=</span> <span class="n">dset</span><span class="p">.</span><span class="n">where</span><span class="p">(</span><span class="n">dset</span><span class="p">[</span><span class="s">'pm2p5_conc'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">).</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s">'h'</span><span class="p">),</span><span class="n">np</span><span class="p">.</span><span class="n">timedelta64</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s">'D'</span><span class="p">))).</span><span class="n">sel</span><span class="p">(</span><span class="n">latitude</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mf">43.</span><span class="p">,</span> <span class="mf">40.</span><span class="p">),</span>
@@ -1807,7 +1964,7 @@ Data variables:
 <span class="n">sub_dset</span> <span class="o">=</span> <span class="n">dset</span><span class="p">.</span><span class="n">sel</span><span class="p">(</span><span class="n">latitude</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mf">43.</span><span class="p">,</span> <span class="mf">40.</span><span class="p">),</span> <span class="n">longitude</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mf">11.</span><span class="p">,</span><span class="mf">15.</span><span class="p">)).</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s">'1D'</span><span class="p">).</span><span class="n">mean</span><span class="p">()</span>
 <span class="c1"># We need to project our data to the new projection and for this we use `transform`.
 # we set the original data projection in transform (here PlateCarree)
-</span><span class="n">p</span> <span class="o">=</span> <span class="n">sub_dset</span><span class="p">[</span><span class="s">'pm2p5_conc'</span><span class="p">].</span><span class="n">plot</span><span class="p">(</span><span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="p">.</span><span class="n">PlateCarree</span><span class="p">(),</span> 
+</span><span class="n">p</span> <span class="o">=</span> <span class="n">sub_dset</span><span class="p">[</span><span class="s">'pm2p5_conc'</span><span class="p">].</span><span class="n">plot</span><span class="p">(</span><span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="p">.</span><span class="n">PlateCarree</span><span class="p">(),</span>
                                 <span class="n">vmin</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span> <span class="o">=</span> <span class="mi">35</span><span class="p">,</span>
                                 <span class="n">subplot_kws</span><span class="o">=</span><span class="p">{</span><span class="s">"projection"</span><span class="p">:</span> <span class="n">proj_plot</span><span class="p">},</span>
                                 <span class="n">col</span><span class="o">=</span><span class="s">'time'</span><span class="p">,</span> <span class="n">col_wrap</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
@@ -1838,7 +1995,7 @@ Data variables:
 
 <h1 class="no_toc" id="conclusion">Conclusion</h1>
 
-<p><i class="fas fa-trophy" aria-hidden="true"></i><span class="visually-hidden">trophy</span> Well done! <a href="https://pangeo.io/">Pangeo</a> is a fantastic community with many more resources for learning and/or contributing! Please, if you use any Python packages from the Pangeo ecosystem, do not forget to cite Pangeo <span class="citation"><a href="#Abernathey2017">Abe<span class="notranslate">rna</span>they <i>et al.</i> 2017</a></span>, <span class="citation"><a href="#Abernathey2021">Abe<span class="notranslate">rna</span>they <i>et al.</i> 2021</a></span>, <span class="citation"><a href="#Gentemann2021">Gentemann <i>et al.</i> 2021</a></span> and <span class="citation"><a href="#Sambasivan2021">Sambasivan <i>et al.</i> 2021</a></span>!</p>
+<p>Well done! <a href="https://pangeo.io/">Pangeo</a> is a fantastic community with many more resources for learning and/or contributing! Please, if you use any Python packages from the Pangeo ecosystem, do not forget to cite Pangeo <span class="citation"><a href="#Abernathey2017">Abe<span class="notranslate">rna</span>they <i>et al.</i> 2017</a></span>, <span class="citation"><a href="#Abernathey2021">Abe<span class="notranslate">rna</span>they <i>et al.</i> 2021</a></span>, <span class="citation"><a href="#Gentemann2021">Gentemann <i>et al.</i> 2021</a></span> and <span class="citation"><a href="#Sambasivan2021">Sambasivan <i>et al.</i> 2021</a></span>!</p>
 
 <p>Have a look at the <a href="https://gallery.pangeo.io/repos/pangeo-data/pangeo-tutorial-gallery/">Pangeo Tutorial Gallery</a> to pick up your next Pangeo training material!</p>
 
@@ -1865,11 +2022,14 @@ Data variables:
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/climate/faqs/">FAQ page for the Climate topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/climate/faqs/">FAQ page for the Climate topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                 
+
+                
+
 
                 
                 <h1 id="bibliography">References</h1>
@@ -1882,7 +2042,7 @@ Data variables:
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
                 <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
                 </p>
 
@@ -1914,8 +2074,6 @@ Data variables:
                     })(window, document);
                 </script>
 
-
-
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
@@ -1937,8 +2095,8 @@ Data variables:
 author = "Anne Fouilloux",
 title = "Pangeo Notebook in Galaxy - Introduction to Xarray (Galaxy Training Materials)",
 year = "2022",
-month = "02",
-day = "18"
+month = "03",
+day = "08"
 url = "\url{https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1958,6 +2116,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

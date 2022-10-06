@@ -29,11 +29,12 @@
     {
       "name": "Cristóbal Gallardo",
       "joined": "2020-11",
+      "elixir_node": "de",
       "id": "gallardoalba",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/gallardoalba.json"
     }
   ],
-  "last_modified_at": "08-Nov-21",
+  "last_modified_at": "26-Sep-22",
   "url": "/topics/introduction/tutorials/galaxy-intro-strands/tutorial.html",
   "topic_name": "introduction",
   "tutorial_name": "galaxy-intro-strands"

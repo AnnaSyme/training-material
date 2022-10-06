@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Refining Genome Annotations with Apollo</title>
+        <title>Refining Genome Annotations with Apollo (prokaryotes)</title>
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
@@ -17,6 +17,19 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Refining Genome Annotations with Apollo (prokaryotes)" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:23 +0000" />
+<meta name="DC.creator" content="Anthony Bretaudeau" />
+<meta name="DC.creator" content="Helena Rasche" />
+<meta name="DC.creator" content="Nathan Dunn" />
+<meta name="DC.creator" content="Mateo Boudet" />
+<meta name="DC.creator" content="Erasmus+ Programme" />
 
         
         
@@ -24,9 +37,11 @@
         
         
         <meta name="description" content="Genome annotation is a multi-level process that includes ..." />
-        <meta property="og:title" content="Galaxy Training: Refining Genome Annotations with Apollo" />
+        <meta property="og:site_name" content="Galaxy Training Network" />
+        <meta property="og:title" content="Galaxy Training: Refining Genome Annotations with Apollo (prokaryotes)" />
         <meta property="og:description" content="Genome annotation is a multi-level process that includes ..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -243,27 +258,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -276,9 +278,9 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:00:14 +0000",
+  "dateModified": "1970-01-01 00:00:23 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
-  "headline": "Refining Genome Annotations with Apollo",
+  "headline": "Refining Genome Annotations with Apollo (prokaryotes)",
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
   "isFamilyFriendly": true,
@@ -301,28 +303,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Genome Annotation",
     "description": "Genome annotation is a multi-level process that includes prediction of protein-coding\ngenes, as well as other functional genome units such as structural RNAs, tRNAs,\nsmall RNAs, pseudogenes, control regions, direct and inverted repeats, insertion\nsequences, transposons and other mobile elements.\n",
-    "url": "https://training.galaxyproject.org//training-material/topics/genome-annotation/"
+    "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/"
   },
-  "courseCode": "genome-annotation / apollo / hands-on",
   "learningResourceType": "hands-on tutorial",
-  "name": "Hands-on for 'Refining Genome Annotations with Apollo' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/genome-annotation/tutorials/apollo/tutorial.html",
+  "name": "Hands-on for 'Refining Genome Annotations with Apollo (prokaryotes)' tutorial",
+  "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/tutorial.html",
   "timeRequired": "PT3H",
-  "keywords": "prokaryote",
+  "keywords": "genome-annotation, prokaryote",
   "description": "The questions this  addresses are:\n - How to visualize your genome after automated annotations have been performed?\n - How to manually annotate genome after automated annotations have been performed?\n - How to evaluate and visualize annotated genomic features?\n - How do I collaborate when doing genome annotation?\n\n\\nThe objectives are:\n - Load a genome into Galaxy\n - View annotations in JBrowse\n - Learn how to load JBrowse data into Apollo\n - Learn how to manually refine genome annotations within Apollo\n - Export refined genome annotations\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -333,8 +353,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/galaxy-interface/tutorials/upload-rules/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/upload-rules/tutorial.html",
       "name": "Rule Based Uploader",
       "description": "Hands-on for 'Rule Based Uploader' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -347,8 +368,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/genome-annotation/tutorials/annotation-with-prokka/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-prokka/slides.html",
       "name": "Genome annotation with Prokka",
       "description": "Slides for 'Genome annotation with Prokka' tutorial",
       "learningResourceType": "slides",
@@ -361,8 +383,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/genome-annotation/tutorials/annotation-with-prokka/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-prokka/tutorial.html",
       "name": "Genome annotation with Prokka",
       "description": "Hands-on for 'Genome annotation with Prokka' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -373,67 +396,232 @@
         "name": "Galaxy Training Network",
         "url": "https://galaxyproject.org/teach/gtn/"
       }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/genome-annotation/tutorials/annotation-with-prokka/slides.html",
-      "name": "Genome annotation with Prokka",
-      "description": "Slides for 'Genome annotation with Prokka' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
     }
-  ],
-  "hasPart": [
-
   ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anthony Bretaudeau"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
+      "name": "Anthony Bretaudeau",
+      "image": "https://avatars.githubusercontent.com/abretaud",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-0914-2470",
+      "orcid": "https://orcid.org/0000-0003-0914-2470"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Nathan Dunn"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/nathandunn/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/nathandunn/",
+      "name": "Nathan Dunn",
+      "image": "https://avatars.githubusercontent.com/nathandunn",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Mateo Boudet"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/mboudet/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/mboudet/",
+      "name": "Mateo Boudet",
+      "image": "https://avatars.githubusercontent.com/mboudet",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-7028-7620",
+      "orcid": "https://orcid.org/0000-0002-7028-7620"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Erasmus+ Programme"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/",
+      "name": "Erasmus+ Programme",
+      "image": "https://avatars.githubusercontent.com/erasmusplus",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anthony Bretaudeau"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
+      "name": "Anthony Bretaudeau",
+      "image": "https://avatars.githubusercontent.com/abretaud",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-0914-2470",
+      "orcid": "https://orcid.org/0000-0003-0914-2470"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Nathan Dunn"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/nathandunn/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/nathandunn/",
+      "name": "Nathan Dunn",
+      "image": "https://avatars.githubusercontent.com/nathandunn",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Mateo Boudet"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/mboudet/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/mboudet/",
+      "name": "Mateo Boudet",
+      "image": "https://avatars.githubusercontent.com/mboudet",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-7028-7620",
+      "orcid": "https://orcid.org/0000-0002-7028-7620"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Erasmus+ Programme"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/",
+      "name": "Erasmus+ Programme",
+      "image": "https://avatars.githubusercontent.com/erasmusplus",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -441,35 +629,42 @@
       "@type": "CreativeWork",
       "name": "Genome Annotation",
       "description": "Genome annotation is a multi-level process that includes prediction of protein-coding\ngenes, as well as other functional genome units such as structural RNAs, tRNAs,\nsmall RNAs, pseudogenes, control regions, direct and inverted repeats, insertion\nsequences, transposons and other mobile elements.\n",
-      "url": "https://training.galaxyproject.org//training-material/topics/genome-annotation/"
+      "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/"
     }
   ],
-  "skillLevel": "Intermediate"
+  "educationalLevel": "Intermediate"
 }
 </script>
 
 <section class="tutorial topic-genome-annotation">
-    <h1 data-toc-skip>Refining Genome Annotations with Apollo</h1>
+    <h1 data-toc-skip>Refining Genome Annotations with Apollo (prokaryotes)</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
-<a href="/training-material/hall-of-fame/abretaud/" class="contributor-badge contributor-abretaud"><img src="https://avatars.githubusercontent.com/abretaud?s=27" alt="Avatar">Anthony Bretaudeau</a>
+	<div class="contributors-line">
+		Authors: 
+<a href="/training-material/hall-of-fame/abretaud/" class="contributor-badge contributor-abretaud"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/abretaud?s=27" alt="Avatar">Anthony Bretaudeau</a>
 
 
-<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
 
 
 <a href="/training-material/hall-of-fame/nathandunn/" class="contributor-badge contributor-nathandunn"><img src="https://avatars.githubusercontent.com/nathandunn?s=27" alt="Avatar">Nathan Dunn</a>
 
 
-<a href="/training-material/hall-of-fame/mboudet/" class="contributor-badge contributor-mboudet"><img src="https://avatars.githubusercontent.com/mboudet?s=27" alt="Avatar">Mateo Boudet</a>
+
+<a href="/training-material/hall-of-fame/mboudet/" class="contributor-badge contributor-mboudet"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/mboudet?s=27" alt="Avatar">Mateo Boudet</a>
+
 
 
 <a href="/training-material/hall-of-fame/erasmusplus/" class="contributor-badge contributor-erasmusplus"><img src="https://avatars.githubusercontent.com/erasmusplus?s=27" alt="Avatar">Erasmus+ Programme</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -591,6 +786,8 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
@@ -621,6 +818,12 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
                             
                             <li> Genome annotation with Prokka:
                             
@@ -633,6 +836,10 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -692,7 +899,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-    <a class="topic-icon" href="/training-material/topics/genome-annotation/tutorials/apollo/workflows/" title="Workflows" alt="Refining Genome Annotations with Apollo workflows">
+    <a class="topic-icon" href="/training-material/topics/genome-annotation/tutorials/apollo/workflows/" title="Workflows" alt="Refining Genome Annotations with Apollo (prokaryotes) workflows">
         <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
     </a>
 
@@ -705,6 +912,14 @@
 
             
             
+            
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/genome-annotation/tutorials/apollo/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
             
 
             <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
@@ -720,10 +935,12 @@
 
 
 
+
+
   
   <li class="btn btn-default supporting_material">
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>&nbsp;Recordings
     </a>
     <ul class="dropdown-menu">
         
@@ -751,6 +968,7 @@
         </li>
         
         
+        
     </ul>
    </li>
    
@@ -762,7 +980,7 @@
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -927,7 +1145,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Dec 14, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 23, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -952,7 +1170,7 @@
 
 <h1 class="no_toc" id="introduction">Introduction</h1>
 
-<p>After automatically annotating your genome using <a href="../annotation-with-prokka/tutorial.html">Prokka</a> or <a href="../annotation-with-maker/tutorial.html">Maker</a>, it is important to visualize your results so you can understand what your organism looks like, and then to manually refine these annotations along with any additional data you might have. This process is most often done as part of a group, smaller organisms may be annotated individually though.</p>
+<p>After automatically annotating your genome using <a href="../annotation-with-prokka/tutorial.html">Prokka</a> for example, it is important to visualize your results so you can understand what your organism looks like, and then to manually refine these annotations along with any additional data you might have. This process is most often done as part of a group, smaller organisms may be annotated individually though.</p>
 
 <p><a href="https://github.com/gmod/apollo">Apollo</a> <span class="citation"><a href="#Dunn2019">Dunn <i>et al.</i> 2019</a></span> provides a platform to do this. It is a web-based, collaborative genome annotation editor. Think of it as “Google Docs” for genome annotation, multiple users can work together simultaneously to curate evidences and annotate a genome.</p>
 
@@ -981,10 +1199,9 @@
       <li><a href="#adding-more-functional-annotation" id="markdown-toc-adding-more-functional-annotation">Adding more functional annotation</a></li>
       <li><a href="#comparing-with-the-official-annotation" id="markdown-toc-comparing-with-the-official-annotation">Comparing with the official annotation</a></li>
       <li><a href="#sequence-alterations" id="markdown-toc-sequence-alterations">Sequence alterations</a></li>
-      <li><a href="#exporting-annotation" id="markdown-toc-exporting-annotation">Exporting annotation</a></li>
     </ol>
   </li>
-  <li><a href="#collaborating-with-other-annotators" id="markdown-toc-collaborating-with-other-annotators">Collaborating with other annotators</a></li>
+  <li><a href="#exporting-and-collaborating" id="markdown-toc-exporting-and-collaborating">Exporting and collaborating</a></li>
   <li><a href="#whats-next" id="markdown-toc-whats-next">What’s next?</a></li>
 </ol>
 
@@ -998,7 +1215,7 @@
   <li>A set of prior gene predictions or other genomic feature predictions</li>
   <li>The output of a bioinformatics analysis like BLAST or InterProScan</li>
   <li>Sequencing <span class="notranslate">reads</span> from <span class="notranslate">RNA</span>-Seq or another HTS analysis</li>
-  <li>If you are not doing a <em>de novo</em> annotation, then a previous released <abbr title="Official Gene Set">OGS</abbr></li>
+  <li>If you are not doing a <em>de novo</em> annotation, then a previous released Official Gene Set (OGS)</li>
 </ul>
 
 <p>In this tutorial we have obtained some data from NCBI related to <a href="https://ecoliwiki.org/colipedia/index.php/Category:Strain:MG1655"><em>Escherichia coli K12 str. MG1655</em></a>, and we will visualise this data and use it to make some annotations in order to familiarise you with the process.</p>
@@ -1112,7 +1329,7 @@ Therefore, it is necessary to both visually inspect the results and manually fix
 <p>Let’s begin by building a JBrowse instance with all the data we have for this genome.</p>
 
 <blockquote class="comment">
-  <h3 id="comment-why-bother"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Why bother?</h3>
+  <h3 id="comment-reduced-data"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Reduced data</h3>
 
   <p>To reduce the size of the data, in this tutorial we will only work on a portion of the <em>Escherichia coli K12 str. MG1655</em> genome.</p>
 </blockquote>
@@ -1535,7 +1752,9 @@ The GO defines concepts/classes used to describe gene function, and relationship
 
 <p>Once you have added some alterations, Apollo will automatically display the effect it has on the overlapping genes.</p>
 
-<h2 id="exporting-annotation">Exporting annotation</h2>
+<h1 id="exporting-and-collaborating">Exporting and collaborating</h1>
+
+<h2 class="no_toc" id="exporting-annotation">Exporting annotation</h2>
 
 <p>You can continue improving annotation whenever you want, the Apollo server will keep your changes in a safe place for future use. However at some point you will want to export your work to perform other analyses base on it. This can be done from <span class="notranslate">Galaxy</span>:</p>
 
@@ -1572,17 +1791,17 @@ The GO defines concepts/classes used to describe gene function, and relationship
 
 <p>Note that if you have inserted some sequence alterations, the fasta sequences will take them into account.</p>
 
-<h1 id="collaborating-with-other-annotators">Collaborating with other annotators</h1>
+<h2 class="no_toc" id="collaborating-with-other-annotators">Collaborating with other annotators</h2>
 
-<p>As explained at the beginning of this tutorial, Apollo is a collaborative annotation tool, which means you can work with other people from anywhere in the world. By default the organisms you create in Apollo are only accessible by yourself. But you can easily open the access to other people by creating a group of users on Apollo, and then allowing this group to access one or several of your organisms. This works for users hving an account on the same <span class="notranslate">Galaxy</span>  (most probably use<span class="notranslate">galaxy</span>.eu).</p>
+<p>As explained at the beginning of this tutorial, Apollo is a collaborative annotation tool, which means you can work with other people from anywhere in the world. By default the organisms you create in Apollo are only accessible by yourself. But you can easily open the access to other people by creating a group of users on Apollo, and then allowing this group to access one or several of your organisms. This works for users having an account on the same <span class="notranslate">Galaxy</span>  (most probably use<span class="notranslate">galaxy</span>.eu).</p>
 
 <p>Click on the <strong>Sharing</strong> tab in the Apollo right panel.</p>
 
-<p><img src="../../images/apollo/sharing.png" alt="Apollo right hand menu has a number of tabs, Annotations, Tracks, Ref Sequence, Sharing, and GGA are shown. Sharing is active." loading="lazy" /></p>
+<p><img src="../../images/apollo/sharing.png" alt="Apollo right hand menu has a number of tabs, Annotations, Tracks, Ref Sequence, Sharing, and GGA are shown. Sharing is active." /></p>
 
 <p>You should see a screen like this:</p>
 
-<p><img src="../../images/apollo/perm_home.png" alt="Screenshot of the sharing tab with a blue bar reading Your Permissions, with group management below. A large header reads &quot;Shareable organisms&quot; and lists organisms that can be shared. A &quot;Group membership&quot; section shows that they are not a member of any group." loading="lazy" /></p>
+<p><img src="../../images/apollo/perm_home.png" alt="Screenshot of the sharing tab with a blue bar reading Your Permissions, with group management below. A large header reads &quot;Shareable organisms&quot; and lists organisms that can be shared. A &quot;Group membership&quot; section shows that they are not a member of any group." /></p>
 
 <p>It means that you are currently not in any group, and that, as its creator, you have the right to share access to one organism: <code class="language-plaintext highlighter-rouge">E. coli K12</code>.</p>
 
@@ -1601,13 +1820,13 @@ The GO defines concepts/classes used to describe gene function, and relationship
     </li>
   </ol>
 
-  <p><img src="../../images/apollo/perm_group_create.png" alt="Group creation dialog with one field, the group name set to 'my_friends'. " loading="lazy" /></p>
+  <p><img src="../../images/apollo/perm_group_create.png" alt="Group creation dialog with one field, the group name set to 'my_friends'" /></p>
 
 </blockquote>
 
 <p>Now you should see a screen like this:</p>
 
-<p><img src="../../images/apollo/perm_group_added.png" alt="Screenshot of the group detail interface showing no allowed organisms, but one available organism that can be added to this group." loading="lazy" /></p>
+<p><img src="../../images/apollo/perm_group_added.png" alt="Screenshot of the group detail interface showing no allowed organisms, but one available organism that can be added to this group." /></p>
 
 <p>Let’s add a colleague to our newly created group.</p>
 
@@ -1629,7 +1848,7 @@ The GO defines concepts/classes used to describe gene function, and relationship
     </li>
   </ol>
 
-  <p><img src="../../images/apollo/perm_add_user.png" alt="Screenshot of adding a user in the permapol to the previous group, my_friends. The user email is filled out to an example value." loading="lazy" /></p>
+  <p><img src="../../images/apollo/perm_add_user.png" alt="Screenshot of adding a user in the permapol to the previous group, my_friends. The user email is filled out to an example value." /></p>
 
 </blockquote>
 
@@ -1657,6 +1876,8 @@ The GO defines concepts/classes used to describe gene function, and relationship
 <h1 class="no_toc" id="conclusion">Conclusion</h1>
 
 <p>Congratulations, you finished this tutorial! By using Apollo and JBrowse, you learned how to manually refine predicted annotations and export them to <span class="notranslate">Galaxy</span> for future analyses. You also learn how to give access to your project at any other researcher, making it a real collaborative solution.</p>
+
+<p>A <a href="/training-material/topics/genome-annotation/tutorials/apollo-euk/tutorial.html">similar tutorial for eukaryote genomes</a> exists, using different types of evidence tracks, feel free to have a look at it to learn more.</p>
 
 <p>When refinement is sufficient an updated or new version of the annotation may be exported as GFF3 as well as published as a new JBrowse directory for inspection.</p>
 
@@ -1689,11 +1910,14 @@ The GO defines concepts/classes used to describe gene function, and relationship
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/genome-annotation/faqs/">FAQ page for the Genome Annotation topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/genome-annotation/faqs/">FAQ page for the Genome Annotation topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                 
+
+                
+
 
                 
                 <h1 id="bibliography">References</h1>
@@ -1702,9 +1926,18 @@ The GO defines concepts/classes used to describe gene function, and relationship
                 
 
                 
+                <h1 data-toc-skip>Glossary</h1>
+                <dl>
+                    
+                    
+                    <dt>OGS</dt>
+                    <dd>Official Gene Set</dd>
+                    
+                </dl>
+                
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
                 <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
                 </p>
 
@@ -1729,19 +1962,17 @@ The GO defines concepts/classes used to describe gene function, and relationship
                                 e.hide();
 
                                 $("#feedback-form").html(`
-                                    <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Refining Genome Annotations with Apollo (Genome Annotation)">Loading...</iframe>
+                                    <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Refining Genome Annotations with Apollo (prokaryotes) (Genome Annotation)">Loading...</iframe>
                                 `)
                             })
                         });
                     })(window, document);
                 </script>
 
-
-
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Anthony Bretaudeau, Helena Rasche, Nathan Dunn, Mateo Boudet, Erasmus+ Programme, 2021 <b>Refining Genome Annotations with Apollo (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/tutorial.html">https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">Anthony Bretaudeau, Helena Rasche, Nathan Dunn, Mateo Boudet, Erasmus+ Programme, 2022 <b>Refining Genome Annotations with Apollo (prokaryotes) (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/tutorial.html">https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1757,10 +1988,10 @@ The GO defines concepts/classes used to describe gene function, and relationship
                 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code id="citation-code">@misc{genome-annotation-apollo,
 author = "Anthony Bretaudeau and Helena Rasche and Nathan Dunn and Mateo Boudet and Erasmus+ Programme",
-title = "Refining Genome Annotations with Apollo (Galaxy Training Materials)",
-year = "2021",
-month = "12",
-day = "14"
+title = "Refining Genome Annotations with Apollo (prokaryotes) (Galaxy Training Materials)",
+year = "2022",
+month = "09",
+day = "23"
 url = "\url{https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1780,6 +2011,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

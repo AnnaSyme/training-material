@@ -17,6 +17,15 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="JupyterLab in Galaxy" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:16 +0000" />
+<meta name="DC.creator" content="Anne Fouilloux" />
 
         
         
@@ -24,9 +33,11 @@
         
         
         <meta name="description" content="A collection of microtutorials explaining various feature..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: JupyterLab in Galaxy" />
         <meta property="og:description" content="A collection of microtutorials explaining various feature..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -243,27 +254,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -276,7 +274,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:00:02 +0000",
+  "dateModified": "1970-01-01 00:00:16 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "JupyterLab in Galaxy",
   "interactivityType": "mixed",
@@ -301,45 +299,47 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Using Galaxy and Managing your Data",
     "description": "A collection of microtutorials explaining various features of the Galaxy user interface and manipulating data within Galaxy.",
-    "url": "https://training.galaxyproject.org//training-material/topics/galaxy-interface/"
+    "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/"
   },
-  "courseCode": "galaxy-interface / jupyterlab / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'JupyterLab in Galaxy' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html",
   "timeRequired": "PT1H",
-  "keywords": "interactive-tools",
+  "keywords": "galaxy-interface, interactive-tools",
   "description": "The questions this  addresses are:\n - How can I manipulate data using JupyterLab in Galaxy?\n - How can I start a notebook in JupyterLab?\n - How can I import/export dataset from/to my history to/from the notebook?\n - How can I save my notebook to my history?\n\n\\nThe objectives are:\n - Launch JupyterLab in Galaxy\n - Start a notebook\n - Import libraries\n - Use get() to import datasets from your history to the notebook\n - Use put() to export datasets from the notebook to your history\n - Save your notebook into your history\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "hasPart": [
-
-  ],
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Anne Fouilloux"
-    }
-  ],
-  "contributor": [
-    {
-      "@type": "Person",
-      "name": "Anne Fouilloux"
-    }
-  ],
   "about": [
     {
       "@type": "CreativeWork",
       "name": "Using Galaxy and Managing your Data",
       "description": "A collection of microtutorials explaining various features of the Galaxy user interface and manipulating data within Galaxy.",
-      "url": "https://training.galaxyproject.org//training-material/topics/galaxy-interface/"
+      "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/"
     }
   ]
 }
@@ -349,12 +349,48 @@
     <h1 data-toc-skip>JupyterLab in Galaxy</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		
+<table class="contributions">
+	
+	<tr>
+		<td><abbr title="These people wrote the bulk of the tutorial, they may have done the analysis, built the workflow, and wrote the text themselves.">Author(s)</abbr></td>
+		<td>
+			
 <a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+		</td>
+	</tr>
+	
+
+
+	
+
+	
+	<tr>
+		<td><abbr title="These people edited the text, either for spelling and grammar, flow, GTN-fit, or other similar editing categories">Editor(s)</abbr></td>
+		<td>
+			
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+
+</td>
+	</tr>
+	
+
+	
+
+	
+
+	
+</table>
+
+
+	</div>
 
 </div>
 
@@ -417,7 +453,7 @@
 
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 2, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 16, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -435,7 +471,9 @@
             <div class="col-sm-10">
                  
 
-                <h1 class="no_toc" id="introduction">Introduction</h1>
+                <p><a href="https://jupyterlab.readthedocs.io/en/stable">JupyterLab</a> is an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">Integrated Development Environment (IDE)</a>.
+Like most IDEs, it provides a graphical interface for R/Python, making it more user-friendly, and providing dozens of useful features.
+We will introduce additional benefits of using JupyterLab as you cover the lessons.</p>
 
 <blockquote class="comment">
   <h3 id="comment-comment"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
@@ -443,10 +481,6 @@
   <p>This tutorial is significantly based on <a href="https://jupyterlab.readthedocs.io/en/stable/">the JupyterLab documentation</a> <a href="https://jupyterlab.readthedocs.io/en/stable/user/interface.html">“The JupyterLab Interface”</a> section.</p>
 
 </blockquote>
-
-<p><a href="https://jupyterlab.readthedocs.io/en/stable">JupyterLab</a> is an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">Integrated Development Environment (IDE)</a>.
-Like most IDEs, it provides a graphical interface for R/Python, making it more user-friendly, and providing dozens of useful features.
-We will introduce additional benefits of using JupyterLab as you cover the lessons.</p>
 
 <blockquote class="agenda">
   <h3 id="agenda">Agenda</h3>
@@ -565,9 +599,13 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
   <h3 id="hands_on-hands-on-import-python-libraries"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Import Python libraries</h3>
 
   <ol>
-    <li>Click on a cell of your notebook to edit it (verify that it is defined as a <code class="language-plaintext highlighter-rouge">Code</code> cell)</li>
-    <li>Enter the following lines : <code class="language-plaintext highlighter-rouge">import numpy as np</code> and <code class="language-plaintext highlighter-rouge">import matplotlib.pyplot as plt</code>.</li>
-    <li><code class="language-plaintext highlighter-rouge">shift</code>+<code class="language-plaintext highlighter-rouge">return</code> to run the cell or click on the run cell button.</li>
+    <li>Click on a cell of your notebook to edit it (verify that it is defined as a “Code” cell)</li>
+    <li>Enter the following lines:
+      <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</code></pre></div>      </div>
+    </li>
+    <li><kbd>Shift+Return</kbd> to run the cell or click on the run cell button.</li>
   </ol>
 
 </blockquote>
@@ -580,16 +618,33 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
   <h3 id="hands_on-hands-on-draw-a-simple-plot"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Draw a simple plot</h3>
 
   <ol>
-    <li>Generate a simple dataset <code class="language-plaintext highlighter-rouge">x = np.linspace(0, 2, 100)</code> and <code class="language-plaintext highlighter-rouge">y = x**2</code></li>
-    <li>Create your figure with the command <code class="language-plaintext highlighter-rouge">fig, ax = plt.subplots( nrows=1, ncols=1 ,figsize=(15, 10) )</code>
+    <li>
+      <p>Generate a simple dataset</p>
+
+      <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+</code></pre></div>      </div>
+    </li>
+    <li>
+      <p>Create your figure with the command:</p>
+
+      <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplots</span><span class="p">(</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">1</span> <span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="p">)</span>
+</code></pre></div>      </div>
+
       <ul>
         <li><code class="language-plaintext highlighter-rouge">nrows=1, ncols=1</code> means you will have one plot in your figure (one row and one column)</li>
         <li><code class="language-plaintext highlighter-rouge">figsize</code> parameter determine the size of the figure</li>
       </ul>
     </li>
-    <li>Draw the plot with the command <code class="language-plaintext highlighter-rouge">plt.plot(x, y);</code> <img src="../../images/jupyterlab_plot.png" alt="Simple plot in Jupyter. " loading="lazy" /></li>
-  </ol>
+    <li>
+      <p>Draw the plot with the command</p>
 
+      <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+</code></pre></div>      </div>
+
+      <p><img src="../../images/jupyterlab_plot.png" alt="Simple plot in Jupyter. " loading="lazy" /></p>
+    </li>
+  </ol>
 </blockquote>
 
 <h1 id="interaction-between-jupyterlab-and-galaxy">Interaction between JupyterLab and <span class="notranslate">Galaxy</span></h1>
@@ -630,8 +685,6 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
 
 </blockquote>
 
-<h1 class="no_toc" id="conclusion">Conclusion</h1>
-
 
                 
                 <blockquote class="key_points">
@@ -654,10 +707,13 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
 
                 
 
+
+                
+
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
                 <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
                 </p>
 
@@ -689,12 +745,10 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
                     })(window, document);
                 </script>
 
-
-
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Anne Fouilloux, 2021 <b>JupyterLab in Galaxy (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html">https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">, 2022 <b>JupyterLab in Galaxy (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html">https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -711,9 +765,9 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
 <code id="citation-code">@misc{galaxy-interface-jupyterlab,
 author = "Anne Fouilloux",
 title = "JupyterLab in Galaxy (Galaxy Training Materials)",
-year = "2021",
+year = "2022",
 month = "09",
-day = "02"
+day = "16"
 url = "\url{https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -733,6 +787,11 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
+                
+
+                
 
 
 <script type="text/javascript">

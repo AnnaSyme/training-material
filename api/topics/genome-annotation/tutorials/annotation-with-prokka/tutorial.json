@@ -30,6 +30,7 @@
     {
       "name": "Torsten Seemann",
       "joined": "2018-06",
+      "elixir_node": "au",
       "id": "tseemann",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/tseemann.json"
     },
@@ -37,11 +38,13 @@
       "name": "Simon Gladman",
       "email": "simon.gladman@unimelb.edu.au",
       "joined": "2017-09",
+      "elixir_node": "au",
       "id": "slugger70",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
     }
   ],
-  "last_modified_at": "28-May-21",
+  "subtopic": "prokaryote",
+  "last_modified_at": "22-Aug-22",
   "url": "/topics/genome-annotation/tutorials/annotation-with-prokka/tutorial.html",
   "topic_name": "genome-annotation",
   "tutorial_name": "annotation-with-prokka"

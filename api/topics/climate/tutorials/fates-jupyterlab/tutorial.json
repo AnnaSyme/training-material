@@ -60,11 +60,12 @@
       "name": "Anne Fouilloux",
       "twitter": "AnneFouilloux",
       "joined": "2019-07",
+      "elixir_node": "no",
       "id": "annefou",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/annefou.json"
     }
   ],
-  "last_modified_at": "17-Nov-21",
+  "last_modified_at": "14-Jul-22",
   "url": "/topics/climate/tutorials/fates-jupyterlab/tutorial.html",
   "topic_name": "climate",
   "tutorial_name": "fates-jupyterlab"

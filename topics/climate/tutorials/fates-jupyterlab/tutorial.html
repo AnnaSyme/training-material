@@ -17,6 +17,15 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:14 +0000" />
+<meta name="DC.creator" content="Anne Fouilloux" />
 
         
         
@@ -24,9 +33,11 @@
         
         
         <meta name="description" content="Learn to analyze climate data through Galaxy." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Functionally Assembled Terrestrial Ecosystem Simulator (F..." />
         <meta property="og:description" content="Learn to analyze climate data through Galaxy." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -243,27 +254,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -276,7 +274,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:00:17 +0000",
+  "dateModified": "1970-01-01 00:00:14 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab",
   "interactivityType": "mixed",
@@ -301,28 +299,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Climate",
     "description": "Learn to analyze climate data through Galaxy.",
-    "url": "https://training.galaxyproject.org//training-material/topics/climate/"
+    "url": "https://training.galaxyproject.org/training-material/topics/climate/"
   },
-  "courseCode": "climate / fates-jupyterlab / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html",
   "timeRequired": "PT6H",
-  "keywords": "interactive-tools",
+  "keywords": "climate, interactive-tools",
   "description": "The questions this  addresses are:\n - Why and when using Galaxy Climate JupyterLab for CLM-FATES?\n - How to start Galaxy Climate JupyterLab in Galaxy?\n - How to upload input data for running CLM-FATES?\n - How to create CLM-FATES case in Galaxy Climate JupyterLab?\n - How to customize your run?\n - How to analyze your model outputs?\n - How to save your model results into a Galaxy history?\n - How to share your results?\n\n\\nThe objectives are:\n - Motivation for using the Galaxy Climate JupyterLab for CLM-FATES.\n - Setting up CLM-FATES case with Galaxy Climate JupyterLab.\n - Running CLM-FATES in Galaxy for single-point locations where in-situ measurements are available.\n - Analyzing CLM-FATES results.\n - Sharing CLM-FATES simulations.\n - Composing, executing and publishing the corresponding Jupyter notebooks.\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -333,8 +349,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/climate/tutorials/fates/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates/slides.html",
       "name": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES)",
       "description": "Slides for 'Functionally Assembled Terrestrial Ecosystem Simulator (FATES)' tutorial",
       "learningResourceType": "slides",
@@ -347,8 +364,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/climate/tutorials/fates/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates/tutorial.html",
       "name": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES)",
       "description": "Hands-on for 'Functionally Assembled Terrestrial Ecosystem Simulator (FATES)' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -361,22 +379,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/climate/tutorials/fates/slides.html",
-      "name": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES)",
-      "description": "Slides for 'Functionally Assembled Terrestrial Ecosystem Simulator (FATES)' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html",
       "name": "JupyterLab in Galaxy",
       "description": "Hands-on for 'JupyterLab in Galaxy' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -399,19 +404,50 @@
       "name": "The Unix Shell"
     }
   ],
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -419,7 +455,7 @@
       "@type": "CreativeWork",
       "name": "Climate",
       "description": "Learn to analyze climate data through Galaxy.",
-      "url": "https://training.galaxyproject.org//training-material/topics/climate/"
+      "url": "https://training.galaxyproject.org/training-material/topics/climate/"
     }
   ]
 }
@@ -429,12 +465,15 @@
     <h1 data-toc-skip>Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -613,6 +652,8 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
@@ -672,9 +713,19 @@
             
             
             
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/climate/tutorials/fates-jupyterlab/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
+
+
+            
 
             <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
             
+
+
 
 
 
@@ -695,7 +746,7 @@
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -714,7 +765,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Nov 17, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jul 14, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -789,7 +840,7 @@ The <a href="https://fates-docs.readthedocs.io/en/latest/index.html">FATES docum
 <h2 id="motivation">Motivation</h2>
 
 <p>In this tutorial, we will be using a <span class="notranslate">Galaxy</span> interactive tool called <span class="notranslate">Galaxy</span> Climate JupyterLab for running CLM-FATES.
-This interactive tool is only available from <a href="https://live.usegalaxy.eu/" target="_blank">Live<span class="notranslate">Galaxy</span>.eu</a>.</p>
+This interactive tool is only available from <a href="https://live.usegalaxy.eu/">Live<span class="notranslate">Galaxy</span>.eu</a>.</p>
 
 <p>This platform is meant to be used for:</p>
 <ul>
@@ -840,7 +891,7 @@ stopping your JupyterLab.</p>
       <p>Check the datatype is <strong>tar</strong></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code>    <ul>      <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>    </ul>  </li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
     <li>
       <p>Rename Datasets</p>
@@ -870,7 +921,7 @@ it is a good practice to change the dataset name by something more meaningfull. 
 is tutorial.</p>
 
   <ol>
-    <li>Open the <span class="tool" data-tool="interactive_tool_jupyter_notebook" title="Tested with interactive_tool_jupyter_notebook"><strong>JupyterLab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_jupyter_notebook</span></span>  by clicking <a href="https://live.usegalaxy.eu/?tool_id=interactive_tool_climate_notebook" target="_blank">here</a></li>
+    <li>Open the <span class="tool" data-tool="interactive_tool_jupyter_notebook" title="Tested with interactive_tool_jupyter_notebook"><strong>JupyterLab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_jupyter_notebook</span></span>  by clicking <a href="https://live.usegalaxy.eu/?tool_id=interactive_tool_climate_notebook">here</a></li>
     <li>Click Execute</li>
     <li>The tool will start running and will stay running permanently</li>
     <li>Click on the “User” menu at the top and go to “Active Interactive Tools” and locate the JupyterLab instance you started.</li>
@@ -1337,11 +1388,14 @@ If you are not familiar with <code class="language-plaintext highlighter-rouge">
                 
 
                 <h1>Frequently Asked Questions</h1>
-                Have questions about this tutorial? Check out the  <a href="/training-material/topics/climate/faqs/">FAQ page for the Climate topic</a> to see if your question is listed there.
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/climate/faqs/">FAQ page for the Climate topic</a> to see if your question is listed there.
                 If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
                 <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                 
+
+                
+
 
                 
                 <h1 id="bibliography">References</h1>
@@ -1351,7 +1405,7 @@ If you are not familiar with <code class="language-plaintext highlighter-rouge">
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
                 <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
                 </p>
 
@@ -1383,12 +1437,10 @@ If you are not familiar with <code class="language-plaintext highlighter-rouge">
                     })(window, document);
                 </script>
 
-
-
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Anne Fouilloux, 2021 <b>Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html">https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">Anne Fouilloux, 2022 <b>Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html">https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1405,9 +1457,9 @@ If you are not familiar with <code class="language-plaintext highlighter-rouge">
 <code id="citation-code">@misc{climate-fates-jupyterlab,
 author = "Anne Fouilloux",
 title = "Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab (Galaxy Training Materials)",
-year = "2021",
-month = "11",
-day = "17"
+year = "2022",
+month = "07",
+day = "14"
 url = "\url{https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1427,6 +1479,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">
