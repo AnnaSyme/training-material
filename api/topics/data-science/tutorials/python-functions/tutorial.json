@@ -71,10 +71,7 @@
   "abbreviations": {
     "DRY": "Don't Repeat Yourself"
   },
-  "last_modified_at": "29-Sep-22",
-  "tags": [
-    "jupyter-notebook"
-  ],
+  "last_modified_at": "2022-09-29T12:58:11+00:00",
   "url": "/topics/data-science/tutorials/python-functions/tutorial.html",
   "topic_name": "data-science",
   "tutorial_name": "python-functions"
