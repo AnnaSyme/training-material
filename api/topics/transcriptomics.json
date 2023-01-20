@@ -300,11 +300,11 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "rna-seq-reads-to-counts.ga",
+          "workflow": "qc_report.ga",
           "tests": false
         },
         {
-          "workflow": "qc_report.ga",
+          "workflow": "rna-seq-reads-to-counts.ga",
           "tests": false
         }
       ],
@@ -2374,11 +2374,11 @@
       "slides": true,
       "workflows": [
         {
-          "workflow": "scrna_pp_celseq.ga",
+          "workflow": "scrna_mp_celseq.ga",
           "tests": false
         },
         {
-          "workflow": "scrna_mp_celseq.ga",
+          "workflow": "scrna_pp_celseq.ga",
           "tests": false
         }
       ],
@@ -2555,16 +2555,16 @@
       "slides": false,
       "workflows": [
         {
+          "workflow": "deg-analysis.ga",
+          "tests": true
+        },
+        {
           "workflow": "qc-mapping-counting.ga",
           "tests": true
         },
         {
           "workflow": "qc-mapping-counting-paired-and-single.ga",
           "tests": false
-        },
-        {
-          "workflow": "deg-analysis.ga",
-          "tests": true
         }
       ],
       "tools": [
@@ -3175,11 +3175,11 @@
       "slides": true,
       "workflows": [
         {
-          "workflow": "Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
+          "workflow": "Galaxy-Workflow-Monocle3_workflow.ga",
           "tests": false
         },
         {
-          "workflow": "Galaxy-Workflow-Monocle3_workflow.ga",
+          "workflow": "Galaxy-Workflow-Trajectory_analysis_using_Monocle3-full_tutorial_workflow.ga",
           "tests": false
         },
         {
