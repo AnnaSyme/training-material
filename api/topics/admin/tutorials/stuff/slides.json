@@ -2,7 +2,7 @@
   "layout": "tutorial_slides",
   "logo": "assets/images/gat.png",
   "title": "Server: Other",
-  "enable": false,
+  "draft": true,
   "zenodo_link": "",
   "questions": [
     "How to monitor a Galaxy service?"
@@ -17,49 +17,41 @@
     "Use grafana or the reports webapp to monitor your service."
   ],
   "contributors": [
-    {
-      "name": "Nate Coraor",
-      "gitter": "natefoo",
-      "twitter": "natefoo",
-      "email": "nate@bx.psu.edu",
-      "joined": "2017-12",
-      "id": "natefoo",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/natefoo.json"
-    },
-    {
-      "name": "Björn Grüning",
-      "email": "bjoern.gruening@gmail.com",
-      "twitter": "bjoerngruening",
-      "gitter": "bgruening",
-      "orcid": "0000-0002-3079-6586",
-      "linkedin": "bgruening",
-      "joined": "2017-09",
-      "elixir_node": "de",
-      "id": "bgruening",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
-    },
-    {
-      "name": "Simon Gladman",
-      "email": "simon.gladman@unimelb.edu.au",
-      "joined": "2017-09",
-      "elixir_node": "au",
-      "id": "slugger70",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
-    },
-    {
-      "name": "Helena Rasche",
-      "email": "helena.rasche@gmail.com",
-      "orcid": "0000-0001-9760-8992",
-      "maintainer_contact": "gitter",
-      "gitter": "hexylena",
-      "joined": "2017-09",
-      "elixir_node": "nl",
-      "id": "hexylena",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
-    }
+    "natefoo",
+    "bgruening",
+    "slugger70",
+    "hexylena"
   ],
-  "last_modified_at": "2021-04-06T11:50:17+00:00",
   "url": "/topics/admin/tutorials/stuff/slides.html",
   "topic_name": "admin",
-  "tutorial_name": "stuff"
+  "tutorial_name": "stuff",
+  "dir": "topics/admin/tutorials/stuff",
+  "id": "admin/stuff",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial",
+  "tags": [
+    "work-in-progress"
+  ]
 }

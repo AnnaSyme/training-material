@@ -2,7 +2,8 @@
   "layout": "tutorial_hands_on",
   "title": "Including a new topic",
   "questions": [
-    "How to include a new topic?"
+    "How to include a new topic?",
+    "What kinds of Topics are possible?"
   ],
   "objectives": [
     "Create a new topic",
@@ -20,10 +21,35 @@
       "hexylena"
     ]
   },
-  "last_modified_at": "2022-05-20T13:54:34+00:00",
   "url": "/topics/contributing/tutorials/create-new-topic/tutorial.html",
   "topic_name": "contributing",
   "tutorial_name": "create-new-topic",
+  "dir": "topics/contributing/tutorials/create-new-topic",
+  "id": "contributing/create-new-topic",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": false,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial",
   "contributors": [
     {
       "name": "Bérénice Batut",
@@ -35,18 +61,24 @@
       "joined": "2017-09",
       "elixir_node": "de",
       "id": "bebatut",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
     },
     {
       "name": "Helena Rasche",
-      "email": "helena.rasche@gmail.com",
+      "email": "hexylena@galaxians.org",
       "orcid": "0000-0001-9760-8992",
       "maintainer_contact": "gitter",
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
       "id": "hexylena",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
     }
-  ]
+  ],
+  "urls": {
+    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-topic/tutorial.json",
+    "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-topic/tutorial.json"
+  }
 }

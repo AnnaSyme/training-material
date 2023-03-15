@@ -3,26 +3,37 @@
   "logo": "assets/images/gat.png",
   "title": "Reference Genomes in Galaxy",
   "contributors": [
-    {
-      "name": "Daniel Blankenberg",
-      "twitter": "dblankenberg",
-      "orcid": "0000-0002-6833-9049",
-      "joined": "2018-07",
-      "id": "blankenberg",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/blankenberg.json"
-    },
-    {
-      "name": "Simon Gladman",
-      "email": "simon.gladman@unimelb.edu.au",
-      "joined": "2017-09",
-      "elixir_node": "au",
-      "id": "slugger70",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
-    }
+    "blankenberg",
+    "slugger70"
   ],
   "subtopic": "data",
-  "last_modified_at": "2022-03-01T12:21:57+00:00",
   "url": "/topics/admin/tutorials/reference-genomes/slides.html",
   "topic_name": "admin",
-  "tutorial_name": "reference-genomes"
+  "tutorial_name": "reference-genomes",
+  "dir": "topics/admin/tutorials/reference-genomes",
+  "id": "admin/reference-genomes",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
 }

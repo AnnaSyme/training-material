@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html" />
@@ -24,10 +23,9 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:42 +0000" />
+<meta name="DC.date" content="2023-01-24 14:21:57 +0000" />
 <meta name="DC.creator" content="Anne Fouilloux" />
 
-        
         
         
         
@@ -36,220 +34,12 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Functionally Assembled Terrestrial Ecosystem Simulator (F..." />
         <meta property="og:description" content="Learn to analyze climate data through Galaxy." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/climate" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Climate
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
-            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
         
-        <a class="dropdown-item" href="/training-material/topics/climate/faqs/" title="Check our FAQs for the Climate topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/climate/tutorials/fates-jupyterlab/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        
-            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-            </a>
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
+        <script type="application/ld+json">
             
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/climate/tutorials/fates-jupyterlab/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-09-01/topics/climate/tutorials/fates-jupyterlab/tutorial.html" title="Version 2020-09-01">2020-09-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-08-01/topics/climate/tutorials/fates-jupyterlab/tutorial.html" title="Version 2020-08-01">2020-08-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -274,7 +64,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:42 +0000",
+  "dateModified": "2023-01-24 14:21:57 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab",
   "interactivityType": "mixed",
@@ -328,7 +118,7 @@
   "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html",
   "timeRequired": "PT6H",
   "keywords": "climate, interactive-tools",
-  "description": "The questions this  addresses are:\n - Why and when using Galaxy Climate JupyterLab for CLM-FATES?\n - How to start Galaxy Climate JupyterLab in Galaxy?\n - How to upload input data for running CLM-FATES?\n - How to create CLM-FATES case in Galaxy Climate JupyterLab?\n - How to customize your run?\n - How to analyze your model outputs?\n - How to save your model results into a Galaxy history?\n - How to share your results?\n\n\\nThe objectives are:\n - Motivation for using the Galaxy Climate JupyterLab for CLM-FATES.\n - Setting up CLM-FATES case with Galaxy Climate JupyterLab.\n - Running CLM-FATES in Galaxy for single-point locations where in-situ measurements are available.\n - Analyzing CLM-FATES results.\n - Sharing CLM-FATES simulations.\n - Composing, executing and publishing the corresponding Jupyter notebooks.\n\n",
+  "description": "The questions this  addresses are:\n - Why and when using Galaxy Climate JupyterLab for CLM-FATES?\n - How to start Galaxy Climate JupyterLab in Galaxy?\n - How to upload input data for running CLM-FATES?\n - How to create CLM-FATES case in Galaxy Climate JupyterLab?\n - How to customize your run?\n - How to analyze your model outputs?\n - How to save your model results into a Galaxy history?\n - How to share your results?\n\n\nThe objectives are:\n - Motivation for using the Galaxy Climate JupyterLab for CLM-FATES.\n - Setting up CLM-FATES case with Galaxy Climate JupyterLab.\n - Running CLM-FATES in Galaxy for single-point locations where in-situ measurements are available.\n - Analyzing CLM-FATES results.\n - Sharing CLM-FATES simulations.\n - Composing, executing and publishing the corresponding Jupyter notebooks.\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
@@ -424,7 +214,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-1784-2920",
+      "orcid": "https://orcid.org/0000-0002-1784-2920"
     }
   ],
   "contributor": [
@@ -447,7 +239,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0002-1784-2920",
+      "orcid": "https://orcid.org/0000-0002-1784-2920"
     }
   ],
   "about": [
@@ -459,7 +253,215 @@
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/climate" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Climate
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/fates-jupyterlab/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/climate/faqs/" title="Check our FAQs for the Climate topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/climate/tutorials/fates-jupyterlab/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/climate/tutorials/fates-jupyterlab/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-09-01/topics/climate/tutorials/fates-jupyterlab/tutorial.html" title="Version 2020-09-01">2020-09-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-08-01/topics/climate/tutorials/fates-jupyterlab/tutorial.html" title="Version 2020-08-01">2020-08-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-climate">
     <h1 data-toc-skip>Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab</h1>
@@ -468,18 +470,14 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
 	</div>
 
 </div>
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -617,6 +615,32 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             
                             <li> JupyterLab in Galaxy:
                             
@@ -626,32 +650,6 @@
                                 
                             
                             </li>
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
                         
                     
                 
@@ -688,17 +686,13 @@
         <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/climate/slides/introduction.html" title="Topic Overview slides">
-                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
-                </a></li>
-            
 
             
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.4108341">
-    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.4108341">
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
 </li>
@@ -765,7 +759,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jul 14, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jan 24, 2023 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -783,9 +777,9 @@
             <div class="col-sm-10">
                  
 
-                <h1 class="no_toc" id="introduction">Introduction</h1>
+                <h1 id="introduction">Introduction</h1>
 
-<p>The practical aims at familiarizing you with running CLM-FATES within <span class="notranslate">Galaxy</span> Climate JupyterLab.</p>
+<p>The practical aims at familiarizing you with running CLM-FATES within Galaxy Climate JupyterLab.</p>
 
 <blockquote class="agenda">
   <h2 id="agenda">Agenda</h2>
@@ -793,16 +787,13 @@
   <p>In this tutorial, we will cover:</p>
 
 <ol id="markdown-toc">
-  <li><a href="#agenda" id="markdown-toc-agenda">Agenda</a></li>
-  <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
-  <li><a href="#step-1-get-data" id="markdown-toc-step-1-get-data">Step-1: Get data</a>    <ol>
-      <li><a href="#hands_on-hands-on-data-upload" id="markdown-toc-hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ol>
+      <li><a href="#agenda" id="markdown-toc-agenda">Agenda</a></li>
+      <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
     </ol>
   </li>
-  <li><a href="#step-2-opening-up-climate-jupyterlab" id="markdown-toc-step-2-opening-up-climate-jupyterlab">Step-2: Opening up Climate JupyterLab</a>    <ol>
-      <li><a href="#hands_on-hands-on-launch-jupyterlab-for-ocean--atmosphere--land--climate-python-ecosystem-in-galaxy" id="markdown-toc-hands_on-hands-on-launch-jupyterlab-for-ocean--atmosphere--land--climate-python-ecosystem-in-galaxy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Launch JupyterLab for Ocean / Atmosphere / Land / Climate Python ecosystem in <span class="notranslate">Galaxy</span></a></li>
-    </ol>
-  </li>
+  <li><a href="#step-1-get-data" id="markdown-toc-step-1-get-data">Step-1: Get data</a></li>
+  <li><a href="#step-2-opening-up-climate-jupyterlab" id="markdown-toc-step-2-opening-up-climate-jupyterlab">Step-2: Opening up Climate JupyterLab</a></li>
   <li><a href="#step-3-create-a-new-session-clm-fates-in-jupyterlab" id="markdown-toc-step-3-create-a-new-session-clm-fates-in-jupyterlab">Step-3: Create a new session CLM-FATES in JupyterLab</a>    <ol>
       <li><a href="#import-input-data-to-jupyterlab" id="markdown-toc-import-input-data-to-jupyterlab">Import input data to JupyterLab</a></li>
       <li><a href="#get-clm-fates-emerald-release" id="markdown-toc-get-clm-fates-emerald-release">Get CLM-FATES EMERALD release</a></li>
@@ -816,7 +807,7 @@
       <li><a href="#analyzing-fates-clm-model-outputs" id="markdown-toc-analyzing-fates-clm-model-outputs">Analyzing FATES-CLM model outputs</a></li>
     </ol>
   </li>
-  <li><a href="#save-your-results-to-your-galaxy-history" id="markdown-toc-save-your-results-to-your-galaxy-history">Save your results to your <span class="notranslate">Galaxy</span> history</a></li>
+  <li><a href="#save-your-results-to-your-galaxy-history" id="markdown-toc-save-your-results-to-your-galaxy-history">Save your results to your Galaxy history</a></li>
   <li><a href="#share-your-work" id="markdown-toc-share-your-work">Share your work</a></li>
   <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
 </ol>
@@ -824,7 +815,7 @@
 </blockquote>
 
 <blockquote class="comment">
-  <h3 id="comment-background"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Background</h3>
+  <div class="box-title comment-title" id="comment-background" aria-label="comment box: Background"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background</div>
 
   <p>FATES is the “Functionally Assembled Terrestrial Ecosystem Simulator”.
 FATES needs what we call a “Host Land Model” (HLM) to run and in this tutorial
@@ -839,8 +830,8 @@ The <a href="https://fates-docs.readthedocs.io/en/latest/index.html">FATES docum
 
 <h2 id="motivation">Motivation</h2>
 
-<p>In this tutorial, we will be using a <span class="notranslate">Galaxy</span> interactive tool called <span class="notranslate">Galaxy</span> Climate JupyterLab for running CLM-FATES.
-This interactive tool is only available from <a href="https://live.usegalaxy.eu/">Live<span class="notranslate">Galaxy</span>.eu</a>.</p>
+<p>In this tutorial, we will be using a Galaxy interactive tool called Galaxy Climate JupyterLab for running CLM-FATES.
+This interactive tool is only available from <a href="https://live.usegalaxy.eu/">LiveGalaxy.eu</a>.</p>
 
 <p>This platform is meant to be used for:</p>
 <ul>
@@ -851,14 +842,14 @@ This interactive tool is only available from <a href="https://live.usegalaxy.eu/
   <li>teaching purposes.</li>
 </ul>
 
-<p>The main advantage over the <span class="notranslate">Galaxy</span> CLM-FATES tool is that you can run any versions of FATES, including developments
+<p>The main advantage over the Galaxy CLM-FATES tool is that you can run any versions of FATES, including developments
 that are not released yet. However, it is not recommended to run more than a few decades of simulation time.
-In that particular case, we would suggest to use the <span class="notranslate">Galaxy</span> CLM-FATES <span class="notranslate">Galaxy</span> tool.</p>
+In that particular case, we would suggest to use the Galaxy CLM-FATES Galaxy tool.</p>
 
 <blockquote class="comment">
-  <h3 id="comment-cml-fates-in-jupyterlab-versus-clm-fates-galaxy-tool"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> CML-FATES in JupyterLab versus CLM-FATES <span class="notranslate">Galaxy</span> tool</h3>
-  <p>Do not use the interactive <span class="notranslate">Galaxy</span> Climate JupyterLab for running long and “operational” simulations and
-do not forget that you need to save back your results to your <span class="notranslate">Galaxy</span> history or local machine before
+  <div class="box-title comment-title" id="comment-cml-fates-in-jupyterlab-versus-clm-fates-galaxy-tool" aria-label="comment box: CML-FATES in JupyterLab versus CLM-FATES Galaxy tool"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: CML-FATES in JupyterLab versus CLM-FATES Galaxy tool</div>
+  <p>Do not use the interactive Galaxy Climate JupyterLab for running long and “operational” simulations and
+do not forget that you need to save back your results to your Galaxy history or local machine before
 stopping your JupyterLab.</p>
 
 </blockquote>
@@ -866,14 +857,14 @@ stopping your JupyterLab.</p>
 <h1 id="step-1-get-data">Step-1: Get data</h1>
 
 <blockquote class="notranslate hands_on">
-  <h2 id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h2>
+  <div class="box-title hands-on-title" id="hands-on-data-upload" aria-label="hands-on box:  Data upload "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on:  Data upload</div>
 
   <ol>
     <li>
       <p>Create a new history for this tutorial. If you are not inspired, you can name it <em>fates-jupyterlab</em>.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-creating-a-new-history"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>   <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>   <ol>   <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>   <li>Select the option <strong>Create New</strong> from the menu</li> </ol> </blockquote>
     </li>
     <li>
       <p>Import the files from <a href="https://doi.org/10.5281/zenodo.4108341">Zenodo</a> or from the shared data library</p>
@@ -882,16 +873,16 @@ stopping your JupyterLab.</p>
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ul>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>   <li>Click on <strong>Import</strong></li> </ul> </blockquote>
     </li>
     <li>
       <p>Check the datatype is <strong>tar</strong></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code>    <ul>      <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>    </ul>  </li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-changing-the-datatype"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-changing-the-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Changing the datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden">galaxy-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>   <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code>     <ul>       <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>     </ul>   </li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
     <li>
       <p>Rename Datasets</p>
@@ -900,13 +891,13 @@ stopping your JupyterLab.</p>
 it is a good practice to change the dataset name by something more meaningfull. For example by removing <code class="language-plaintext highlighter-rouge">https://zenodo.org/record/4108341/files/</code> to obtain <code class="language-plaintext highlighter-rouge">inputdata_version2.0.0_ALP1.tar</code>, respectively.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-renaming-a-dataset"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-renaming-a-dataset-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, change the <strong>Name</strong> field</li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
     <li>
       <p>Add a tag to the dataset corresponding to <code class="language-plaintext highlighter-rouge">fates-jupyterlab</code></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-adding-a-tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag</h3>  <ul>  <li>Click on the dataset</li>  <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>  <li>    <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>    <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>  </li>  <li>Check that the tag is appearing below the dataset name</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-adding-a-tag"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-adding-a-tag-contents" aria-expanded="true" aria-label="Toggle tip box: Adding a tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the dataset</li>   <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden">galaxy-tags</span> <strong>Add Tags</strong></li>   <li>     <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>     <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>   </li>   <li>Check that the tag is appearing below the dataset name</li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -915,14 +906,14 @@ it is a good practice to change the dataset name by something more meaningfull. 
 <h1 id="step-2-opening-up-climate-jupyterlab">Step-2: Opening up Climate JupyterLab</h1>
 
 <blockquote class="notranslate hands_on">
-  <h2 id="hands_on-hands-on-launch-jupyterlab-for-ocean--atmosphere--land--climate-python-ecosystem-in-galaxy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Launch JupyterLab for Ocean / Atmosphere / Land / Climate Python ecosystem in <span class="notranslate">Galaxy</span></h2>
+  <div class="box-title hands-on-title" id="hands-on-launch-jupyterlab-for-ocean-atmosphere-land-climate-python-ecosystem-in-galaxy" aria-label="hands-on box:  Launch JupyterLab for Ocean / Atmosphere / Land / Climate Python ecosystem in Galaxy "><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on:  Launch JupyterLab for Ocean / Atmosphere / Land / Climate Python ecosystem in Galaxy</div>
 
-  <p>Currently JupyterLab for Ocean / Atmosphere / Land / Climate Python ecosystem in <span class="notranslate">Galaxy</span> is available on <a href="https://live.usegalaxy.eu">Live.use<span class="notranslate">Galaxy</span>.eu</a> only. JupyterLab for Ocean / Atmosphere / Land / Climate Python ecosystem and not the default JupyterLab in <span class="notranslate">Galaxy</span> contains all the python packages and additional software we need for running Earth System Model, including Functionally Assembled Terrestrial Ecosystem Simulator (FATES). The default JupyterLab in <span class="notranslate">Galaxy</span> would not be sufficient for executing all the tasks in th
+  <p>Currently JupyterLab for Ocean / Atmosphere / Land / Climate Python ecosystem in Galaxy is available on <a href="https://live.usegalaxy.eu">Live.useGalaxy.eu</a> only. JupyterLab for Ocean / Atmosphere / Land / Climate Python ecosystem and not the default JupyterLab in Galaxy contains all the python packages and additional software we need for running Earth System Model, including Functionally Assembled Terrestrial Ecosystem Simulator (FATES). The default JupyterLab in Galaxy would not be sufficient for executing all the tasks in th
 is tutorial.</p>
 
   <ol>
-    <li>Open the <span class="tool" data-tool="interactive_tool_jupyter_notebook" title="Tested with interactive_tool_jupyter_notebook"><strong>JupyterLab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_jupyter_notebook</span></span>  by clicking <a href="https://live.usegalaxy.eu/?tool_id=interactive_tool_climate_notebook">here</a></li>
-    <li>Click Execute</li>
+    <li>Open the <span class="tool" data-tool="interactive_tool_jupyter_notebook" title="Tested with interactive_tool_jupyter_notebook"><strong>JupyterLab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_jupyter_notebook</span></span>  or opening directly on <a href="https://live.usegalaxy.eu/?tool_id=interactive_tool_climate_notebook">live.usegalaxy</a></li>
+    <li>Click Run Tool</li>
     <li>The tool will start running and will stay running permanently</li>
     <li>Click on the “User” menu at the top and go to “Active Interactive Tools” and locate the JupyterLab instance you started.</li>
     <li>Click on your JupyterLab instance (please not that it may take a few minutes before you can click on the link to your jupyterLab instance).</li>
@@ -938,11 +929,11 @@ is tutorial.</p>
 
 <h2 id="import-input-data-to-jupyterlab">Import input data to JupyterLab</h2>
 
-<p>In this part of the tutorial, we will be using the existing Jupyter Notebook called <strong>ipython_<span class="notranslate">galaxy</span>_notebook.ipynb</strong></p>
+<p>In this part of the tutorial, we will be using the existing Jupyter Notebook called <strong>ipython_galaxy_notebook.ipynb</strong></p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-open-a-jupyterlab-terminal"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Open a JupyterLab Terminal</h3>
-  <p>To open <strong>ipython_<span class="notranslate">galaxy</span>_notebook.ipynb</strong>, double click on it.
+  <div class="box-title hands-on-title" id="hands-on-open-a-jupyterlab-terminal" aria-label="hands-on box: Open a JupyterLab Terminal"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Open a JupyterLab Terminal</div>
+  <p>To open <strong>ipython_galaxy_notebook.ipynb</strong>, double click on it.
 More information on the JupyterLab interface can be found on the <a href="https://jupyterlab.readthedocs.io/en/stable/user/interface.html">JupyterLab documentation</a>.</p>
 
   <p>Import the FATES input dataset from your history:</p>
@@ -967,7 +958,7 @@ tar xf /import/inputdata_version2.0.0_ALP1.tar --directory $HOME/inputdata
 </blockquote>
 
 <blockquote class="comment">
-  <h3 id="comment-direct-download-in-jupyterlab-from-zenodo"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Direct download in JupyterLab from Zenodo</h3>
+  <div class="box-title comment-title" id="comment-direct-download-in-jupyterlab-from-zenodo" aria-label="comment box: Direct download in JupyterLab from Zenodo"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Direct download in JupyterLab from Zenodo</div>
 
   <p>You may also download the input dataset directly from Zenodo.</p>
   <ul>
@@ -981,16 +972,16 @@ wget https://zenodo.org/record/4108341/files/inputdata_version2.0.0_ALP1.tar
 </blockquote>
 
 <blockquote class="comment">
-  <h3 id="comment-using-jupyterlab-terminal"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Using JupyterLab Terminal</h3>
+  <div class="box-title comment-title" id="comment-using-jupyterlab-terminal" aria-label="comment box: Using JupyterLab Terminal"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Using JupyterLab Terminal</div>
 
   <p>Most of the tutorial (except visualization) can be executed from a JupyterLab Terminal. In that case,
-you should not add <code class="language-plaintext highlighter-rouge">%%bash</code> to your commands. More on JupyterLab Terminal can be found <a href="https://jupyterlab.readthedocs.io/en/stable/user/terminal.html">here</a>.</p>
+you should not add <code class="language-plaintext highlighter-rouge">%%bash</code> to your commands. More on JupyterLab Terminal can be found on <a href="https://jupyterlab.readthedocs.io/en/stable/user/terminal.html">Read the Docs</a>.</p>
 </blockquote>
 
 <h2 id="get-clm-fates-emerald-release">Get CLM-FATES EMERALD release</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-clone-clm-fates-for-nordic-sites"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Clone CLM-FATES for Nordic sites</h3>
+  <div class="box-title hands-on-title" id="hands-on-clone-clm-fates-for-nordic-sites" aria-label="hands-on box: Clone CLM-FATES for Nordic sites"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Clone CLM-FATES for Nordic sites</div>
 
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%bash
 conda create --name fates -y fates-emerald=2.0.1
@@ -1013,7 +1004,7 @@ source activate fates
 <h2 id="create-clm-fates-new-case">Create CLM-FATES new case</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-create-clm-fates-new-case-for-alp1-site"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Create CLM-FATES new case for ALP1 site</h3>
+  <div class="box-title hands-on-title" id="hands-on-create-clm-fates-new-case-for-alp1-site" aria-label="hands-on box: Create CLM-FATES new case for ALP1 site"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Create CLM-FATES new case for ALP1 site</div>
 
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%bash
 source activate fates
@@ -1024,7 +1015,7 @@ create_newcase --case $HOME/ctsm_cases/fates_alp1 --compset 2000_DATM%1PTGSWP3_C
 </blockquote>
 
 <blockquote class="warning">
-  <h3 id="warning-command-not-found"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="visually-hidden">warning</span> Command not found!</h3>
+  <div class="box-title warning-title" id="warning-command-not-found" aria-label="warning box: Command not found!"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="visually-hidden"></span> Warning: Command not found!</div>
   <p>If you get an error when invoking <code class="language-plaintext highlighter-rouge">create_newcase</code> make sure you have switch to fates conda environment:</p>
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%bash
 source acticate fates
@@ -1051,7 +1042,7 @@ create_newcase --help
           <li><strong>River runoff</strong>:MOSART: MOdel for Scale Adaptive River Transport</li>
           <li><strong>Land Ice</strong>: SGLC Stub Glacier (land ice) component</li>
           <li><strong>Wave</strong>-   SWAV Stub wave component
- The list of available component set is given <a href="http://www.cesm.ucar.edu/models/cesm2/config/compsets.html">here</a>.</li>
+ See also the <a href="http://www.cesm.ucar.edu/models/cesm2/config/compsets.html">list of available component sets</a>.</li>
         </ul>
       </li>
     </ul>
@@ -1062,7 +1053,7 @@ create_newcase --help
 <h2 id="setup-build-and-submit-your-first-simulation">Setup, build and submit your first simulation</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-setup-build-and-submit"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Setup, build and submit</h3>
+  <div class="box-title hands-on-title" id="hands-on-setup-build-and-submit" aria-label="hands-on box: Setup, build and submit"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Setup, build and submit</div>
 
   <p>Check the content of the directory and browse the sub-directories:</p>
   <ul>
@@ -1094,7 +1085,7 @@ tutorial.</p>
 <h2 id="check-your-run">Check your run</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-check-your-simulation"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: check your simulation</h3>
+  <div class="box-title hands-on-title" id="hands-on-check-your-simulation" aria-label="hands-on box: check your simulation"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: check your simulation</div>
 
   <ol>
     <li>From a new code cell:</li>
@@ -1126,7 +1117,7 @@ We have run a very short simulation and get one file only, called <code class="l
 CLM-FATES model outputs are stored in netCDF format.</p>
 
   <blockquote class="comment">
-    <h3 id="comment-what-is-a-netcdf-file"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> What is a netCDF file?</h3>
+    <div class="box-title comment-title" id="comment-what-is-a-netcdf-file" aria-label="comment box: What is a netCDF file?"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: What is a netCDF file?</div>
 
     <p>Netcdf stands for “network Common Data Form”. It is self-describing, portable, metadata friendly, supported by many languages
 (including python, R, fortran, C/C++, Matlab, NCL, etc.), viewing tools (like panoply, ncview/ncdump) and tool suites of file operators (in particular NCO and CDO).</p>
@@ -1180,7 +1171,7 @@ We also changed the aspect of the plot (aspect=3, size=6).</p>
 <h2 id="customize-your-run">Customize your run</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-run-10-years"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Run 10 years</h3>
+  <div class="box-title hands-on-title" id="hands-on-run-10-years" aria-label="hands-on box: Run 10 years"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Run 10 years</div>
 
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%bash
 source activate fates
@@ -1206,7 +1197,7 @@ cd $HOME/ctsm_cases/fates_alp1
 <h2 id="analyzing-fates-clm-model-outputs">Analyzing FATES-CLM model outputs</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-open-a-new-python-notebook"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Open a new Python notebook</h3>
+  <div class="box-title hands-on-title" id="hands-on-open-a-new-python-notebook" aria-label="hands-on box: Open a new Python notebook"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Open a new Python notebook</div>
   <ul>
     <li>Create a notebook by clicking the <code class="language-plaintext highlighter-rouge">+</code> button in the file browser and then selecting a kernel in the new Launcher tab:</li>
     <li>Rename your notebook to <strong>analyse_case.ipynb</strong>
@@ -1262,32 +1253,32 @@ p.fig.savefig('CANOPY_HEIGHT_DIST.png')
 
 <p><img src="../../images/CANOPY_HEIGHT_DIST_10yrs.png" alt="CANOPY HEIGHT DIST (10 years). " loading="lazy" /></p>
 
-<h1 id="save-your-results-to-your-galaxy-history">Save your results to your <span class="notranslate">Galaxy</span> history</h1>
+<h1 id="save-your-results-to-your-galaxy-history">Save your results to your Galaxy history</h1>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-put-your-data-to-your-galaxy-history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Put your data to your <span class="notranslate">Galaxy</span> history</h3>
+  <div class="box-title hands-on-title" id="hands-on-put-your-data-to-your-galaxy-history" aria-label="hands-on box: Put your data to your Galaxy history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Put your data to your Galaxy history</div>
 
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%bash
 cd $HOME
 tar cvf archive_emerald_fates_test.tar archive
 </code></pre></div>  </div>
-  <p>Then you are now ready to put your dataset into <span class="notranslate">Galaxy</span>. As it can be large, we recommend to use FTP:</p>
+  <p>Then you are now ready to put your dataset into Galaxy. As it can be large, we recommend to use FTP:</p>
 
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -T {"archive_emerald_fates_test.tar"} ftp://ftp.use<span class="notranslate">galaxy</span>.eu --user USER:PASSWORD --ssl
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -T {"archive_emerald_fates_test.tar"} ftp://ftp.usegalaxy.eu --user USER:PASSWORD --ssl
 </code></pre></div>  </div>
-  <p>Where you replace <code class="language-plaintext highlighter-rouge">USER</code> by your <span class="notranslate">galaxy</span> use<span class="notranslate">rna</span>me (what you used to login to <span class="notranslate">Galaxy</span> i.e. usually your email address
-and <code class="language-plaintext highlighter-rouge">PASSWORD</code> by your <span class="notranslate">Galaxy</span> login password.</p>
+  <p>Where you replace <code class="language-plaintext highlighter-rouge">USER</code> by your galaxy username (what you used to login to Galaxy i.e. usually your email address
+and <code class="language-plaintext highlighter-rouge">PASSWORD</code> by your Galaxy login password.</p>
 
   <p>To get <code class="language-plaintext highlighter-rouge">archive_emerald_fates_test.tar</code> in your history:</p>
   <ul>
-    <li>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</li>
+    <li>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</li>
     <li>Click on <strong>Choose FTP files</strong> and select <code class="language-plaintext highlighter-rouge">archive_emerald_fates_test.tar</code> to import it into your history.</li>
   </ul>
 
-  <p>And make sure to save all your notebooks to your <span class="notranslate">Galaxy</span> history too:</p>
+  <p>And make sure to save all your notebooks to your Galaxy history too:</p>
 
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%bash
-put -p ipython_<span class="notranslate">galaxy</span>_notebook.ipynb
+put -p ipython_galaxy_notebook.ipynb
 put -p check_analysis.ipynb
 put -p analyse_case.ipynb
 put -p AREA_TREES.png
@@ -1296,32 +1287,32 @@ put -p CANOPY_HEIGHT_DIST.png
 </blockquote>
 
 <blockquote class="warning">
-  <h3 id="warning-danger-you-can-lose-data"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="visually-hidden">warning</span> Danger: You can lose data!</h3>
-  <p>If you do not copy data (FATES model results, jupyter notebooks, plots, etc.) before you stop your <span class="notranslate">Galaxy</span> climate
+  <div class="box-title warning-title" id="warning-danger-you-can-lose-data" aria-label="warning box: Danger: You can lose data!"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="visually-hidden"></span> Warning: Danger: You can lose data!</div>
+  <p>If you do not copy data (FATES model results, jupyter notebooks, plots, etc.) before you stop your Galaxy climate
 JupyterLab tool, all your results will be lost!</p>
 </blockquote>
 
 <h1 id="share-your-work">Share your work</h1>
 
-<p>One of the most important features of <span class="notranslate">Galaxy</span> comes at the end of an analysis. When you have published striking findings, it is important that other researchers are able to reproduce your in-silico experiment. <span class="notranslate">Galaxy</span> enables users to easily share their workflows and histories with others.</p>
+<p>One of the most important features of Galaxy comes at the end of an analysis. When you have published striking findings, it is important that other researchers are able to reproduce your in-silico experiment. Galaxy enables users to easily share their workflows and histories with others.</p>
 
-<p>To share a history, click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon in the history panel and select <code class="language-plaintext highlighter-rouge">Share or Publish</code>. On this page you can do 3 things:</p>
+<p>To share a history, click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> icon in the history panel and select <code class="language-plaintext highlighter-rouge">Share or Publish</code>. On this page you can do 3 things:</p>
 
 <ol>
   <li><strong>Make History Accessible via Link</strong>. This generates a link that you can give out to others. Anybody with this link will be able to view your history.</li>
   <li><strong>Make History Accessible and Publish</strong>. This will not only create a link, but will also publish your history. This means your history will be listed under <code class="language-plaintext highlighter-rouge">Shared Data → Histories</code> in the top menu.</li>
-  <li><strong>Share with a user</strong>. This will share the history only with specific users on the <span class="notranslate">Galaxy</span> instance.</li>
+  <li><strong>Share with a user</strong>. This will share the history only with specific users on the Galaxy instance.</li>
 </ol>
 
 <blockquote class="comment">
-  <h3 id="comment-permissions"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Permissions</h3>
+  <div class="box-title comment-title" id="comment-permissions" aria-label="comment box: Permissions"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Permissions</div>
   <p>Different servers have different default permission settings. Some servers create all of your datasets completely private to you, while others make them accessible if you know the secret ID.</p>
 
   <p>Be sure to select <strong>Also make all objects within the History accessible</strong> whenever you make a history accessible via link, otherwise whomever you send your link to might not be able to see your history.</p>
 </blockquote>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-share-history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Share history</h3>
+  <div class="box-title hands-on-title" id="hands-on-share-history" aria-label="hands-on box: Share history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Share history</div>
 
   <ol>
     <li>Share your history with your neighbour.</li>
@@ -1330,7 +1321,7 @@ JupyterLab tool, all your results will be lost!</p>
 </blockquote>
 
 <blockquote class="comment">
-  <h3 id="comment-clone-clm-fates-release-for-nordic-site-from-github-advanced"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Clone CLM-FATES release for Nordic site from github (advanced)</h3>
+  <div class="box-title comment-title" id="comment-clone-clm-fates-release-for-nordic-site-from-github-advanced" aria-label="comment box: Clone CLM-FATES release for Nordic site from github (advanced)"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Clone CLM-FATES release for Nordic site from github (advanced)</div>
 
   <p>You may also get the CLM-FATES release 2.0.1 directly from github:</p>
 
@@ -1338,7 +1329,7 @@ JupyterLab tool, all your results will be lost!</p>
 cd $HOME
 git clone -b release-emerald-platform2.0.1 https://github.com/NordicESMhub/ctsm.git
 cd ctsm
-./manage_exte<span class="notranslate">rna</span>ls/checkout_exte<span class="notranslate">rna</span>ls
+./manage_externals/checkout_externals
 </code></pre></div>  </div>
   <p>This approach may be interesting if you wish to run another release or development version of CLM-FATES.
 All the tutorial shown can be done with your local version. In that case, you would need to use the
@@ -1361,17 +1352,17 @@ find . -name create_newcase
 </code></pre></div>  </div>
   <p>Finally, if you wish to make changes to the source code, we recommend first to add your changes in different folder and use the option <code class="language-plaintext highlighter-rouge">--user-mods-dir</code> when
 creating your case. In addition, you should make sure to use version control to save your changes.
-If you are not familiar with <code class="language-plaintext highlighter-rouge">git</code>, you could also save your changes in the corresponding <span class="notranslate">Galaxy</span> history.</p>
+If you are not familiar with <code class="language-plaintext highlighter-rouge">git</code>, you could also save your changes in the corresponding Galaxy history.</p>
 </blockquote>
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p class="no_toc">We have learnt to run single-point simulations with FATES-CLM through the <span class="notranslate">Galaxy</span> Climate JupyterLab.</p>
+<p>We have learnt to run single-point simulations with FATES-CLM through the Galaxy Climate JupyterLab.</p>
 
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
                         <li><p>Galaxy Climate JupyterLab</p>
@@ -1440,7 +1431,8 @@ If you are not familiar with <code class="language-plaintext highlighter-rouge">
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Anne Fouilloux, 2022 <b>Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html">https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Anne Fouilloux,  <b>Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html">https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1448,36 +1440,46 @@ If you are not familiar with <code class="language-plaintext highlighter-rouge">
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
+
 <code id="citation-code">@misc{climate-fates-jupyterlab,
 author = "Anne Fouilloux",
 title = "Functionally Assembled Terrestrial Ecosystem Simulator (FATES) with Galaxy Climate JupyterLab (Galaxy Training Materials)",
-year = "2022",
-month = "07",
-day = "14"
+year = "",
+month = "",
+day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
-                </pre></div></div>
-                </p>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -1490,7 +1492,7 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
 
@@ -1506,39 +1508,37 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

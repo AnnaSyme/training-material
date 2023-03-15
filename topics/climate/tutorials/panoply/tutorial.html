@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/panoply/tutorial.html" />
@@ -24,10 +23,9 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Visualize Climate data with Panoply netCDF viewer" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:42 +0000" />
+<meta name="DC.date" content="2023-01-24 14:21:57 +0000" />
 <meta name="DC.creator" content="Anne Fouilloux" />
 
-        
         
         
         
@@ -36,16 +34,183 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Visualize Climate data with Panoply netCDF viewer" />
         <meta property="og:description" content="Learn to analyze climate data through Galaxy." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
+        <script type="application/ld+json">
+            
+
+
+{
+  "@context": "http://schema.org",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "Students"
+  },
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "Community-Driven Data Analysis Training for Biology",
+    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "dateModified": "2023-01-24 14:21:57 +0000",
+  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
+  "headline": "Visualize Climate data with Panoply netCDF viewer",
+  "interactivityType": "mixed",
+  "isAccessibleForFree": true,
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "producer": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "provider": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "sourceOrganization": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Climate",
+    "description": "Learn to analyze climate data through Galaxy.",
+    "url": "https://training.galaxyproject.org/training-material/topics/climate/"
+  },
+  "learningResourceType": "hands-on tutorial",
+  "name": "Hands-on for 'Visualize Climate data with Panoply netCDF viewer' tutorial",
+  "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/panoply/tutorial.html",
+  "timeRequired": "PT1H",
+  "keywords": "climate, interactive-tools",
+  "description": "The questions this  addresses are:\n - How to start Panoply interactive environment in Galaxy?\n - How to inspect netCDF data?\n - How to make a plot with Panoply?\n - Where to save your plots in Panoply?\n - How to customize plots in Panoply?\n - How to generate animation in Panoply?\n\n\nThe objectives are:\n - Learn to use Panoply in Galaxy to visuallize netCDF geo-referenced data\n - Learn how Panoply plots are exported to Galaxy\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
+  "competencyRequired": [
+    {
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
+      "name": "Introduction to Galaxy Analyses",
+      "description": "Introduction to Galaxy Analyses",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    }
+  ],
+  "author": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-1784-2920",
+      "orcid": "https://orcid.org/0000-0002-1784-2920"
+    }
+  ],
+  "contributor": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-1784-2920",
+      "orcid": "https://orcid.org/0000-0002-1784-2920"
+    }
+  ],
+  "about": [
+    {
+      "@type": "CreativeWork",
+      "name": "Climate",
+      "description": "Learn to analyze climate data through Galaxy.",
+      "url": "https://training.galaxyproject.org/training-material/topics/climate/"
+    }
+  ]
+}
+        </script>
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,9 +277,11 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
+        
         <a class="dropdown-item" href="/training-material/topics/climate/faqs/" title="Check our FAQs for the Climate topic">
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
         </a>
+        
         
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
@@ -145,10 +312,14 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
-            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-            </a>
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
         
 
         <div class="dropdown-item">
@@ -157,27 +328,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -187,7 +345,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/climate/tutorials/panoply/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
@@ -223,6 +380,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         
 
@@ -246,165 +404,9 @@
   room: 'Galaxy-Training-Network/Lobby'
   };
 </script>
+
+
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
-
-
-{
-  "@context": "http://schema.org",
-  "@type": "LearningResource",
-  "http://purl.org/dc/terms/conformsTo": {
-    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
-    "@type": "CreativeWork"
-  },
-  "audience": {
-    "@type": "EducationalAudience",
-    "educationalRole": "Students"
-  },
-  "citation": {
-    "@type": "CreativeWork",
-    "name": "Community-Driven Data Analysis Training for Biology",
-    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
-  },
-  "copyrightHolder": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "dateModified": "1970-01-01 00:33:42 +0000",
-  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
-  "headline": "Visualize Climate data with Panoply netCDF viewer",
-  "interactivityType": "mixed",
-  "isAccessibleForFree": true,
-  "isFamilyFriendly": true,
-  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
-  "producer": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "provider": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "sourceOrganization": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "identifier": "https://github.com/galaxyproject/training-material",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
-  "isPartOf": {
-    "@type": "CreativeWork",
-    "name": "Climate",
-    "description": "Learn to analyze climate data through Galaxy.",
-    "url": "https://training.galaxyproject.org/training-material/topics/climate/"
-  },
-  "learningResourceType": "hands-on tutorial",
-  "name": "Hands-on for 'Visualize Climate data with Panoply netCDF viewer' tutorial",
-  "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/panoply/tutorial.html",
-  "timeRequired": "PT1H",
-  "keywords": "climate, interactive-tools",
-  "description": "The questions this  addresses are:\n - How to start Panoply interactive environment in Galaxy?\n - How to inspect netCDF data?\n - How to make a plot with Panoply?\n - Where to save your plots in Panoply?\n - How to customize plots in Panoply?\n - How to generate animation in Panoply?\n\n\\nThe objectives are:\n - Learn to use Panoply in Galaxy to visuallize netCDF geo-referenced data\n - Learn how Panoply plots are exported to Galaxy\n\n",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
-  "competencyRequired": [
-    {
-      "@context": "http://schema.org",
-      "@type": "LearningResource",
-      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
-      "name": "Introduction to Galaxy Analyses",
-      "description": "Introduction to Galaxy Analyses",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    }
-  ],
-  "author": [
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
-      "name": "Anne Fouilloux",
-      "image": "https://avatars.githubusercontent.com/annefou",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ]
-    }
-  ],
-  "contributor": [
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
-      "name": "Anne Fouilloux",
-      "image": "https://avatars.githubusercontent.com/annefou",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ]
-    }
-  ],
-  "about": [
-    {
-      "@type": "CreativeWork",
-      "name": "Climate",
-      "description": "Learn to analyze climate data through Galaxy.",
-      "url": "https://training.galaxyproject.org/training-material/topics/climate/"
-    }
-  ]
-}
-</script>
 
 <section class="tutorial topic-climate">
     <h1 data-toc-skip>Visualize Climate data with Panoply netCDF viewer</h1>
@@ -413,18 +415,14 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
 	</div>
 
 </div>
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -492,17 +490,13 @@
         <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/climate/slides/introduction.html" title="Topic Overview slides">
-                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
-                </a></li>
-            
 
             
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.3695482">
-    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.3695482">
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
 </li>
@@ -569,7 +563,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jul 14, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jan 24, 2023 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -587,16 +581,16 @@
             <div class="col-sm-10">
                  
 
-                <h1 class="no_toc" id="introduction">Introduction</h1>
+                <h1 id="introduction">Introduction</h1>
 
 <blockquote class="comment">
-  <h3 id="comment-comment"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
+  <div class="box-title comment-title" id="comment" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
   <p>This tutorial is significantly based on <a href="https://www.giss.nasa.gov/tools/panoply/help/">the Panoply documentation</a> <a href="https://disc.gsfc.nasa.gov/information/howto?title=Quick%20View%20Data%20with%20Panoply">“Quick View Data with Panoply”</a> section.</p>
 
 </blockquote>
 
-<p>The practical aims at familiarzing you with the <a href="https://www.giss.nasa.gov/tools/panoply/">Panoply</a> <span class="notranslate">Galaxy</span> interactive environment. Panoply is among the most popular tool to visualize geo-referenced data stored in <a href="https://en.wikipedia.org/wiki/NetCDF">Network Common Data Form</a> (netCDF). It provides a graphical interface for inspecting (show metadata) and visualizing netCDF data. It supports many features to customize your plots and we will introduce some of them in this lesson.</p>
+<p>The practical aims at familiarzing you with the <a href="https://www.giss.nasa.gov/tools/panoply/">Panoply</a> Galaxy interactive environment. Panoply is among the most popular tool to visualize geo-referenced data stored in <a href="https://en.wikipedia.org/wiki/NetCDF">Network Common Data Form</a> (netCDF). It provides a graphical interface for inspecting (show metadata) and visualizing netCDF data. It supports many features to customize your plots and we will introduce some of them in this lesson.</p>
 
 <p>In this tutorial, you will learn to:</p>
 <ul>
@@ -607,13 +601,16 @@
 </ul>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will cover:</p>
 
 <ol id="markdown-toc">
-  <li><a href="#netcdf-format" id="markdown-toc-netcdf-format">NetCDF format</a></li>
-  <li><a href="#get-data" id="markdown-toc-get-data">Get data</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ol>
+      <li><a href="#netcdf-format" id="markdown-toc-netcdf-format">NetCDF format</a></li>
+      <li><a href="#get-data" id="markdown-toc-get-data">Get data</a></li>
+    </ol>
+  </li>
   <li><a href="#panoply" id="markdown-toc-panoply">Panoply</a>    <ol>
       <li><a href="#opening-up-panoply" id="markdown-toc-opening-up-panoply">Opening up Panoply</a></li>
       <li><a href="#inspect-metadata" id="markdown-toc-inspect-metadata">Inspect metadata</a></li>
@@ -624,12 +621,13 @@
       <li><a href="#quit-panoply" id="markdown-toc-quit-panoply">Quit Panoply</a></li>
     </ol>
   </li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
 </ol>
 
 </blockquote>
 
 <blockquote class="comment">
-  <h3 id="comment-background"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Background</h3>
+  <div class="box-title comment-title" id="comment-background" aria-label="comment box: Background"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Background</div>
 
   <p>There are many online services to get climate data, and it is often difficult to know which ones are up-to date and which resources to trust.
 Different services provide different Application Programming Interfaces (API), use different terminologies, different file formats etc., which make it difficult for new users to master them all.
@@ -648,14 +646,14 @@ We will be using a freely available dataset containing Essential Climate Variabl
 <h2 id="get-data">Get data</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
+  <div class="box-title hands-on-title" id="hands-on-data-upload" aria-label="hands-on box: Data upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Data upload</div>
 
   <ol>
     <li>
       <p>Create a new history for this tutorial. If you are not inspired, you can name it <em>Panoply</em> for example…</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-creating-a-new-history"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>   <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>   <ol>   <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>   <li>Select the option <strong>Create New</strong> from the menu</li> </ol> </blockquote>
     </li>
     <li>
       <p>Import the file from <a href="https://doi.org/10.5281/zenodo.3697454">Zenodo</a> or from the shared data library</p>
@@ -665,18 +663,18 @@ https://zenodo.org/record/3697454/files/ecv_2018.nc
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-contents" aria-expanded="true" aria-label="Toggle tip box: Importing via links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ul>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>   <li>Click on <strong>Import</strong></li> </ul> </blockquote>
     </li>
     <li>
       <p>Check that the datatype is <strong>netcdf</strong></p>
 
-      <p>Files you uploaded are in netcdf format. In <span class="notranslate">Galaxy</span>, Datatypes are, by default, automatically guessed. Here, as necdf is a derivative of the h5 format, <span class="notranslate">Galaxy</span> automatically affect the h5 datatype to netcdf files. To cope with that, one can change the datatype manually, once datasets uploaded (as shown below) OR you can directly specify datatype on the upload tool form so <span class="notranslate">Galaxy</span> will not try to automatically guess it.</p>
+      <p>Files you uploaded are in netcdf format. In Galaxy, Datatypes are, by default, automatically guessed. Here, as netcdf is a derivative of the h5 format, Galaxy automatically affect the h5 datatype to netcdf files. To cope with that, one can change the datatype manually, once datasets uploaded (as shown below) OR you can directly specify datatype on the upload tool form so Galaxy will not try to automatically guess it.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code>    <ul>      <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>    </ul>  </li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-changing-the-datatype"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-changing-the-datatype-contents" aria-expanded="true" aria-label="Toggle tip box: Changing the datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden">galaxy-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>   <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code>     <ul>       <li>tip: you can start typing the datatype into the field to filter the dropdown menu</li>     </ul>   </li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
     <li>
       <p>Rename Datasets</p>
@@ -684,13 +682,13 @@ https://zenodo.org/record/3697454/files/ecv_2018.nc
       <p>As “https://zenodo.org/record/3697454/files/ecv_1979.nc” is not a beautiful name and can give errors for some tools, it is a good practice to change the dataset name by something more meaningfull. For example by removing <code class="language-plaintext highlighter-rouge">https://zenodo.org/record/3697454/files/</code> to obtain <code class="language-plaintext highlighter-rouge">ecv_1979.nc</code> and <code class="language-plaintext highlighter-rouge">ecv_2018.nc</code>, respectively.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-renaming-a-dataset"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-renaming-a-dataset-contents" aria-expanded="true" aria-label="Toggle tip box: Renaming a dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>   <li>In the central panel, change the <strong>Name</strong> field</li>   <li>Click the <strong>Save</strong> button</li> </ul> </blockquote>
     </li>
     <li>
       <p>Add a tag to the dataset corresponding to <code class="language-plaintext highlighter-rouge">copernicus</code></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-adding-a-tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag</h3>  <ul>  <li>Click on the dataset</li>  <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>  <li>    <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>    <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>  </li>  <li>Check that the tag is appearing below the dataset name</li></ul></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-adding-a-tag"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-adding-a-tag-contents" aria-expanded="true" aria-label="Toggle tip box: Adding a tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on the dataset</li>   <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden">galaxy-tags</span> <strong>Add Tags</strong></li>   <li>     <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>     <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>   </li>   <li>Check that the tag is appearing below the dataset name</li> </ul> </blockquote>
     </li>
   </ol>
 
@@ -701,18 +699,18 @@ https://zenodo.org/record/3697454/files/ecv_2018.nc
 <h2 id="opening-up-panoply">Opening up Panoply</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-launch-panoply"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Launch Panoply</h3>
+  <div class="box-title hands-on-title" id="hands-on-launch-panoply" aria-label="hands-on box: Launch Panoply"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Launch Panoply</div>
 
-  <p>Panoply is available as a <span class="notranslate">Galaxy</span> interactive environment and may not be available on all <span class="notranslate">Galaxy</span> servers.</p>
+  <p>Panoply is available as a Galaxy interactive environment and may not be available on all Galaxy servers.</p>
 
   <blockquote class="tip">
-    <h3 id="tip-tip-launch-panoply-in-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Launch Panoply in <span class="notranslate">Galaxy</span></h3>
-    <p>Currently Panoply in <span class="notranslate">Galaxy</span> is available on use<span class="notranslate">Galaxy</span>.eu instance, on the “Interactive tools” tool panel section or, as all interactive tools, from the dedicated us<span class="notranslate">Galaxy</span>.eu subdomain: <a href="https://live.usegalaxy.eu">Live.use<span class="notranslate">Galaxy</span>.eu</a></p>
+    <div class="box-title tip-title" id="tip-launch-panoply-in-galaxy"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-launch-panoply-in-galaxy-contents" aria-expanded="true" aria-label="Toggle tip box: Launch Panoply in Galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Launch Panoply in Galaxy<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+    <p>Currently Panoply in Galaxy is available on useGalaxy.eu instance, on the “Interactive tools” tool panel section or, as all interactive tools, from the dedicated usGalaxy.eu subdomain: <a href="https://live.usegalaxy.eu">Live.useGalaxy.eu</a></p>
 
     <ol>
-      <li>Open the <span class="tool" data-tool="interactive_tool_panoply" title="Tested with interactive_tool_panoply"><strong>Panoply</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_panoply</span></span>  by clicking <a href="https://live.usegalaxy.eu/?tool_id=interactive_tool_panoply">here</a></li>
+      <li>Open the <span class="tool" data-tool="interactive_tool_panoply" title="Tested with interactive_tool_panoply"><strong>Panoply</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_panoply</span></span>  <a href="https://live.usegalaxy.eu/?tool_id=interactive_tool_panoply">on UseGalaxy.eu</a></li>
       <li>Check <strong>ecv_1979.nc</strong> dataset selected in the netcdf input field</li>
-      <li>Click Execute</li>
+      <li>Click Run Tool</li>
       <li>The tool will start running and will stay running permanently</li>
       <li>Click on the “User” menu at the top and go to “Active Interactive Tools” and locate the Panoply instance you started.</li>
       <li>Click on your Panoply instance
@@ -726,7 +724,7 @@ https://zenodo.org/record/3697454/files/ecv_2018.nc
 <h2 id="inspect-metadata">Inspect metadata</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-inspect-dataset"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Inspect dataset</h3>
+  <div class="box-title hands-on-title" id="hands-on-inspect-dataset" aria-label="hands-on box: Inspect dataset"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Inspect dataset</div>
 
   <ol>
     <li>
@@ -735,12 +733,12 @@ https://zenodo.org/record/3697454/files/ecv_2018.nc
       <p>Here you can look at the dataset (ecv_1979.nc) and related variables (<code class="language-plaintext highlighter-rouge">latitude</code>, <code class="language-plaintext highlighter-rouge">longitude</code>, <code class="language-plaintext highlighter-rouge">number</code>, <code class="language-plaintext highlighter-rouge">siconc</code>, etc)</p>
 
       <blockquote class="question">
-        <h3 id="question-question"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+        <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <p>what is the unit of the <code class="language-plaintext highlighter-rouge">sea ice area fraction</code> variable (<strong>siconc</strong>) variable?</p>
 
         <blockquote class="solution">
-          <h3 id="solution-solution"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+          <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <p>The unit of <strong>siconc</strong> is (0-1) e.g. a real value between 0 (no ice) and 1 (fully coverted by ice).</p>
         </blockquote>
@@ -750,12 +748,12 @@ https://zenodo.org/record/3697454/files/ecv_2018.nc
       <p>Inspect the surface temperature (<strong>t2m</strong>) variable</p>
 
       <blockquote class="question">
-        <h3 id="question-question-1"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+        <div class="box-title question-title" id="question-1" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <p>what is the unit of this variable and its shape?</p>
 
         <blockquote class="solution">
-          <h3 id="solution-solution-1"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+          <div class="box-title solution-title" id="solution-1"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <p>The unit of <strong>t2m</strong> is Kelvin (K). <strong>t2m</strong> is a 3D array (time, latitude, longitude).</p>
         </blockquote>
@@ -768,14 +766,14 @@ https://zenodo.org/record/3697454/files/ecv_2018.nc
 <h2 id="create-geo-referenced-longitude-latitude-plot">Create Geo-referenced Longitude-Latitude plot</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-geographical-map"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: geographical map</h3>
+  <div class="box-title hands-on-title" id="hands-on-geographical-map" aria-label="hands-on box: geographical map"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: geographical map</div>
 
   <ol>
     <li>Double click on the variable <strong>t2m</strong> and click on <strong>Create</strong>
       <figure id="figure-2"><img src="../../images/panoply_t2m_map_default.png" alt="Panoply create Latitude longitude map. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Create map</figcaption></figure>
 
       <blockquote class="question">
-        <h3 id="question-question-2"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+        <div class="box-title question-title" id="question-2" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>What does it show?</li>
@@ -784,7 +782,7 @@ https://zenodo.org/record/3697454/files/ecv_2018.nc
         </ol>
 
         <blockquote class="solution">
-          <h3 id="solution-solution-2"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+          <div class="box-title solution-title" id="solution-2"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>The plot represent the surface temperature over the entire world.
@@ -813,7 +811,7 @@ You need to make sure to save all your plot in the <em>outputs</em> folder other
     <li>Change colormap
 <strong>Always make sure you use color blind friendly palettes.</strong>
       <ul>
-        <li>To change the default colormap, click on tab “<strong>Scale</strong>” (bottom of your plot wind) and select another “<strong>Color Table</strong>” (you can scroll down to go through all the different available colormap).</li>
+        <li>To change the default colormap, click on tab “<strong>Scale</strong>” (bottom of your plot window) and select another “<strong>Color Table</strong>” (you can scroll down to go through all the different available colormap).</li>
         <li>Save your plot using <strong>Save Image As</strong> and make sure to choose another name to avoid overwritting your preceding plot.</li>
       </ul>
       <figure id="figure-4"><img src="../../images/panoply_colormap.png" alt="Panoply colormap. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Plot colormap</figcaption></figure>
@@ -824,7 +822,7 @@ You need to make sure to save all your plot in the <em>outputs</em> folder other
 <h2 id="changing-map-projection">Changing map projection</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-change-projection"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Change projection</h3>
+  <div class="box-title hands-on-title" id="hands-on-change-projection" aria-label="hands-on box: Change projection"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Change projection</div>
 
   <ol>
     <li>
@@ -836,7 +834,7 @@ You need to make sure to save all your plot in the <em>outputs</em> folder other
       <p>Create another plot window for sea ice area fraction (<strong>siconc</strong>) and make a new geo-referenced map</p>
 
       <blockquote class="question">
-        <h3 id="question-question-3"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+        <div class="box-title question-title" id="question-3" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <ol>
           <li>What kind of colormap could you use to highlight the extent of sea-ice?</li>
@@ -844,7 +842,7 @@ You need to make sure to save all your plot in the <em>outputs</em> folder other
         </ol>
 
         <blockquote class="solution">
-          <h3 id="solution-solution-3"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+          <div class="box-title solution-title" id="solution-3"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <ol>
             <li>Any colormap that shows low values (close to 0) in light color so we can focus on values that are close to 1. For instance, <strong>CP_PuBu_08.cpt</strong>.
@@ -863,19 +861,19 @@ You need to make sure to save all your plot in the <em>outputs</em> folder other
 <h2 id="export-animation">Export Animation</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-export-animation"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Export animation</h3>
+  <div class="box-title hands-on-title" id="hands-on-export-animation" aria-label="hands-on box: Export animation"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Export animation</div>
 
   <ol>
     <li>From your previous plot window, click on <strong>File</strong> and select <strong>Export Animation</strong>. Save your plot using either <strong>MOV</strong> or <strong>AVI</strong> format.
  It goes through each plot e.g. for each month and create an animation where you can see the evolution of sea-ice extent from January 1979 to December 1979.
-You will be able to download the resulting movie from <span class="notranslate">Galaxy</span> once you quit Panoply.</li>
+You will be able to download the resulting movie from Galaxy once you quit Panoply.</li>
   </ol>
 </blockquote>
 
 <h2 id="create-timeseries">Create timeseries</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-create-1d-plot"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Create 1D plot</h3>
+  <div class="box-title hands-on-title" id="hands-on-create-1d-plot" aria-label="hands-on box: Create 1D plot"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Create 1D plot</div>
 
   <ol>
     <li>Double click on the variable <strong>t2m</strong>, click on <strong>Create</strong> and select <strong>Create horizontal line plot along time axis</strong> (make sure to switch to <strong>time</strong>).</li>
@@ -883,7 +881,7 @@ You will be able to download the resulting movie from <span class="notranslate">
   <figure id="figure-8"><img src="../../images/panoply_create_1D.png" alt="Panoply create 1D plot. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Create 1D plot</figcaption></figure>
 
   <blockquote class="question">
-    <h3 id="question-question-4"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+    <div class="box-title question-title" id="question-4" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>What was the maximum temperature in Oslo (latitude: 60 degrees North, longitude: 10.75 East) in 1979?</li>
@@ -891,7 +889,7 @@ You will be able to download the resulting movie from <span class="notranslate">
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-4"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div class="box-title solution-title" id="solution-4"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-4-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
       <ol>
         <li>The maximum temperature is about 288 K so about 15 degrees Celsius (<code class="language-plaintext highlighter-rouge">288 - 273.15</code>).</li>
@@ -905,18 +903,18 @@ You will be able to download the resulting movie from <span class="notranslate">
 <h2 id="quit-panoply">Quit Panoply</h2>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-quit-panoply-to-keep-your-plots"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Quit Panoply to keep your plots</h3>
+  <div class="box-title hands-on-title" id="hands-on-quit-panoply-to-keep-your-plots" aria-label="hands-on box: Quit Panoply to keep your plots"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Quit Panoply to keep your plots</div>
 
   <ol>
-    <li>To make sure all your plots stored in <strong>outputs</strong> folder get exported to <span class="notranslate">Galaxy</span>, you need to quit panoply:
+    <li>To make sure all your plots stored in <strong>outputs</strong> folder get exported to Galaxy, you need to quit panoply:
  <strong>File</strong> –&gt; <strong>Quit Panoply</strong>.</li>
-    <li>Go back to your current <span class="notranslate">Galaxy</span> history and you should find <strong>Panoply outputs</strong></li>
+    <li>Go back to your current Galaxy history and you should find <strong>Panoply outputs</strong></li>
   </ol>
-  <figure id="figure-10"><img src="../../images/panoply_outputs.png" alt="Panoply outputs. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 10:</span> Panoply outputs in <span class="notranslate">Galaxy</span></figcaption></figure>
+  <figure id="figure-10"><img src="../../images/panoply_outputs.png" alt="Panoply outputs. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 10:</span> Panoply outputs in Galaxy</figcaption></figure>
 
 </blockquote>
 
-<h1 class="no_toc" id="conclusion">Conclusion</h1>
+<h1 id="conclusion">Conclusion</h1>
 
 <p>We have now learnt how to analyze climate data using Panoply. We only use one of the two datasets so we strongly encourage you to do the same exercises with the second dataset <strong>ecv_2018.nc</strong>. Please note that when comparing surface temperature or sea-ice area fraction from 1979 and 2018, you would not be able to conclude anything regarding climate change. For any climate studies, long term timeseries (between 20 to 30 years) are necessary to establish climate trends.</p>
 
@@ -924,10 +922,10 @@ You will be able to download the resulting movie from <span class="notranslate">
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
-                        <li><p>Inspect and view netCDF data with netCDF</p>
+                        <li><p>Inspect and view netCDF data with Panoply</p>
 </li>
                         
                         <li><p>Interact with Galaxy to save your plots</p>
@@ -987,7 +985,8 @@ You will be able to download the resulting movie from <span class="notranslate">
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Anne Fouilloux, 2022 <b>Visualize Climate data with Panoply netCDF viewer (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/panoply/tutorial.html">https://training.galaxyproject.org/training-material/topics/climate/tutorials/panoply/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Anne Fouilloux,  <b>Visualize Climate data with Panoply netCDF viewer (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/panoply/tutorial.html">https://training.galaxyproject.org/training-material/topics/climate/tutorials/panoply/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -995,36 +994,46 @@ You will be able to download the resulting movie from <span class="notranslate">
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
+
 <code id="citation-code">@misc{climate-panoply,
 author = "Anne Fouilloux",
 title = "Visualize Climate data with Panoply netCDF viewer (Galaxy Training Materials)",
-year = "2022",
-month = "07",
-day = "14"
+year = "",
+month = "",
+day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/climate/tutorials/panoply/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
-                </pre></div></div>
-                </p>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -1037,7 +1046,7 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
 
@@ -1053,39 +1062,37 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

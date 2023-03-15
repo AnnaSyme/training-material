@@ -1,9 +1,8 @@
 {
   "layout": "tutorial_slides",
-  "logo": "GTN",
-  "class": "enlarge120",
   "title": "Unicycler Assembly",
   "zenodo_link": "https://doi.org/10.5281/zenodo.940733",
+  "level": "Introductory",
   "tags": [
     "prokaryote"
   ],
@@ -16,6 +15,15 @@
     "Evaluate the Quality of the Assembly with Quast",
     "Annotate the assembly with Prokka"
   ],
+  "follow_up_training": [
+    {
+      "type": "internal",
+      "topic_name": "assembly",
+      "tutorials": [
+        "ecoli_comparison"
+      ]
+    }
+  ],
   "time_estimation": "4h",
   "key_points": [
     "We learned about the strategies used by assemblers for hybrid assemblies",
@@ -24,31 +32,58 @@
     "Combination of short and long reads helped us produce an almost perfect assembly"
   ],
   "contributors": [
-    {
-      "name": "Anton Nekrutenko",
-      "email": "anton@nekrut.org",
-      "joined": "2017-09",
-      "id": "nekrut",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/nekrut.json"
-    },
-    {
-      "name": "Delphine Lariviere",
-      "email": "delphine.lariviere@galaxy.org",
-      "joined": "2017-09",
-      "id": "delphine-l",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/delphine-l.json"
-    },
-    {
-      "name": "Simon Gladman",
-      "email": "simon.gladman@unimelb.edu.au",
-      "joined": "2017-09",
-      "elixir_node": "au",
-      "id": "slugger70",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
-    }
+    "nekrut",
+    "delphine-l",
+    "slugger70"
   ],
-  "last_modified_at": "2021-07-09T11:43:26+00:00",
   "url": "/topics/assembly/tutorials/unicycler-assembly/slides.html",
   "topic_name": "assembly",
-  "tutorial_name": "unicycler-assembly"
+  "tutorial_name": "unicycler-assembly",
+  "dir": "topics/assembly/tutorials/unicycler-assembly",
+  "id": "assembly/unicycler-assembly",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": true,
+  "workflows": [
+    {
+      "workflow": "unicycler.ga",
+      "tests": true,
+      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/workflows/unicycler.ga",
+      "path": "topics/assembly/tutorials/unicycler-assembly/workflows/unicycler.ga",
+      "wfid": "assembly-unicycler-assembly",
+      "wfname": "unicycler",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-unicycler-assembly/versions/unicycler",
+      "license": null,
+      "creators": [
+
+      ]
+    }
+  ],
+  "tools": [
+    "toolshed.g2.bx.psu.edu/repos/crs4/prokka/prokka/1.14.5",
+    "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+    "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7",
+    "toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.0.2+galaxy0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/unicycler/unicycler/0.4.8.0"
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial",
+  "logo": "GTN",
+  "class": "enlarge120"
 }

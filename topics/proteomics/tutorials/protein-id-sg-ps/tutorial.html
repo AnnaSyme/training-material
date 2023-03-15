@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" />
@@ -24,11 +23,10 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Peptide and Protein ID using SearchGUI and PeptideShaker" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:41 +0000" />
+<meta name="DC.date" content="2023-02-03 09:27:07 +0000" />
 <meta name="DC.creator" content="Florian Christoph Sigloch" />
 <meta name="DC.creator" content="Björn Grüning" />
 
-        
         
         
         
@@ -37,220 +35,12 @@
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Peptide and Protein ID using SearchGUI and PeptideShaker" />
         <meta property="og:description" content="Training material for proteomics workflows in Galaxy" />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/proteomics" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Proteomics
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
-            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
         
-        <a class="dropdown-item" href="/training-material/topics/proteomics/faqs/" title="Check our FAQs for the Proteomics topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        
-            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-            </a>
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
+        <script type="application/ld+json">
             
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-09-01/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" title="Version 2020-09-01">2020-09-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-08-01/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" title="Version 2020-08-01">2020-08-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -275,7 +65,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "2023-02-03 09:27:07 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Peptide and Protein ID using SearchGUI and PeptideShaker",
   "interactivityType": "mixed",
@@ -328,8 +118,8 @@
   "name": "Hands-on for 'Peptide and Protein ID using SearchGUI and PeptideShaker' tutorial",
   "url": "https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html",
   "timeRequired": "PT45M",
-  "keywords": "proteomics, DDA",
-  "description": "The questions this  addresses are:\n - How to convert LC-MS/MS raw files?\n - How to identify peptides?\n - How to identify proteins?\n - How to evaluate the results?\n\n\\nThe objectives are:\n - Protein identification from LC-MS/MS raw files.\n\n",
+  "keywords": "proteomics, DDA, HeLa",
+  "description": "The questions this  addresses are:\n - How to convert LC-MS/MS raw files?\n - How to identify peptides?\n - How to identify proteins?\n - How to evaluate the results?\n\n\nThe objectives are:\n - Protein identification from LC-MS/MS raw files.\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
@@ -459,7 +249,215 @@
   ],
   "educationalLevel": "Beginner"
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/proteomics" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Proteomics
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/proteomics/faqs/" title="Check our FAQs for the Proteomics topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-09-01/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" title="Version 2020-09-01">2020-09-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-08-01/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html" title="Version 2020-08-01">2020-08-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-proteomics">
     <h1 data-toc-skip>Peptide and Protein ID using SearchGUI and PeptideShaker</h1>
@@ -468,22 +466,14 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/stortebecker/" class="contributor-badge contributor-stortebecker"><img src="https://avatars.githubusercontent.com/stortebecker?s=27" alt="Avatar">Florian Christoph Sigloch</a>
-
-
-
-<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/stortebecker/" class="contributor-badge contributor-stortebecker"><img src="https://avatars.githubusercontent.com/stortebecker?s=27" alt="Avatar">Florian Christoph Sigloch</a><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
 	</div>
 
 </div>
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -553,17 +543,13 @@
         <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/proteomics/slides/introduction.html" title="Topic Overview slides">
-                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
-                </a></li>
-            
 
             
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/546301">
-    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://zenodo.org/record/546301">
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
 </li>
@@ -573,20 +559,13 @@
                 <li class="btn btn-default supporting_material">
 
 
-    <a class="topic-icon" href="/training-material/topics/proteomics/tutorials/protein-id-sg-ps/workflows/" title="Workflows" alt="Peptide and Protein ID using SearchGUI and PeptideShaker workflows">
-        <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
+    <a class="btn btn-default topic-icon" href="/training-material/topics/proteomics/tutorials/protein-id-sg-ps/workflows/" title="Workflows" alt="Peptide and Protein ID using SearchGUI and PeptideShaker workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Workflows
     </a>
 
 </li>
             
 
-            
-                <li class="btn btn-default supporting_material">
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/proteomics/tutorials/protein-id-sg-ps/tours/" title="Galaxy interactive tour" >
-    <i class="fas fa-magic" aria-hidden="true"></i> Tours
-</a>
-
-</li>
             
 
             
@@ -804,7 +783,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 31, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Feb 3, 2023 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -822,7 +801,7 @@
             <div class="col-sm-10">
                  
 
-                <h1 class="no_toc" id="introduction">Introduction</h1>
+                <h1 id="introduction">Introduction</h1>
 
 <p>Identifying the proteins contained in a sample is an important step in any proteomic experiment. However, in most experimental set ups, proteins are digested to peptides before the LC-MS/MS analysis. In this so-called “bottom-up” procedure, only peptide masses are measured. Therefore, protein identification cannot be performed directly from raw data, but is a multi-step process:</p>
 
@@ -836,9 +815,9 @@
 <p>A plethora of software solutions exist for each step. In this tutorial, we will show how to
 use the <a href="http://proteowizard.sourceforge.net/">ProteoWizard</a> tool MSconvert and the <a href="https://openms.de">OpenMS</a> tool <a href="http://ftp.mi.fu-berlin.de/pub/OpenMS/release-documentation/html/TOPP_PeakPickerHiRes.html">PeakPickerHiRes</a> for step 1, and the <a href="https://compomics.com/">Compomics</a> tools <a href="https://compomics.github.io/projects/searchgui.html">SearchGUI</a> and <a href="https://compomics.github.io/projects/peptide-shaker.html">PeptideShaker</a>, for the steps 2-4.</p>
 
-<p>For an alte<span class="notranslate">rna</span>tive identification pipeline using only tools provided by the <a href="https://openms.de">OpenMS software suite</a>, please consult <a href="/training-material/topics/proteomics/tutorials/protein-id-oms/tutorial.html">this tutorial</a>.</p>
+<p>For an alternative identification pipeline using only tools provided by the <a href="https://openms.de">OpenMS software suite</a>, please consult <a href="/training-material/topics/proteomics/tutorials/protein-id-oms/tutorial.html">this tutorial</a>.</p>
 
-<h1 class="no_toc" id="input-data">Input data</h1>
+<h1 id="input-data">Input data</h1>
 
 <p>As an example dataset, we will use an LC-MS/MS analysis of HeLa cell lysate published
 in <a href="https://www.ncbi.nlm.nih.gov/pubmed/24678044">Vaudel et al., 2014, Proteomics</a>. Detailed information
@@ -847,38 +826,42 @@ For step 2, we will use a validated human Uniprot FASTA database without appende
 If you already completed the tutorial on <a href="/training-material/topics/proteomics/tutorials/database-handling/tutorial.html">Database Handling</a> you can use the constructed database priot to the <strong>DecoyDatabase</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> step. You can find a prepared database, as well as the input proteomics data in different file formats on <a href="https://zenodo.org/record/796184">Zenodo</a>.</p>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will deal with:</p>
 
 <ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#input-data" id="markdown-toc-input-data">Input data</a></li>
   <li><a href="#preparing-raw-data" id="markdown-toc-preparing-raw-data">Preparing Raw Data</a></li>
   <li><a href="#peptide-and-protein-identification" id="markdown-toc-peptide-and-protein-identification">Peptide and Protein Identification</a></li>
   <li><a href="#analysis-of-contaminants" id="markdown-toc-analysis-of-contaminants">Analysis of Contaminants</a></li>
   <li><a href="#evaluation-of-peptide-and-protein-ids" id="markdown-toc-evaluation-of-peptide-and-protein-ids">Evaluation of Peptide and Protein IDs</a></li>
+  <li><a href="#premade-workflow" id="markdown-toc-premade-workflow">Premade Workflow</a></li>
+  <li><a href="#further-reading" id="markdown-toc-further-reading">Further Reading</a></li>
 </ol>
 
 </blockquote>
 
 <h1 id="preparing-raw-data">Preparing Raw Data</h1>
 
-<p>Raw data conversion is the first step of any proteomic data analysis. The most common converter is msconvert from the <a href="http://proteowizard.sourceforge.net/">ProteoWizard software suite</a>, the format to convert to is mzML. SearchGUI needs <code class="language-plaintext highlighter-rouge">MGF</code> format as input, but as we need the <code class="language-plaintext highlighter-rouge">mzML</code> format for several other tasks, we will convert to <code class="language-plaintext highlighter-rouge">mzML</code> first. Due to licensing reasons, msconvert runs only on windows systems and will not work on most <span class="notranslate">Galaxy</span> servers.</p>
+<p>Raw data conversion is the first step of any proteomic data analysis. The most common converter is msconvert from the <a href="http://proteowizard.sourceforge.net/">ProteoWizard software suite</a>, the format to convert to is mzML. SearchGUI needs <code class="language-plaintext highlighter-rouge">MGF</code> format as input, but as we need the <code class="language-plaintext highlighter-rouge">mzML</code> format for several other tasks, we will convert to <code class="language-plaintext highlighter-rouge">mzML</code> first. Due to licensing reasons, msconvert runs only on windows systems and will not work on most Galaxy servers.</p>
 
 <p>Depending on your machine settings, raw data will be generated either in profile mode or centroid mode. For most peptide search engines, the tandem mass spectrometry (MS2) data have to be converted to centroid mode, a process called “peak picking” or “centroiding”.
 Machine vendors offer algorithms to extract peaks from profile raw data. This is implemented in <strong><em>msconvert</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> and can be run in parallel to the mzML conversion. However, the OpenMS tool <strong><em>PeakPickerHiRes</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> is reported to generate slightly better results (<a href="https://www.ncbi.nlm.nih.gov/pubmed/17094243">Lange et al., 2006, Pac Symp Biocomput</a>) and is therefore recommended for quantitative studies (<a href="https://www.ncbi.nlm.nih.gov/pubmed/19953549">Vaudel et al., 2010, Proteomics</a>).
 If your data were generated on a low resolution mass spectrometer, use <strong><em>PeakPickerWavelet</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> instead.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-file-conversion-and-peak-picking"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-On: File Conversion and Peak Picking</h3>
+  <div class="box-title hands-on-title" id="hands-on-file-conversion-and-peak-picking" aria-label="hands-on box: File Conversion and Peak Picking"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: File Conversion and Peak Picking</div>
 
-  <p>We provide the <a href="https://zenodo.org/record/796184">input data</a> in the original <code class="language-plaintext highlighter-rouge">raw</code> format and also already converted to <code class="language-plaintext highlighter-rouge">MGF</code> and <code class="language-plaintext highlighter-rouge">mzML</code> file formats. If <strong><em>msconvert</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> does not run on your <span class="notranslate">Galaxy</span> instance, please download the preconverted <code class="language-plaintext highlighter-rouge">mzML</code> as an input.</p>
+  <p>We provide the <a href="https://zenodo.org/record/796184">input data</a> in the original <code class="language-plaintext highlighter-rouge">raw</code> format and also already converted to <code class="language-plaintext highlighter-rouge">MGF</code> and <code class="language-plaintext highlighter-rouge">mzML</code> file formats. If <strong><em>msconvert</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> does not run on your Galaxy instance, please download the preconverted <code class="language-plaintext highlighter-rouge">mzML</code> as an input.</p>
 
   <ol>
     <li>
       <p>Create a new history for this Peptide and Protein ID exercise.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-creating-a-new-history"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-creating-a-new-history-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a new history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>   <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>   <ol>   <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">galaxy-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>   <li>Select the option <strong>Create New</strong> from the menu</li> </ol> </blockquote>
     </li>
     <li>Load the example dataset into your history from Zenodo: <a href="https://zenodo.org/record/892005/files/qExactive01819.raw">raw</a> <a href="https://zenodo.org/record/892005/files/qExactive01819_profile.mzml">mzML</a></li>
     <li>Rename the dataset to something meaningful.</li>
@@ -888,8 +871,8 @@ If your data were generated on a low resolution mass spectrometer, use <strong><
   </ol>
 
   <blockquote class="comment">
-    <h3 id="comment-comment-local-use-of-msconvert"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment: Local Use of MSConvert</h3>
-    <p>The vendor libraries used by msconvert are only licensed for Windows systems and are therefore rarely implemented in <span class="notranslate">Galaxy</span> instances. If <strong><em>msconvert</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> is not available in your <span class="notranslate">Galaxy</span> instance, please install the software on a Windows computer and run the conversion locally. You can find a detailed description of the necessary steps <a href="https://compomics.com/bioinformatics-for-proteomics/identification/">here</a> (“Peak List Generation”). Afterwards, upload the resulting mzML file to your <span class="notranslate">Galaxy</span> history.</p>
+    <div class="box-title comment-title" id="comment-local-use-of-msconvert" aria-label="comment box: Local Use of MSConvert"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Local Use of MSConvert</div>
+    <p>The vendor libraries used by msconvert are only licensed for Windows systems and are therefore rarely implemented in Galaxy instances. If <strong><em>msconvert</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> is not available in your Galaxy instance, please install the software on a Windows computer and run the conversion locally. You can find <a href="https://compomics.com/bioinformatics-for-proteomics/identification/">a detailed description of the necessary steps</a> (“Peak List Generation”). Afterwards, upload the resulting mzML file to your Galaxy history.</p>
   </blockquote>
 </blockquote>
 
@@ -901,16 +884,16 @@ If your data were generated on a low resolution mass spectrometer, use <strong><
 <p>In bottom-up proteomics, it is necessary to combine the identified peptides to proteins. This is not a trivial task, as proteins are redundant in most eukaryotic organisms. Thus, not every peptide can be assigned to only one protein. Luckily, the <strong><em>Peptide Shaker</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> already takes care of protein inference and even gives us some information on validity of the protein identifications. We will discuss validation in a <a href="#evaluation-of-peptide-and-protein-ids">later step</a> of this tutorial.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-peptide-and-protein-identification"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-On: Peptide and Protein Identification</h3>
+  <div class="box-title hands-on-title" id="hands-on-peptide-and-protein-identification" aria-label="hands-on box: Peptide and Protein Identification"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Peptide and Protein Identification</div>
 
   <ol>
-    <li>Copy the prepared protein database from the tutorial <a href="../database-handling/tutorial.html">Database Handling</a> into your current history by using the multiple history view or upload the ready-made database from this <a href="https://zenodo.org/record/892005/files/Human_database_%28cRAP_and_Mycoplasma_added%29.fasta">link</a>.</li>
+    <li>Copy the prepared protein database from the tutorial <a href="../database-handling/tutorial.html">Database Handling</a> into your current history by using the multiple history view or upload the <a href="https://zenodo.org/record/892005/files/Human_database_%28cRAP_and_Mycoplasma_added%29.fasta">ready-made database from Zenodo</a>.</li>
     <li>Open <strong><em>Search GUI</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to search the mgf file against the protein database. In the <strong><code class="language-plaintext highlighter-rouge">Search Engine Options</code></strong> select <code class="language-plaintext highlighter-rouge">X!Tandem</code> and <code class="language-plaintext highlighter-rouge">MS-GF+</code>. In the <strong><code class="language-plaintext highlighter-rouge">Protein Modification Options</code></strong> add the <strong><code class="language-plaintext highlighter-rouge">Fixed Modifications</code></strong>: <code class="language-plaintext highlighter-rouge">Carbamidomethylation of C</code> and the <strong><code class="language-plaintext highlighter-rouge">Variable Modifications</code></strong>: <code class="language-plaintext highlighter-rouge">Oxidation of M</code>.</li>
     <li>Run <strong><em>Peptide Shaker</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on the Search GUI output. Enable the following outputs: <code class="language-plaintext highlighter-rouge">Zip File for import to Desktop App</code>, <code class="language-plaintext highlighter-rouge">mzidentML File</code>, <code class="language-plaintext highlighter-rouge">PSM Report</code>, <code class="language-plaintext highlighter-rouge">Peptide Report</code>, <code class="language-plaintext highlighter-rouge">Protein Report</code>.</li>
   </ol>
 
   <blockquote class="comment">
-    <h3 id="comment-comment-search-gui-parameters"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment: Search GUI Parameters</h3>
+    <div class="box-title comment-title" id="comment-search-gui-parameters" aria-label="comment box: Search GUI Parameters"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Search GUI Parameters</div>
     <p>We ran <strong><em>Search GUI</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with default settings. When you are processing files of a different experiment, you may need to adjust some of the parameters.
 <strong>Search GUI</strong> bundles numerous peptide search engines for matching MS/MS to peptide sequences within a database. In practice, using 2-3 different search engines offers high confidence while keeping analysis time reasonable. In our hands, X! tandem, MS-GF+, OMSSA and Comet search algorithms offer good results.
 The <strong><code class="language-plaintext highlighter-rouge">Precursor Options</code></strong> have to be adjusted to the mass spectrometer which was used to generate the files. The default settings fit a  high resolution Orbitrap instrument.
@@ -918,23 +901,23 @@ In the <strong><code class="language-plaintext highlighter-rouge">Advanced Optio
   </blockquote>
 
   <blockquote class="comment">
-    <h3 id="comment-comment-peptideshaker-outputs"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment: PeptideShaker Outputs</h3>
+    <div class="box-title comment-title" id="comment-peptideshaker-outputs" aria-label="comment box: PeptideShaker Outputs"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: PeptideShaker Outputs</div>
     <p>Peptide Shaker offers a variety of outputs.
 The <code class="language-plaintext highlighter-rouge">Zip File for import to Desktop App</code> can be downloaded to view and evaluate the search results in the Peptide Shaker viewer (<a href="https://compomics.github.io/projects/peptide-shaker.html">Download</a>).
 The several <code class="language-plaintext highlighter-rouge">Reports</code> contain tabular, human-readable information.
-Also, an <code class="language-plaintext highlighter-rouge">mzidentML</code> (= <code class="language-plaintext highlighter-rouge">mzid</code>) file can be created that contains all peptide sequence matching information and can be utilized by compatible <span class="notranslate">downstream</span> software.
+Also, an <code class="language-plaintext highlighter-rouge">mzidentML</code> (= <code class="language-plaintext highlighter-rouge">mzid</code>) file can be created that contains all peptide sequence matching information and can be utilized by compatible downstream software.
 The <code class="language-plaintext highlighter-rouge">Certificate of Analysis</code> provides details on all parameters settings of both Search GUI and Peptide Shaker used for the analysis.</p>
   </blockquote>
 
   <blockquote class="question">
-    <h3 id="question-questions"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions:</h3>
+    <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
     <ol>
       <li>How many peptides were identified? How many proteins?</li>
       <li>How many peptides with oxidized methionine were identified?</li>
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>You should have identified 3,325 peptides and 1,170 proteins.</li>
         <li>328 peptides contain an oxidized methionine (MeO). To get to this number, you can use <strong><em>Select</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on the Peptide Report and search for either “Oxidation of M” or “M&lt;ox&gt;”.</li>
@@ -947,7 +930,7 @@ The <code class="language-plaintext highlighter-rouge">Certificate of Analysis</
 <p>The FASTA database used for the peptide to spectrum matching contained some entries that were not expected to stem from the HeLa cell lysate, but are common contaminations in LC-MS/MS samples. The main reason to add those is to avoid misidentification of the spectra to other proteins. However, it also enables you to check for contaminations in your samples. <strong>CAVE:</strong> in human samples, many proteins that are common contaminants may also stem from the real sample. The real source of such human proteins might require advanced investigation.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-analysis-of-contaminants"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-On: Analysis of Contaminants</h3>
+  <div class="box-title hands-on-title" id="hands-on-analysis-of-contaminants" aria-label="hands-on box: Analysis of Contaminants"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Analysis of Contaminants</div>
 
   <ol>
     <li>Run <strong><em>Select</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on the Peptide Shaker Protein Report to select all lines that match the pattern “CONTAMINANT”.</li>
@@ -955,7 +938,7 @@ The <code class="language-plaintext highlighter-rouge">Certificate of Analysis</
   </ol>
 
   <blockquote class="question">
-    <h3 id="question-questions-1"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div class="box-title question-title" id="question-1" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
     <ol>
       <li>Which contaminants did you identify? Where do these contaminations come from?</li>
       <li>What other sources of contaminants exist?</li>
@@ -964,7 +947,7 @@ The <code class="language-plaintext highlighter-rouge">Certificate of Analysis</
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-1"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div class="box-title solution-title" id="solution-1"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>TRY_BOVIN is bovine trypsin. It was used to degrade the proteins to peptides. ALBU_BOVIN is bovine serum albumin. It is added to cell culture medium in high amounts.</li>
         <li>Contaminants often stem from the experimenter, these are typically keratins or other high-abundant human proteins. Basically any protein present in the room of the mass spectrometer might get into the ion source, if it is airborne. As an example, sheep keratins are sometimes found in proteomic samples, stemming from clothing made of sheep wool.</li>
@@ -986,21 +969,21 @@ False positives are expected to be randomly assigned to peptides in the FASTA da
 </ul>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-evaluation-of-peptide-and-protein-ids"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-On: Evaluation of Peptide and Protein IDs</h3>
+  <div class="box-title hands-on-title" id="hands-on-evaluation-of-peptide-and-protein-ids" aria-label="hands-on box: Evaluation of Peptide and Protein IDs"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Evaluation of Peptide and Protein IDs</div>
 
   <ol>
     <li>Remove all “Doubtful” proteins from your protein list by running <strong><em>Select</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on the Peptide Shaker Protein Report. Select only those lines that <strong>do not</strong> match the pattern “Doubtful”.</li>
   </ol>
 
   <blockquote class="question">
-    <h3 id="question-questions-2"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions:</h3>
+    <div class="box-title question-title" id="question-2" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
     <ol>
       <li>How to exclude mycoplasma proteins?</li>
       <li>How many “Confident” non-contaminant proteins were identified?</li>
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-2"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div class="box-title solution-title" id="solution-2"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>Add another <strong><em>Select</em></strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> matching the pattern “HUMAN”.</li>
         <li>You should have identified 582 human non-contaminant proteins that were validated to be “Confident”.</li>
@@ -1009,21 +992,21 @@ False positives are expected to be randomly assigned to peptides in the FASTA da
   </blockquote>
 </blockquote>
 
-<h1 class="no_toc" id="premade-workflow">Premade <span class="notranslate">Workflow</span></h1>
+<h1 id="premade-workflow">Premade Workflow</h1>
 
-<p>A premade <span class="notranslate">workflow</span> for this tutorial can be found <a href="workflows/wf_proteinID_SG_PS.ga">here</a></p>
+<p><a href="workflows/wf_proteinID_SG_PS.ga">A premade workflow for this tutorial is available</a></p>
 
-<h1 class="no_toc" id="further-reading">Further Reading</h1>
+<h1 id="further-reading">Further Reading</h1>
 
 <ul>
   <li><a href="https://compomics.com/bioinformatics-for-proteomics/">Search GUI and Peptide Shaker tutorials at Compomics</a></li>
-  <li><a href="https://drive.google.com/file/d/0B6bIeOvjBkbWVnhMLWxXdGVUY3M/view">Using Search GUI and Peptide Shaker in <span class="notranslate">Galaxy</span></a></li>
+  <li><a href="https://drive.google.com/file/d/0B6bIeOvjBkbWVnhMLWxXdGVUY3M/view">Using Search GUI and Peptide Shaker in Galaxy</a></li>
 </ul>
 
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
                         <li><p>LC-MS/MS raw files have to be locally converted to mgf/mzML prior to further analysis on most Galaxy servers.</p>
@@ -1092,7 +1075,8 @@ False positives are expected to be randomly assigned to peptides in the FASTA da
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Florian Christoph Sigloch, Björn Grüning, 2021 <b>Peptide and Protein ID using SearchGUI and PeptideShaker (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html">https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Florian Christoph Sigloch, Björn Grüning,  <b>Peptide and Protein ID using SearchGUI and PeptideShaker (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html">https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1100,36 +1084,46 @@ False positives are expected to be randomly assigned to peptides in the FASTA da
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
+
 <code id="citation-code">@misc{proteomics-protein-id-sg-ps,
 author = "Florian Christoph Sigloch and Björn Grüning",
 title = "Peptide and Protein ID using SearchGUI and PeptideShaker (Galaxy Training Materials)",
-year = "2021",
-month = "05",
-day = "31"
+year = "",
+month = "",
+day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
-                </pre></div></div>
-                </p>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -1142,7 +1136,7 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
 
@@ -1158,39 +1152,37 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/external-auth/tutorial.html" />
@@ -24,7 +23,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="External Authentication" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:42 +0000" />
+<meta name="DC.date" content="2022-10-18 14:23:35 +0000" />
 <meta name="DC.creator" content="Nate Coraor" />
 <meta name="DC.creator" content="Nicola Soranzo" />
 <meta name="DC.creator" content="Helena Rasche" />
@@ -33,225 +32,16 @@
         
         
         
-        
         <meta name="description" content="Resources related to configuration and maintenance of Gal..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: External Authentication" />
         <meta property="og:description" content="Resources related to configuration and maintenance of Gal..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
-
-    </head>
-    <body data-spy="scroll" data-target="#toc">
-        <header>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="/training-material/topics/admin" title="Go back to list of tutorials">
-                            <i class="far fa-folder" aria-hidden="true"></i> Galaxy Server administration
-                        </a>
-                        
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
-            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <!-- disable Tess for now
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-        -->
-
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
-        </a>
         
-        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
-           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
-        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
+        <meta property="og:image" content="/training-material/assets/images/gat.png" />
 
         
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/external-auth/tutorial.md" title="Edit on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
-        </a>
-
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
-        </a>
-
-        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/admin/tutorials/external-auth/tutorial.html" title="Show view statistics of this page">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
-        </a>
-
-        
-            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-            </a>
-        
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
-            </div>
-
+        <script type="application/ld+json">
             
-            <div id="archive-selector">
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/admin/tutorials/external-auth/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-09-01/topics/admin/tutorials/external-auth/tutorial.html" title="Version 2020-09-01">2020-09-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-08-01/topics/admin/tutorials/external-auth/tutorial.html" title="Version 2020-08-01">2020-08-01</a>
-            
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
-            </div>
-
-        </div>
-
-    </div>
-</li>
-
-
-                    <!-- Search bar-->
-                    <li class="nav-item">
-                      <div id="navbarSupportedContent" role="search">
-                        <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
-                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
-                          <div class="md-form mb-2">
-                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-        <div class="container main-content" role="main">
-        
-
-
-
-
-
-
-
-
-
-
-
-<!-- Gitter -->
-
-
-
-
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'galaxyproject/admins'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-<script type="application/ld+json">
-    
 
 
 {
@@ -276,7 +66,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:42 +0000",
+  "dateModified": "2022-10-18 14:23:35 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "External Authentication",
   "interactivityType": "mixed",
@@ -330,7 +120,7 @@
   "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/external-auth/tutorial.html",
   "timeRequired": "PT30M",
   "keywords": "admin, authentication",
-  "description": "The questions this  addresses are:\n - How can I connect Galaxy with CAS, SAML, etc.\n\n\\nThe objectives are:\n - be familiar with configuring Galaxy to use an upstream (proxy) authentication provider\n - be able to log in to your Galaxy server with a file-configured user.\n\n",
+  "description": "The questions this  addresses are:\n - How can I connect Galaxy with CAS, SAML, etc.\n\n\nThe objectives are:\n - be familiar with configuring Galaxy to use an upstream (proxy) authentication provider\n - be able to log in to your Galaxy server with a file-configured user.\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
@@ -418,7 +208,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0001-8083-2963",
+      "orcid": "https://orcid.org/0000-0001-8083-2963"
     },
     {
       "@context": "https://schema.org",
@@ -487,7 +279,9 @@
           "name": "Galaxy Training Network",
           "url": "https://galaxyproject.org/teach/gtn/"
         }
-      ]
+      ],
+      "identifier": "https://orcid.org/0000-0001-8083-2963",
+      "orcid": "https://orcid.org/0000-0001-8083-2963"
     },
     {
       "@context": "https://schema.org",
@@ -545,7 +339,215 @@
     }
   ]
 }
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/admin" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Galaxy Server administration
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/external-auth/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/external-auth/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/admin/tutorials/external-auth/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-10-01/topics/admin/tutorials/external-auth/tutorial.html" title="Version 2020-10-01">2020-10-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-09-01/topics/admin/tutorials/external-auth/tutorial.html" title="Version 2020-09-01">2020-09-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-08-01/topics/admin/tutorials/external-auth/tutorial.html" title="Version 2020-08-01">2020-08-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'galaxyproject/admins'
+  };
 </script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <section class="tutorial topic-admin">
     <h1 data-toc-skip>External Authentication</h1>
@@ -554,26 +556,14 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a>
-
-
-
-<a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge contributor-nsoranzo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/nsoranzo?s=27" alt="Avatar">Nicola Soranzo</a>
-
-
-
-<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge contributor-natefoo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/natefoo?s=27" alt="Avatar">Nate Coraor</a><a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge contributor-nsoranzo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/nsoranzo?s=27" alt="Avatar">Nicola Soranzo</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
 	</div>
 
 </div>
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -609,6 +599,44 @@
         
             <ul>
                 
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -673,47 +701,7 @@
                     
                         
                     
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
                 
-                    
-                        
                     
                         
                     
@@ -764,6 +752,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -884,7 +874,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jun 14, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 18, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -902,14 +892,15 @@
             <div class="col-sm-10">
                  
 
-                <h1 class="no_toc" id="overview">Overview</h1>
+                <h1 id="overview">Overview</h1>
 
-<p>For this exercise we will use a basic password file method for authenticating - this is probably not a very useful method in production, but it demonstrates how the proxy server can be configured to provide the correct header to <span class="notranslate">Galaxy</span>, and how <span class="notranslate">Galaxy</span> integrates with <span class="notranslate">upstream</span> authentication providers. This same method can be used with NGINX and Apache modules for CAS or SAML authentication.</p>
+<p>For this exercise we will use a basic password file method for authenticating - this is probably not a very useful method in production, but it demonstrates how the proxy server can be configured to provide the correct header to Galaxy, and how Galaxy integrates with upstream authentication providers. This same method can be used with NGINX and Apache modules for CAS or SAML authentication.</p>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
 
 <ol id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
   <li><a href="#configuring-authentication" id="markdown-toc-configuring-authentication">Configuring Authentication</a></li>
   <li><a href="#testing" id="markdown-toc-testing">Testing</a></li>
   <li><a href="#api-access" id="markdown-toc-api-access">API access</a></li>
@@ -921,12 +912,12 @@
 <h1 id="configuring-authentication">Configuring Authentication</h1>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-configuring-everything"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Configuring everything</h3>
+  <div class="box-title hands-on-title" id="hands-on-configuring-everything" aria-label="hands-on box: Configuring everything"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Configuring everything</div>
 
   <ol>
-    <li>Edit the <span class="notranslate">galaxy</span>.j2 template file in the templates/nginx directory and update the main location block defined for serving <span class="notranslate">galaxy</span>. Add the parameters:
+    <li>Edit the galaxy.j2 template file in the templates/nginx directory and update the main location block defined for serving galaxy. Add the parameters:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">auth_basic <span class="notranslate">galaxy</span>;</code></li>
+        <li><code class="language-plaintext highlighter-rouge">auth_basic galaxy;</code></li>
         <li><code class="language-plaintext highlighter-rouge">auth_basic_user_file /etc/nginx/passwd;</code></li>
         <li><code class="language-plaintext highlighter-rouge">proxy_set_header HTTP_REMOTE_USER $remote_user;</code></li>
         <li><code class="language-plaintext highlighter-rouge">proxy_set_header HTTP_GX_SECRET SOME_SECRET_STRING;</code></li>
@@ -935,7 +926,7 @@
       <p>It should look like:</p>
 
       <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@@ -14,6 +14,10 @@</span>
-<span class="gi">+        auth_basic           <span class="notranslate">galaxy</span>;
+<span class="gi">+        auth_basic           galaxy;
 +        auth_basic_user_file /etc/nginx/passwd;
 +        proxy_set_header          HTTP_REMOTE_USER $remote_user;
 +        proxy_set_header          HTTP_GX_SECRET SOME_SECRET_STRING;
@@ -945,23 +936,23 @@
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-how-to-read-a-diff"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to read a Diff</h3>  <p>If you haven’t worked with diffs before, this can be something quite new or different.</p>  <p>If we have two files, let’s say a grocery list, in two files. We’ll call them ‘a’ and ‘b’.</p>  <blockquote class="code-2col">  <blockquote class="code-in">    <h3 data-toc-skip="" id="code-in-old"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Old</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat old<br />🍎<br />🍐<br />🍊<br />🍋<br />🍒<br />🥑<br /></code></pre></div>    </div>  </blockquote>  <blockquote class="code-out">    <h3 data-toc-skip="" id="code-out-new"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> New</h3>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat new<br />🍎<br />🍐<br />🍊<br />🍋<br />🍍<br />🥑<br /></code></pre></div>    </div>  </blockquote></blockquote>  <p>We can see that they have some different entries. We’ve removed 🍒 because they’re awful, and replaced them with an 🍍</p>  <p>Diff lets us compare these files</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new<br />5c5<br />&lt; 🍒<br /><span class="nt">---</span><br /><span class="o">&gt;</span> 🍍<br /></code></pre></div></div>  <p>Here we see that 🍒 is only in a, and 🍍 is only in b. But otherwise the files are identical.</p>  <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new<br /><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:06:36.340962616 +0100<br />@@ <span class="nt">-3</span>,4 +3,4 @@<br /> 🍊<br /> 🍋<br />-🍒<br />+🍍<br /> 🥑<br /></code></pre></div></div>  <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>  <ul>  <li><code class="language-plaintext highlighter-rouge">--- old</code> is the ‘old’ file in our view</li>  <li><code class="language-plaintext highlighter-rouge">+++ new</code> is the ‘new’ file</li>  <li>@@ these lines tell us where the change occurs and how many lines are added or removed.</li>  <li>Lines starting with a - are removed from our ‘new’ file</li>  <li>Lines with a + have been added.</li></ul>  <p>So when you go to apply these diffs to your files in the training:</p>  <ol>  <li>Ignore the header</li>  <li>Remove lines starting with - from your file</li>  <li>Add lines starting with + to your file</li></ol>  <p>The other lines (🍊/🍋 and 🥑) above just provide “context”, they help you know where a change belongs in a file, but <strong>should not be edited</strong> when you’re making the above change. Given the above diff, you would find a line with a 🍒, and replace it with a 🍍</p>  <h4 id="added--removed-lines">Added &amp; Removed Lines</h4>  <p>Removals are very easy to spot, we just have removed lines</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:10:14.370722802 +0100<br />@@ <span class="nt">-4</span>,3 +4,2 @@<br /> 🍋<br /> 🍒<br />-🥑<br /></code></pre></div></div>  <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:11:11.422135393 +0100<br />@@ <span class="nt">-1</span>,3 +1,4 @@<br /> 🍎<br />+🍍<br /> 🍐<br /> 🍊<br /></code></pre></div></div>  <h4 id="completely-new-files">Completely new files</h4>  <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old<br /><span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100<br />+++ old	2022-02-16 14:06:19.697132568 +0100<br />@@ <span class="nt">-0</span>,0 +1,6 @@<br />+🍎<br />+🍐<br />+🍊<br />+🍋<br />+🍒<br />+🥑<br /></code></pre></div></div>  <p>And removed files are similar, except with the new file being /dev/null</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ /dev/null	2022-02-15 11:47:16.100000270 +0100<br />@@ <span class="nt">-1</span>,6 +0,0 @@<br />-🍎<br />-🍐<br />-🍊<br />-🍋<br />-🍒<br />-🥑<br /></code></pre></div></div></blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-how-to-read-a-diff"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-how-to-read-a-diff-contents" aria-expanded="true" aria-label="Toggle tip box: How to read a Diff"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to read a Diff<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>   <p>If you haven’t worked with diffs before, this can be something quite new or different.</p>   <p>If we have two files, let’s say a grocery list, in two files. We’ll call them ‘a’ and ‘b’.</p>   <blockquote class="code-2col">   <blockquote class="code-in">     <div class="box-title code-in-title" id="code-in-old" aria-label="code-in box: Old"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden"></span> Input: Old</div>     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat old<br />🍎<br />🍐<br />🍊<br />🍋<br />🍒<br />🥑<br /></code></pre></div>    </div>   </blockquote>   <blockquote class="code-out">     <div class="box-title code-out-title" id="code-out-new" aria-label="code-out box: New"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden"></span> Output: New</div>     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat new<br />🍎<br />🍐<br />🍊<br />🍋<br />🍍<br />🥑<br /></code></pre></div>    </div>   </blockquote> </blockquote>   <p>We can see that they have some different entries. We’ve removed 🍒 because they’re awful, and replaced them with an 🍍</p>   <p>Diff lets us compare these files</p>   <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new<br />5c5<br />&lt; 🍒<br /><span class="nt">---</span><br /><span class="o">&gt;</span> 🍍<br /></code></pre></div></div>   <p>Here we see that 🍒 is only in a, and 🍍 is only in b. But otherwise the files are identical.</p>   <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>   <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new<br /><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:06:36.340962616 +0100<br />@@ <span class="nt">-3</span>,4 +3,4 @@<br /> 🍊<br /> 🍋<br />-🍒<br />+🍍<br /> 🥑<br /></code></pre></div></div>   <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>   <ul>   <li><code class="language-plaintext highlighter-rouge">--- old</code> is the ‘old’ file in our view</li>   <li><code class="language-plaintext highlighter-rouge">+++ new</code> is the ‘new’ file</li>   <li>@@ these lines tell us where the change occurs and how many lines are added or removed.</li>   <li>Lines starting with a - are removed from our ‘new’ file</li>   <li>Lines with a + have been added.</li> </ul>   <p>So when you go to apply these diffs to your files in the training:</p>   <ol>   <li>Ignore the header</li>   <li>Remove lines starting with - from your file</li>   <li>Add lines starting with + to your file</li> </ol>   <p>The other lines (🍊/🍋 and 🥑) above just provide “context”, they help you know where a change belongs in a file, but <strong>should not be edited</strong> when you’re making the above change. Given the above diff, you would find a line with a 🍒, and replace it with a 🍍</p>   <h4 id="added--removed-lines">Added &amp; Removed Lines</h4>   <p>Removals are very easy to spot, we just have removed lines</p>   <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:10:14.370722802 +0100<br />@@ <span class="nt">-4</span>,3 +4,2 @@<br /> 🍋<br /> 🍒<br />-🥑<br /></code></pre></div></div>   <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>   <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:11:11.422135393 +0100<br />@@ <span class="nt">-1</span>,3 +1,4 @@<br /> 🍎<br />+🍍<br /> 🍐<br /> 🍊<br /></code></pre></div></div>   <h4 id="completely-new-files">Completely new files</h4>   <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>   <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old<br /><span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100<br />+++ old	2022-02-16 14:06:19.697132568 +0100<br />@@ <span class="nt">-0</span>,0 +1,6 @@<br />+🍎<br />+🍐<br />+🍊<br />+🍋<br />+🍒<br />+🥑<br /></code></pre></div></div>   <p>And removed files are similar, except with the new file being /dev/null</p>   <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ /dev/null	2022-02-15 11:47:16.100000270 +0100<br />@@ <span class="nt">-1</span>,6 +0,0 @@<br />-🍎<br />-🍐<br />-🍊<br />-🍋<br />-🍒<br />-🥑<br /></code></pre></div></div> </blockquote>
 
       <blockquote class="tip">
-        <h3 id="tip-running-this-tutorial-just-for-reports"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Running this tutorial <em>just</em> for Reports?</h3>
+        <div class="box-title tip-title" id="tip-running-this-tutorial-i-just-i-for-reports"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-running-this-tutorial-i-just-i-for-reports-contents" aria-expanded="true" aria-label="Toggle tip box: Running this tutorial &lt;i&gt;just&lt;/i&gt; for Reports?"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running this tutorial <i>just</i> for Reports?<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
         <p>Add the <code class="language-plaintext highlighter-rouge">auth_basic</code> and <code class="language-plaintext highlighter-rouge">auth_basic_user_file</code> lines to your <code class="language-plaintext highlighter-rouge">location /reports/</code></p>
       </blockquote>
 
-      <p><code class="language-plaintext highlighter-rouge">auth_basic</code> enables validation of use<span class="notranslate">rna</span>me and password using the “HTTP Basic Authentication” protocol. Its value <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span></code> is used as a realm name to be displayed to the user when prompting for credentials.
-<code class="language-plaintext highlighter-rouge">auth_basic_user_file</code> specifies the file that keeps use<span class="notranslate">rna</span>mes and passwords.
-<code class="language-plaintext highlighter-rouge">proxy_set_header</code> adds <code class="language-plaintext highlighter-rouge">HTTP_REMOTE_USER</code> to the special variables passed by nginx to <span class="notranslate">Galaxy</span>, with value <code class="language-plaintext highlighter-rouge">$remote_user</code>, which is a nginx embedded variable containing the use<span class="notranslate">rna</span>me supplied with the Basic authentication.</p>
+      <p><code class="language-plaintext highlighter-rouge">auth_basic</code> enables validation of username and password using the “HTTP Basic Authentication” protocol. Its value <code class="language-plaintext highlighter-rouge">galaxy</code> is used as a realm name to be displayed to the user when prompting for credentials.
+<code class="language-plaintext highlighter-rouge">auth_basic_user_file</code> specifies the file that keeps usernames and passwords.
+<code class="language-plaintext highlighter-rouge">proxy_set_header</code> adds <code class="language-plaintext highlighter-rouge">HTTP_REMOTE_USER</code> to the special variables passed by nginx to Galaxy, with value <code class="language-plaintext highlighter-rouge">$remote_user</code>, which is a nginx embedded variable containing the username supplied with the Basic authentication.</p>
 
-      <p><code class="language-plaintext highlighter-rouge">GX_SECRET</code> is added as a header for security purposes, to prevent any other users on the system impersonating nginx and sending requests to <span class="notranslate">Galaxy</span>. NGINX and other webservers like Apache will strip any user-sent <code class="language-plaintext highlighter-rouge">REMOTE_USER</code> headers, as that header defines the authenticated user. If you can talk directly to <span class="notranslate">Galaxy</span> (e.g. via curl) and provide the <code class="language-plaintext highlighter-rouge">REMOTE_USER</code> header, you can impersonate any other use. While having <span class="notranslate">Galaxy</span> listen on <code class="language-plaintext highlighter-rouge">127.0.0.1</code> prevents any requests from outside of the system reaching <span class="notranslate">Galaxy</span>, anyone on the system can still send requests to that port. Here you can choose to switch to a unix socket with permissions only permitting <span class="notranslate">Galaxy</span> and Nginx to connect. <code class="language-plaintext highlighter-rouge">GX_SECRET</code> adds additional security as it needs to match <code class="language-plaintext highlighter-rouge">remote_user_secret</code> in your <span class="notranslate">galaxy</span> configutation.</p>
+      <p><code class="language-plaintext highlighter-rouge">GX_SECRET</code> is added as a header for security purposes, to prevent any other users on the system impersonating nginx and sending requests to Galaxy. NGINX and other webservers like Apache will strip any user-sent <code class="language-plaintext highlighter-rouge">REMOTE_USER</code> headers, as that header defines the authenticated user. If you can talk directly to Galaxy (e.g. via curl) and provide the <code class="language-plaintext highlighter-rouge">REMOTE_USER</code> header, you can impersonate any other use. While having Galaxy listen on <code class="language-plaintext highlighter-rouge">127.0.0.1</code> prevents any requests from outside of the system reaching Galaxy, anyone on the system can still send requests to that port. Here you can choose to switch to a unix socket with permissions only permitting Galaxy and Nginx to connect. <code class="language-plaintext highlighter-rouge">GX_SECRET</code> adds additional security as it needs to match <code class="language-plaintext highlighter-rouge">remote_user_secret</code> in your galaxy configutation.</p>
 
       <blockquote class="tip">
-        <h3 id="tip-proxy-bypass"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Proxy bypass</h3>
-        <p>Users can bypass the authentication only if they can talk directly to the gunicorn processes (if you have socket/http: 0.0.0.0, or if it is directly responsible for serving <span class="notranslate">galaxy</span>, and there is no proxy.)
-This can happen mostly when some users have command line access to the <span class="notranslate">Galaxy</span> server, which is considered a bad practice.</p>
+        <div class="box-title tip-title" id="tip-proxy-bypass"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-proxy-bypass-contents" aria-expanded="true" aria-label="Toggle tip box: Proxy bypass"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Proxy bypass<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+        <p>Users can bypass the authentication only if they can talk directly to the gunicorn processes (if you have socket/http: 0.0.0.0, or if it is directly responsible for serving galaxy, and there is no proxy.)
+This can happen mostly when some users have command line access to the Galaxy server, which is considered a bad practice.</p>
       </blockquote>
     </li>
     <li>
@@ -969,22 +960,22 @@ This can happen mostly when some users have command line access to the <span cla
 
       <p>Add a pre_task using the <a href="https://docs.ansible.com/ansible/2.4/htpasswd_module.html"><code class="language-plaintext highlighter-rouge">htpasswd</code></a> module which sets up a password file in <code class="language-plaintext highlighter-rouge">/etc/nginx/passwd</code>, with owner and group set to root, and a name and password, and a mode of 0640.</p>
       <blockquote class="question">
-        <h3 id="question-question"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+        <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
         <p>How does your final configuration look?</p>
 
         <blockquote class="solution">
-          <h3 id="solution-solution"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+          <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
           <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@@ -7,6 +7,15 @@</span>
-         name: <span class="notranslate">galaxy</span>
+         name: galaxy
          state: restarted
    pre_tasks:
 <span class="gi">+    - pip:
 +        name: passlib
 +    - htpasswd:
 +        path: /etc/nginx/passwd
-+        name: user1        # Pick a use<span class="notranslate">rna</span>me
++        name: user1        # Pick a username
 +        password: changeme # and a password
 +        owner: www-data    # nginx on centos
 +        group: root
@@ -998,11 +989,11 @@ This can happen mostly when some users have command line access to the <span cla
       </blockquote>
     </li>
     <li>
-      <p><span class="notranslate">Galaxy</span> needs to be instructed to expect authentication to come from the <span class="notranslate">upstream</span> proxy. In order to do this, set the following two options in your <span class="notranslate">Galaxy</span> group variables:</p>
+      <p>Galaxy needs to be instructed to expect authentication to come from the upstream proxy. In order to do this, set the following two options in your Galaxy group variables:</p>
 
       <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">...</span>
-<span class="na"><span class="notranslate">galaxy</span>_config</span><span class="pi">:</span>
-  <span class="na"><span class="notranslate">galaxy</span></span><span class="pi">:</span>
+<span class="na">galaxy_config</span><span class="pi">:</span>
+  <span class="na">galaxy</span><span class="pi">:</span>
     <span class="s">...</span>
     <span class="s">use_remote_user</span><span class="err">:</span> <span class="no">true</span>
     <span class="s">remote_user_maildomain</span><span class="err">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">inventory_hostname</span><span class="nv"> </span><span class="s">}}"</span>
@@ -1010,8 +1001,8 @@ This can happen mostly when some users have command line access to the <span cla
 </code></pre></div>      </div>
 
       <blockquote class="tip">
-        <h3 id="tip-running-this-tutorial-just-for-reports-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Running this tutorial <em>just</em> for Reports?</h3>
-        <p>You don’t need to make the above changes for <span class="notranslate">Galaxy</span> then.</p>
+        <div class="box-title tip-title" id="tip-running-this-tutorial-i-just-i-for-reports-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-running-this-tutorial-i-just-i-for-reports-1-contents" aria-expanded="true" aria-label="Toggle tip box: Running this tutorial &lt;i&gt;just&lt;/i&gt; for Reports?"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running this tutorial <i>just</i> for Reports?<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+        <p>You don’t need to make the above changes for Galaxy then.</p>
       </blockquote>
 
       <p>Set the <code class="language-plaintext highlighter-rouge">remote_user_maildomain</code> option to the appropriate domain name for your site.</p>
@@ -1022,7 +1013,7 @@ This can happen mostly when some users have command line access to the <span cla
 </blockquote>
 
 <blockquote class="comment">
-  <h3 id="comment-access-denied"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Access denied</h3>
+  <div class="box-title comment-title" id="comment-access-denied" aria-label="comment box: Access denied"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Access denied</div>
 
   <p>If you see this message, it is because nginx is not correctly sending the <code class="language-plaintext highlighter-rouge">REMOTE_USER</code> or the <code class="language-plaintext highlighter-rouge">GX_SECRET</code> values.</p>
 
@@ -1032,22 +1023,22 @@ This can happen mostly when some users have command line access to the <span cla
 
 <h1 id="testing">Testing</h1>
 
-<p>You should now be presented with a password dialog when attempting to load the <span class="notranslate">Galaxy</span> UI.</p>
+<p>You should now be presented with a password dialog when attempting to load the Galaxy UI.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-testing"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Testing</h3>
+  <div class="box-title hands-on-title" id="hands-on-testing" aria-label="hands-on box: Testing"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Testing</div>
 
   <ol>
     <li>
-      <p>Log in using the use<span class="notranslate">rna</span>me and password you provided when creating the <code class="language-plaintext highlighter-rouge">passwd</code> file. If your use<span class="notranslate">rna</span>me and the value of <code class="language-plaintext highlighter-rouge">remote_user_maildomain</code> match an existing user, you will be logged in to that account. If not, a new account will be created for that user.</p>
+      <p>Log in using the username and password you provided when creating the <code class="language-plaintext highlighter-rouge">passwd</code> file. If your username and the value of <code class="language-plaintext highlighter-rouge">remote_user_maildomain</code> match an existing user, you will be logged in to that account. If not, a new account will be created for that user.</p>
     </li>
     <li>
-      <p>Click on the “User” menu at the top, to see how the use<span class="notranslate">rna</span>me appears.</p>
+      <p>Click on the “User” menu at the top, to see how the username appears.</p>
     </li>
     <li>
       <p>Note that some user features are not available when remote user support is enabled.</p>
 
-      <p>Try logging out by selecting <strong>User</strong> -&gt; <strong>Logout</strong>. You will discover that when returning to the user interface, you are still logged in. This is because <span class="notranslate">Galaxy</span> has no way of logging you out of the proxy’s authentication system. Instead, you should set <code class="language-plaintext highlighter-rouge">remote_user_logout_href</code> in <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> to point to the URL of your authentication system’s logout page.</p>
+      <p>Try logging out by selecting <strong>User</strong> -&gt; <strong>Logout</strong>. You will discover that when returning to the user interface, you are still logged in. This is because Galaxy has no way of logging you out of the proxy’s authentication system. Instead, you should set <code class="language-plaintext highlighter-rouge">remote_user_logout_href</code> in <code class="language-plaintext highlighter-rouge">galaxy.yml</code> to point to the URL of your authentication system’s logout page.</p>
     </li>
   </ol>
 
@@ -1055,7 +1046,7 @@ This can happen mostly when some users have command line access to the <span cla
 
 <h1 id="api-access">API access</h1>
 
-<p>If you wish your <span class="notranslate">Galaxy</span> to be accessible to command line clients (e.g. bioblend, blend4j, parsec), you will need to add an exception for authentication on the API. <span class="notranslate">Galaxy</span> will still be secure and protected, but non-browser access will be permitted with an API key.</p>
+<p>If you wish your Galaxy to be accessible to command line clients (e.g. bioblend, blend4j, parsec), you will need to add an exception for authentication on the API. Galaxy will still be secure and protected, but non-browser access will be permitted with an API key.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>location /api/ {
     satisfy any;
@@ -1064,16 +1055,16 @@ This can happen mostly when some users have command line access to the <span cla
 </code></pre></div></div>
 
 <blockquote class="tip">
-  <h3 id="tip-notification-of-registration"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Notification of Registration</h3>
-  <p>There is no built-in way to be notified if users are registered, with exte<span class="notranslate">rna</span>l authentication or built-in. However, you could automate this easily. There is a <a href="https://github.com/usegalaxy-eu/gxadmin">gxadmin</a> command we use called <code class="language-plaintext highlighter-rouge">gxadmin query latest-users</code> which Björn uses often. Other sites have other methods, e.g. Nicola’s <a href="https://gist.github.com/nsoranzo/f023e26aa60024ef6a7e3a3fe5fb2e4f">cron script</a> which runs daily on his server, to add new users to a group according to their email domain name.</p>
+  <div class="box-title tip-title" id="tip-notification-of-registration"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-notification-of-registration-contents" aria-expanded="true" aria-label="Toggle tip box: Notification of Registration"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Notification of Registration<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
+  <p>There is no built-in way to be notified if users are registered, with external authentication or built-in. However, you could automate this easily. There is a <a href="https://github.com/usegalaxy-eu/gxadmin">gxadmin</a> command we use called <code class="language-plaintext highlighter-rouge">gxadmin query latest-users</code> which Björn uses often. Other sites have other methods, e.g. Nicola’s <a href="https://gist.github.com/nsoranzo/f023e26aa60024ef6a7e3a3fe5fb2e4f">cron script</a> which runs daily on his server, to add new users to a group according to their email domain name.</p>
 </blockquote>
 
 <h1 id="reverting">Reverting</h1>
 
-<p>We don’t want to leave <span class="notranslate">Galaxy</span> this way for the rest of our workshop.</p>
+<p>We don’t want to leave Galaxy this way for the rest of our workshop.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-reverting-the-changes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Reverting the changes</h3>
+  <div class="box-title hands-on-title" id="hands-on-reverting-the-changes" aria-label="hands-on box: Reverting the changes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Reverting the changes</div>
 
   <ol>
     <li>
@@ -1094,7 +1085,7 @@ This can happen mostly when some users have command line access to the <span cla
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
                         <li><p>Remote auth is not complex to set up and can help you meet institutional requirements</p>
@@ -1154,7 +1145,8 @@ This can happen mostly when some users have command line access to the <span cla
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Nate Coraor, Nicola Soranzo, Helena Rasche, 2022 <b>External Authentication (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/external-auth/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/external-auth/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Nate Coraor, Nicola Soranzo, Helena Rasche,  <b>External Authentication (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/external-auth/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/external-auth/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1162,36 +1154,46 @@ This can happen mostly when some users have command line access to the <span cla
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
+
 <code id="citation-code">@misc{admin-external-auth,
 author = "Nate Coraor and Nicola Soranzo and Helena Rasche",
 title = "External Authentication (Galaxy Training Materials)",
-year = "2022",
-month = "06",
-day = "14"
+year = "",
+month = "",
+day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/external-auth/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
-@article{Batut_2018,
-    doi = {10.1016/j.cels.2018.05.012},
-    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
-    year = 2018,
-    month = {jun},
-    publisher = {Elsevier {BV}},
-    volume = {6},
-    number = {6},
-    pages = {752--758.e1},
-    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
-    title = {Community-Driven Data Analysis Training for Biology},
-    journal = {Cell Systems}
-}</code>
-                </pre></div></div>
-                </p>
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -1204,7 +1206,7 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
 
@@ -1220,39 +1222,37 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>
