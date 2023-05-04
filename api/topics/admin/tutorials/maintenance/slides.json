@@ -59,7 +59,7 @@
         }
       ],
       "gtn_id": "admin/maintenance",
-      "title": "Server Maintenance and Backups",
+      "title": "admin/maintenance/slides",
       "captioned": true
     },
     "demo": null,

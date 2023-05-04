@@ -70,50 +70,7 @@
   "dir": "topics/admin/tutorials/singularity",
   "id": "admin/singularity",
   "video_library": {
-    "tutorial": {
-      "description": "Running jobs in Singularity",
-      "materials": [
-        {
-          "link": "topics/admin/tutorials/singularity/tutorial.html",
-          "type": "Tutorial"
-        }
-      ],
-      "tags": [
-        "admin"
-      ],
-      "type": "Tutorial",
-      "versions": [
-        {
-          "captions": [
-            "gallardoalba",
-            "slugger70"
-          ],
-          "date": "2021-06-28",
-          "galaxy_version": "21.05",
-          "length": "43M",
-          "link": "q6Dt7j713tI",
-          "speakers": [
-            "slugger70"
-          ]
-        },
-        {
-          "captions": [
-            "hexylena",
-            "cat-bro"
-          ],
-          "date": "2021-02-15",
-          "galaxy_version": "21.01",
-          "length": "16M",
-          "link": "airzg4-ETEs",
-          "speakers": [
-            "hexylena"
-          ]
-        }
-      ],
-      "gtn_id": "admin/singularity",
-      "title": "Use Singularity containers for running Galaxy jobs",
-      "captioned": true
-    },
+    "tutorial": null,
     "slides": null,
     "demo": null,
     "both": null,
