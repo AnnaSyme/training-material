@@ -1,59 +1,59 @@
 
 # HELP gtn_pages_total Total number of Pages
 # TYPE gtn_pages_total counter
-gtn_pages_total{layout=""} 0 1683419037000
-gtn_pages_total{layout="base"} 8 1683419037000
-gtn_pages_total{layout="base_slides"} 3 1683419037000
-gtn_pages_total{layout="contributor_index"} 287 1683419037000
-gtn_pages_total{layout="faq"} 359 1683419037000
-gtn_pages_total{layout="faq-page"} 319 1683419037000
-gtn_pages_total{layout="hall-of-fame"} 1 1683419037000
-gtn_pages_total{layout="home"} 1 1683419037000
-gtn_pages_total{layout="introduction_slides"} 15 1683419037000
-gtn_pages_total{layout="none"} 1 1683419037000
-gtn_pages_total{layout="page"} 4 1683419037000
-gtn_pages_total{layout="topic"} 27 1683419037000
-gtn_pages_total{layout="training_philosophy"} 6 1683419037000
-gtn_pages_total{layout="tutorial_hands_on"} 326 1683419037000
-gtn_pages_total{layout="tutorial_slides"} 90 1683419037000
-gtn_pages_total{layout="tutorial_slides_ai4life"} 1 1683419037000
-gtn_pages_total{layout="workflow-list"} 179 1683419037000
+gtn_pages_total{layout=""} 0 1683505322000
+gtn_pages_total{layout="base"} 8 1683505322000
+gtn_pages_total{layout="base_slides"} 3 1683505322000
+gtn_pages_total{layout="contributor_index"} 287 1683505322000
+gtn_pages_total{layout="faq"} 359 1683505322000
+gtn_pages_total{layout="faq-page"} 319 1683505322000
+gtn_pages_total{layout="hall-of-fame"} 1 1683505322000
+gtn_pages_total{layout="home"} 1 1683505322000
+gtn_pages_total{layout="introduction_slides"} 15 1683505322000
+gtn_pages_total{layout="none"} 1 1683505322000
+gtn_pages_total{layout="page"} 4 1683505322000
+gtn_pages_total{layout="topic"} 27 1683505322000
+gtn_pages_total{layout="training_philosophy"} 6 1683505322000
+gtn_pages_total{layout="tutorial_hands_on"} 326 1683505322000
+gtn_pages_total{layout="tutorial_slides"} 90 1683505322000
+gtn_pages_total{layout="tutorial_slides_ai4life"} 1 1683505322000
+gtn_pages_total{layout="workflow-list"} 179 1683505322000
 
 # HELP gtn_contributors_total Total number of Contributors
 # TYPE gtn_contributors_total counter
-gtn_contributors_total{orcid="true"} 77 1683419037000
-gtn_contributors_total{orcid="false"} 208 1683419037000
+gtn_contributors_total{orcid="true"} 77 1683505322000
+gtn_contributors_total{orcid="false"} 208 1683505322000
 
 # HELP gtn_tutorials_total Total number of Hands-on Tutorials
 # TYPE gtn_tutorials_total counter
-gtn_tutorials_total 326 1683419037000
+gtn_tutorials_total 326 1683505322000
 
 # HELP gtn_faqs_total Total number of FAQs
 # TYPE gtn_faqs_total counter
-gtn_faqs_total 359 1683419037000
+gtn_faqs_total 359 1683505322000
 
 # HELP gtn_project_years_total Total years of project lifetime
 # TYPE gtn_project_years_total counter
-gtn_project_years_total 7.86027397260274 1683419037000
+gtn_project_years_total 7.863013698630137 1683505322000
 
 # HELP tutorial_update_age_days How recently was every single Hands-on Tutorial touched within the GTN, grouped by days since last edited.
 # TYPE tutorial_update_age_days histogram
-tutorial_update_age_days{le="1"} 1 1683419037000
-tutorial_update_age_days{le="7"} 0 1683419037000
-tutorial_update_age_days{le="28"} 0 1683419037000
-tutorial_update_age_days{le="90"} 67 1683419037000
-tutorial_update_age_days{le="365"} 255 1683419037000
-tutorial_update_age_days{le="730"} 2 1683419037000
-tutorial_update_age_days{le="1095"} 0 1683419037000
-tutorial_update_age_days{le="+Inf"} 1 1683419037000
+tutorial_update_age_days{le="1"} 1 1683505322000
+tutorial_update_age_days{le="7"} 0 1683505322000
+tutorial_update_age_days{le="28"} 0 1683505322000
+tutorial_update_age_days{le="90"} 67 1683505322000
+tutorial_update_age_days{le="365"} 255 1683505322000
+tutorial_update_age_days{le="730"} 2 1683505322000
+tutorial_update_age_days{le="1095"} 0 1683505322000
+tutorial_update_age_days{le="+Inf"} 1 1683505322000
 
 # HELP contributor_join_age_days When did contributors join? Buckets of their ages by days since joined.
 # TYPE contributor_join_age_days histogram
-contributor_join_age_days{le="1"} 0 1683419037000
-contributor_join_age_days{le="7"} 0 1683419037000
-contributor_join_age_days{le="28"} 0 1683419037000
-contributor_join_age_days{le="90"} 0 1683419037000
-contributor_join_age_days{le="365"} 18 1683419037000
-contributor_join_age_days{le="730"} 75 1683419037000
-contributor_join_age_days{le="1095"} 36 1683419037000
-contributor_join_age_days{le="+Inf"} 91 1683419037000
+contributor_join_age_days{le="1"} 0 1683505322000
+contributor_join_age_days{le="7"} 0 1683505322000
+contributor_join_age_days{le="28"} 0 1683505322000
+contributor_join_age_days{le="90"} 0 1683505322000
+contributor_join_age_days{le="365"} 18 1683505322000
+contributor_join_age_days{le="730"} 75 1683505322000
+contributor_join_age_days{le="1095"} 36 1683505322000
+contributor_join_age_days{le="+Inf"} 91 1683505322000
