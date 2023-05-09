@@ -23714,5 +23714,27 @@
     "topic": "Introduction to Galaxy Analyses",
     "month": "2023-05",
     "date": "2023-05-07"
+  },
+  {
+    "": "3006",
+    "note": "5",
+    "pro": "Quite straight forward applications.",
+    "con": "This is not applicable t me at the moment ",
+    "anonymous": null,
+    "tutorial": "A short introduction to Galaxy",
+    "topic": "Introduction to Galaxy Analyses",
+    "month": "2023-05",
+    "date": "2023-05-08"
+  },
+  {
+    "": "3007",
+    "note": "5",
+    "pro": null,
+    "con": null,
+    "anonymous": null,
+    "tutorial": "1: RNA-Seq reads to counts",
+    "topic": "Transcriptomics",
+    "month": "2023-05",
+    "date": "2023-05-08"
   }
 ]
