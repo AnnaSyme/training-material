@@ -13,7 +13,8 @@
   "time_estimation": "1H",
   "key_points": [
     "Diversity indicators",
-    "Champs Blocs"
+    "Champs Blocs",
+    "Boulder Fields"
   ],
   "contributors": [
     {
@@ -22,8 +23,29 @@
       "id": "Marie59",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/Marie59.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/Marie59/"
+    },
+    {
+      "name": "Yvan Le Bras",
+      "email": "yvan.le-bras@mnhn.fr",
+      "twitter": "Yvan2935",
+      "gitter": "yvanlebras",
+      "orcid": "0000-0002-8504-068X",
+      "joined": "2017-09",
+      "elixir_node": "fr",
+      "id": "yvanlebras",
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/yvanlebras.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/yvanlebras/"
     }
   ],
+  "translations": {
+    "tutorial": [
+      "fr"
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
   "url": "/topics/ecology/tutorials/champs-blocs/tutorial.html",
   "topic_name": "ecology",
   "tutorial_name": "champs-blocs",
@@ -58,22 +80,10 @@
     "cb_ivr",
     "cb_qecb",
     "toolshed.g2.bx.psu.edu/repos/ecology/cb_dissim/cb_dissim/0.0.0",
+    "toolshed.g2.bx.psu.edu/repos/ecology/cb_div/cb_div/0.0.0",
     "toolshed.g2.bx.psu.edu/repos/ecology/cb_ivr/cb_ivr/0.0.0"
   ],
   "tours": false,
   "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//ecology/tutorials/champs-blocs/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//ecology/tutorials/champs-blocs/tutorial.json"
-  }
+  "type": "tutorial"
 }

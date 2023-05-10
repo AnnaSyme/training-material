@@ -1,7 +1,9 @@
 {
   "layout": "tutorial_hands_on",
   "redirect_from": [
-    "/topics/galaxy-data-manipulation/tutorials/collections/tutorial"
+    "/topics/galaxy-data-manipulation/tutorials/collections/tutorial",
+    "/short/galaxy-interface/collections",
+    "/short/T00146"
   ],
   "title": "Using dataset collections",
   "zenodo_link": "https://doi.org/10.5281/zenodo.5119008",
@@ -54,6 +56,15 @@
       "type": "Tutorial",
       "versions": [
         {
+          "link": "uN6nP3I7QLE",
+          "captions": null,
+          "date": "2023-05-09",
+          "length": "13M",
+          "speakers": [
+            "delphine-l"
+          ]
+        },
+        {
           "captions": [
             "annefou",
             "mariipia10"
@@ -68,7 +79,7 @@
       ],
       "gtn_id": "galaxy-interface/collections",
       "title": "Using dataset collections",
-      "captioned": true
+      "captioned": false
     },
     "slides": null,
     "demo": null,
@@ -94,9 +105,5 @@
     ],
     "video": false
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//galaxy-interface/tutorials/collections/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//galaxy-interface/tutorials/collections/tutorial.json"
-  }
+  "type": "tutorial"
 }

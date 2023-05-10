@@ -170,6 +170,12 @@
         "/topics/sequence-analysis/tutorials/quality-control/tutorial.html"
       ],
       [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ],
+      [
         "single-cell/scrna-umis",
         "Understanding Barcodes",
         "Single Cell",
@@ -409,7 +415,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -611,7 +617,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -710,6 +716,10 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.2.0",
         "1.2.0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+        "1.11+galaxy1"
       ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy0",
@@ -1066,6 +1076,12 @@
         "/topics/ecology/tutorials/biodiversity-data-exploration/tutorial.html"
       ],
       [
+        "ecology/obisindicators",
+        "Obis marine indicators",
+        "Ecology",
+        "/topics/ecology/tutorials/obisindicators/tutorial.html"
+      ],
+      [
         "ecology/species-distribution-modeling",
         "Species distribution modeling",
         "Ecology",
@@ -1109,7 +1125,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -1485,6 +1501,100 @@
       ]
     ]
   },
+  "cat1": {
+    "tool_id": [
+      [
+        "cat1",
+        "cat1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "assembly/ecoli_comparison",
+        "Making sense of a newly assembled genome",
+        "Assembly",
+        "/topics/assembly/tutorials/ecoli_comparison/tutorial.html"
+      ],
+      [
+        "assembly/vgp_genome_assembly",
+        "VGP assembly pipeline",
+        "Assembly",
+        "/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html"
+      ],
+      [
+        "assembly/vgp_workflow_training",
+        "VGP assembly pipeline - short version",
+        "Assembly",
+        "/topics/assembly/tutorials/vgp_workflow_training/tutorial.html"
+      ],
+      [
+        "ecology/ref-based-rad-seq",
+        "RAD-Seq Reference-based data analysis",
+        "Ecology",
+        "/topics/ecology/tutorials/ref-based-rad-seq/tutorial.html"
+      ],
+      [
+        "epigenetics/formation_of_super-structures_on_xi",
+        "Formation of the Super-Structures on the Inactive X",
+        "Epigenetics",
+        "/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html"
+      ],
+      [
+        "genome-annotation/gene-centric",
+        "Comparative gene analysis in unannotated genomes",
+        "Genome Annotation",
+        "/topics/genome-annotation/tutorials/gene-centric/tutorial.html"
+      ],
+      [
+        "introduction/data-manipulation-olympics",
+        "Data Manipulation Olympics",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/data-manipulation-olympics/tutorial.html"
+      ],
+      [
+        "introduction/galaxy-intro-strands",
+        "Introduction to Genomics and Galaxy",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/galaxy-intro-strands/tutorial.html"
+      ],
+      [
+        "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
+        "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-case_cell-cycle",
+        "Removing the effects of the cell cycle",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-scanpy-pbmc3k",
+        "Clustering 3K PBMCs with Scanpy",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.html"
+      ],
+      [
+        "transcriptomics/mirna-target-finder",
+        "Whole transcriptome analysis of Arabidopsis thaliana",
+        "Transcriptomics",
+        "/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html"
+      ],
+      [
+        "transcriptomics/ref-based",
+        "Reference-based RNA-Seq data analysis",
+        "Transcriptomics",
+        "/topics/transcriptomics/tutorials/ref-based/tutorial.html"
+      ],
+      [
+        "variant-analysis/aiv-analysis",
+        "Avian influenza viral strain analysis from gene segment sequencing data",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html"
+      ]
+    ]
+  },
   "iuc/jbrowse": {
     "tool_id": [
       [
@@ -1705,94 +1815,6 @@
       ]
     ]
   },
-  "cat1": {
-    "tool_id": [
-      [
-        "cat1",
-        "cat1"
-      ]
-    ],
-    "tutorials": [
-      [
-        "assembly/ecoli_comparison",
-        "Making sense of a newly assembled genome",
-        "Assembly",
-        "/topics/assembly/tutorials/ecoli_comparison/tutorial.html"
-      ],
-      [
-        "assembly/vgp_genome_assembly",
-        "VGP assembly pipeline",
-        "Assembly",
-        "/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html"
-      ],
-      [
-        "assembly/vgp_workflow_training",
-        "VGP assembly pipeline - short version",
-        "Assembly",
-        "/topics/assembly/tutorials/vgp_workflow_training/tutorial.html"
-      ],
-      [
-        "ecology/ref-based-rad-seq",
-        "RAD-Seq Reference-based data analysis",
-        "Ecology",
-        "/topics/ecology/tutorials/ref-based-rad-seq/tutorial.html"
-      ],
-      [
-        "epigenetics/formation_of_super-structures_on_xi",
-        "Formation of the Super-Structures on the Inactive X",
-        "Epigenetics",
-        "/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html"
-      ],
-      [
-        "genome-annotation/gene-centric",
-        "Comparative gene analysis in unannotated genomes",
-        "Genome Annotation",
-        "/topics/genome-annotation/tutorials/gene-centric/tutorial.html"
-      ],
-      [
-        "introduction/data-manipulation-olympics",
-        "Data Manipulation Olympics",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/data-manipulation-olympics/tutorial.html"
-      ],
-      [
-        "introduction/galaxy-intro-strands",
-        "Introduction to Genomics and Galaxy",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/galaxy-intro-strands/tutorial.html"
-      ],
-      [
-        "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
-        "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-case_cell-cycle",
-        "Removing the effects of the cell cycle",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-scanpy-pbmc3k",
-        "Clustering 3K PBMCs with Scanpy",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.html"
-      ],
-      [
-        "transcriptomics/mirna-target-finder",
-        "Whole transcriptome analysis of Arabidopsis thaliana",
-        "Transcriptomics",
-        "/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html"
-      ],
-      [
-        "transcriptomics/ref-based",
-        "Reference-based RNA-Seq data analysis",
-        "Transcriptomics",
-        "/topics/transcriptomics/tutorials/ref-based/tutorial.html"
-      ]
-    ]
-  },
   "bgruening/tp_sort_header_tool": {
     "tool_id": [
       [
@@ -1878,6 +1900,98 @@
         "Small Non-coding RNA Clustering using BlockClust",
         "Transcriptomics",
         "/topics/transcriptomics/tutorials/small_ncrna_clustering/tutorial.html"
+      ]
+    ]
+  },
+  "devteam/bwa_mem": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2",
+        "0.7.17.2"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
+        "0.7.17.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "assembly/chloroplast-assembly",
+        "Chloroplast genome assembly",
+        "Assembly",
+        "/topics/assembly/tutorials/chloroplast-assembly/tutorial.html"
+      ],
+      [
+        "assembly/vgp_workflow_training",
+        "VGP assembly pipeline - short version",
+        "Assembly",
+        "/topics/assembly/tutorials/vgp_workflow_training/tutorial.html"
+      ],
+      [
+        "galaxy-interface/collections",
+        "Using dataset collections",
+        "Using Galaxy and Managing your Data",
+        "/topics/galaxy-interface/tutorials/collections/tutorial.html"
+      ],
+      [
+        "introduction/galaxy-intro-ngs-data-managment",
+        "NGS data logistics",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/galaxy-intro-ngs-data-managment/tutorial.html"
+      ],
+      [
+        "sequence-analysis/human-reads-removal",
+        "Removal of human reads from SARS-CoV-2 sequencing data",
+        "Sequence analysis",
+        "/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html"
+      ],
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ],
+      [
+        "variant-analysis/aiv-analysis",
+        "Avian influenza viral strain analysis from gene segment sequencing data",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html"
+      ],
+      [
+        "variant-analysis/dunovo",
+        "Calling very rare variants",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/dunovo/tutorial.html"
+      ],
+      [
+        "variant-analysis/exome-seq",
+        "Exome sequencing data analysis for diagnosing a genetic disease",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/exome-seq/tutorial.html"
+      ],
+      [
+        "variant-analysis/non-dip",
+        "Calling variants in non-diploid systems",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/non-dip/tutorial.html"
+      ],
+      [
+        "variant-analysis/sars-cov-2",
+        "From NCBI's Sequence Read Archive (SRA) to Galaxy: SARS-CoV-2 variant analysis",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/sars-cov-2/tutorial.html"
+      ],
+      [
+        "variant-analysis/somatic-variant-discovery",
+        "Somatic Variant Discovery from WES Data Using Control-FREEC",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html"
+      ],
+      [
+        "variant-analysis/somatic-variants",
+        "Identification of somatic and germline variants from tumor and normal sample pairs",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/somatic-variants/tutorial.html"
       ]
     ]
   },
@@ -2015,7 +2129,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -2045,174 +2159,12 @@
       ]
     ]
   },
-  "devteam/bwa_mem": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2",
-        "0.7.17.2"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
-        "0.7.17.1"
-      ]
-    ],
-    "tutorials": [
-      [
-        "assembly/chloroplast-assembly",
-        "Chloroplast genome assembly",
-        "Assembly",
-        "/topics/assembly/tutorials/chloroplast-assembly/tutorial.html"
-      ],
-      [
-        "assembly/vgp_workflow_training",
-        "VGP assembly pipeline - short version",
-        "Assembly",
-        "/topics/assembly/tutorials/vgp_workflow_training/tutorial.html"
-      ],
-      [
-        "galaxy-interface/collections",
-        "Using dataset collections",
-        "Using Galaxy and Managing your Data",
-        "/topics/galaxy-interface/tutorials/collections/tutorial.html"
-      ],
-      [
-        "introduction/galaxy-intro-ngs-data-managment",
-        "NGS data logistics",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/galaxy-intro-ngs-data-managment/tutorial.html"
-      ],
-      [
-        "sequence-analysis/human-reads-removal",
-        "Removal of human reads from SARS-CoV-2 sequencing data",
-        "Sequence analysis",
-        "/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html"
-      ],
-      [
-        "variant-analysis/aiv-analysis",
-        "Avian influenza viral strain analysis from gene segment sequencing data",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html"
-      ],
-      [
-        "variant-analysis/dunovo",
-        "Calling very rare variants",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/dunovo/tutorial.html"
-      ],
-      [
-        "variant-analysis/exome-seq",
-        "Exome sequencing data analysis for diagnosing a genetic disease",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/exome-seq/tutorial.html"
-      ],
-      [
-        "variant-analysis/non-dip",
-        "Calling variants in non-diploid systems",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/non-dip/tutorial.html"
-      ],
-      [
-        "variant-analysis/sars-cov-2",
-        "From NCBI's Sequence Read Archive (SRA) to Galaxy: SARS-CoV-2 variant analysis",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/sars-cov-2/tutorial.html"
-      ],
-      [
-        "variant-analysis/somatic-variant-discovery",
-        "Somatic Variant Discovery from WES Data Using Control-FREEC",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html"
-      ],
-      [
-        "variant-analysis/somatic-variants",
-        "Identification of somatic and germline variants from tumor and normal sample pairs",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/somatic-variants/tutorial.html"
-      ]
-    ]
-  },
-  "bgruening/tp_replace_in_line": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2",
-        "1.1.2"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.1",
-        "1.1.1"
-      ]
-    ],
-    "tutorials": [
-      [
-        "assembly/ecoli_comparison",
-        "Making sense of a newly assembled genome",
-        "Assembly",
-        "/topics/assembly/tutorials/ecoli_comparison/tutorial.html"
-      ],
-      [
-        "ecology/phylogeny-data-prep",
-        "Preparing genomic data for phylogeny reconstruction",
-        "Ecology",
-        "/topics/ecology/tutorials/phylogeny-data-prep/tutorial.html"
-      ],
-      [
-        "ecology/ref-based-rad-seq",
-        "RAD-Seq Reference-based data analysis",
-        "Ecology",
-        "/topics/ecology/tutorials/ref-based-rad-seq/tutorial.html"
-      ],
-      [
-        "evolution/mtb_transmission",
-        "Identifying tuberculosis transmission links: from SNPs to transmission clusters",
-        "Evolution",
-        "/topics/evolution/tutorials/mtb_transmission/tutorial.html"
-      ],
-      [
-        "metagenomics/beer-data-analysis",
-        "Identification of the micro-organisms in a beer using Nanopore sequencing",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/beer-data-analysis/tutorial.html"
-      ],
-      [
-        "metagenomics/nanopore-16S-metagenomics",
-        "16S Microbial analysis with Nanopore data",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html"
-      ],
-      [
-        "proteomics/metaquantome-data-creation",
-        "metaQuantome 1: Data creation",
-        "Proteomics",
-        "/topics/proteomics/tutorials/metaquantome-data-creation/tutorial.html"
-      ],
-      [
-        "sequence-analysis/human-reads-removal",
-        "Removal of human reads from SARS-CoV-2 sequencing data",
-        "Sequence analysis",
-        "/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html"
-      ],
-      [
-        "transcriptomics/ref-based",
-        "Reference-based RNA-Seq data analysis",
-        "Transcriptomics",
-        "/topics/transcriptomics/tutorials/ref-based/tutorial.html"
-      ],
-      [
-        "transcriptomics/rna-seq-counts-to-genes",
-        "2: RNA-seq counts to genes",
-        "Transcriptomics",
-        "/topics/transcriptomics/tutorials/rna-seq-counts-to-genes/tutorial.html"
-      ],
-      [
-        "variant-analysis/somatic-variant-discovery",
-        "Somatic Variant Discovery from WES Data Using Control-FREEC",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html"
-      ]
-    ]
-  },
   "iuc/quast": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+galaxy1",
+        "5.2.0+galaxy1"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+galaxy0",
         "5.2.0+galaxy0"
@@ -2385,6 +2337,80 @@
       ]
     ]
   },
+  "bgruening/tp_replace_in_line": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.2",
+        "1.1.2"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.1",
+        "1.1.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "assembly/ecoli_comparison",
+        "Making sense of a newly assembled genome",
+        "Assembly",
+        "/topics/assembly/tutorials/ecoli_comparison/tutorial.html"
+      ],
+      [
+        "ecology/phylogeny-data-prep",
+        "Preparing genomic data for phylogeny reconstruction",
+        "Ecology",
+        "/topics/ecology/tutorials/phylogeny-data-prep/tutorial.html"
+      ],
+      [
+        "ecology/ref-based-rad-seq",
+        "RAD-Seq Reference-based data analysis",
+        "Ecology",
+        "/topics/ecology/tutorials/ref-based-rad-seq/tutorial.html"
+      ],
+      [
+        "evolution/mtb_transmission",
+        "Identifying tuberculosis transmission links: from SNPs to transmission clusters",
+        "Evolution",
+        "/topics/evolution/tutorials/mtb_transmission/tutorial.html"
+      ],
+      [
+        "metagenomics/nanopore-16S-metagenomics",
+        "16S Microbial analysis with Nanopore data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html"
+      ],
+      [
+        "proteomics/metaquantome-data-creation",
+        "metaQuantome 1: Data creation",
+        "Proteomics",
+        "/topics/proteomics/tutorials/metaquantome-data-creation/tutorial.html"
+      ],
+      [
+        "sequence-analysis/human-reads-removal",
+        "Removal of human reads from SARS-CoV-2 sequencing data",
+        "Sequence analysis",
+        "/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html"
+      ],
+      [
+        "transcriptomics/ref-based",
+        "Reference-based RNA-Seq data analysis",
+        "Transcriptomics",
+        "/topics/transcriptomics/tutorials/ref-based/tutorial.html"
+      ],
+      [
+        "transcriptomics/rna-seq-counts-to-genes",
+        "2: RNA-seq counts to genes",
+        "Transcriptomics",
+        "/topics/transcriptomics/tutorials/rna-seq-counts-to-genes/tutorial.html"
+      ],
+      [
+        "variant-analysis/somatic-variant-discovery",
+        "Somatic Variant Discovery from WES Data Using Control-FREEC",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html"
+      ]
+    ]
+  },
   "devteam/Add_a_column1": {
     "tool_id": [
       [
@@ -2541,6 +2567,10 @@
   },
   "iuc/busco": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.4.6+galaxy0",
+        "5.4.6+galaxy0"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.3.2+galaxy0",
         "5.3.2+galaxy0"
@@ -2835,7 +2865,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -3441,6 +3471,66 @@
       ]
     ]
   },
+  "iuc/anndata_inspect": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.7.5+galaxy1",
+        "0.7.5+galaxy1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.7.5+galaxy0",
+        "0.7.5+galaxy0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.6.22.post1+galaxy1",
+        "0.6.22.post1+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "single-cell/bulk-music-2-preparescref",
+        "Creating the single-cell RNA-seq reference dataset for deconvolution",
+        "Single Cell",
+        "/topics/single-cell/tutorials/bulk-music-2-preparescref/tutorial.html"
+      ],
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-case_alevin-combine-datasets",
+        "Combining datasets after pre-processing",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-case_basic-pipeline",
+        "Filter, Plot and Explore Single-cell RNA-seq Data",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-case_cell-cycle",
+        "Removing the effects of the cell cycle",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-case_monocle3-trajectories",
+        "Inferring trajectories using Monocle3",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-scanpy-pbmc3k",
+        "Clustering 3K PBMCs with Scanpy",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.html"
+      ]
+    ]
+  },
   "iuc/minimap2": {
     "tool_id": [
       [
@@ -3621,6 +3711,62 @@
       ]
     ]
   },
+  "bgruening/tp_sorted_uniq": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0",
+        "1.1.0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.0.0",
+        "1.0.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "contributing/create-new-tutorial",
+        "Creating a new tutorial",
+        "Contributing to the Galaxy Training Material",
+        "/topics/contributing/tutorials/create-new-tutorial/tutorial.html"
+      ],
+      [
+        "galaxy-interface/workflow-reports",
+        "Workflow Reports",
+        "Using Galaxy and Managing your Data",
+        "/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html"
+      ],
+      [
+        "introduction/data-manipulation-olympics",
+        "Data Manipulation Olympics",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/data-manipulation-olympics/tutorial.html"
+      ],
+      [
+        "introduction/galaxy-intro-101-everyone",
+        "Galaxy 101 for everyone",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html"
+      ],
+      [
+        "introduction/galaxy-reproduce",
+        "How to reproduce published Galaxy analyses",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/galaxy-reproduce/tutorial.html"
+      ],
+      [
+        "proteomics/secretome-prediction",
+        "Secretome Prediction",
+        "Proteomics",
+        "/topics/proteomics/tutorials/secretome-prediction/tutorial.html"
+      ],
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ]
+    ]
+  },
   "iuc/query_tabular": {
     "tool_id": [
       [
@@ -3757,7 +3903,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -3775,65 +3921,11 @@
       ]
     ]
   },
-  "iuc/anndata_inspect": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.7.5+galaxy1",
-        "0.7.5+galaxy1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.7.5+galaxy0",
-        "0.7.5+galaxy0"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.6.22.post1+galaxy1",
-        "0.6.22.post1+galaxy1"
-      ]
-    ],
-    "tutorials": [
-      [
-        "single-cell/bulk-music-2-preparescref",
-        "Creating the single-cell RNA-seq reference dataset for deconvolution",
-        "Single Cell",
-        "/topics/single-cell/tutorials/bulk-music-2-preparescref/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-case_alevin-combine-datasets",
-        "Combining datasets after pre-processing",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-case_basic-pipeline",
-        "Filter, Plot and Explore Single-cell RNA-seq Data",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-case_cell-cycle",
-        "Removing the effects of the cell cycle",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-scanpy-pbmc3k",
-        "Clustering 3K PBMCs with Scanpy",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.html"
-      ]
-    ]
-  },
   "devteam/samtools_stats": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.3+galaxy0",
-        "2.0.3+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.4",
+        "2.0.4"
       ],
       [
         "toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.2+galaxy2",
@@ -3880,56 +3972,6 @@
         "M. tuberculosis Variant Analysis",
         "Variant Analysis",
         "/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html"
-      ]
-    ]
-  },
-  "bgruening/tp_sorted_uniq": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0",
-        "1.1.0"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.0.0",
-        "1.0.0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "contributing/create-new-tutorial",
-        "Creating a new tutorial",
-        "Contributing to the Galaxy Training Material",
-        "/topics/contributing/tutorials/create-new-tutorial/tutorial.html"
-      ],
-      [
-        "galaxy-interface/workflow-reports",
-        "Workflow Reports",
-        "Using Galaxy and Managing your Data",
-        "/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html"
-      ],
-      [
-        "introduction/data-manipulation-olympics",
-        "Data Manipulation Olympics",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/data-manipulation-olympics/tutorial.html"
-      ],
-      [
-        "introduction/galaxy-intro-101-everyone",
-        "Galaxy 101 for everyone",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html"
-      ],
-      [
-        "introduction/galaxy-reproduce",
-        "How to reproduce published Galaxy analyses",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/galaxy-reproduce/tutorial.html"
-      ],
-      [
-        "proteomics/secretome-prediction",
-        "Secretome Prediction",
-        "Proteomics",
-        "/topics/proteomics/tutorials/secretome-prediction/tutorial.html"
       ]
     ]
   },
@@ -4053,8 +4095,70 @@
       ]
     ]
   },
+  "crs4/taxonomy_krona_chart": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.7.1+galaxy0",
+        "2.7.1+galaxy0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.7.1",
+        "2.7.1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.6.1.1",
+        "2.6.1.1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.6.1",
+        "2.6.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/beer-data-analysis",
+        "Identification of the micro-organisms in a beer using Nanopore sequencing",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/beer-data-analysis/tutorial.html"
+      ],
+      [
+        "metagenomics/general-tutorial",
+        "Analyses of metagenomics data - The global picture",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/general-tutorial/tutorial.html"
+      ],
+      [
+        "metagenomics/metatranscriptomics-short",
+        "Metatranscriptomics analysis using microbiome RNA-seq data (short)",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html"
+      ],
+      [
+        "metagenomics/mothur-miseq-sop",
+        "16S Microbial Analysis with mothur (extended)",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/mothur-miseq-sop/tutorial.html"
+      ],
+      [
+        "metagenomics/nanopore-16S-metagenomics",
+        "16S Microbial analysis with Nanopore data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html"
+      ],
+      [
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
+      ]
+    ]
+  },
   "devteam/picard_MarkDuplicates": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.4",
+        "2.18.2.4"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.3",
         "2.18.2.3"
@@ -4124,6 +4228,54 @@
         "Combining datasets after pre-processing",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-case_basic-pipeline",
+        "Filter, Plot and Explore Single-cell RNA-seq Data",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-case_cell-cycle",
+        "Removing the effects of the cell cycle",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-plant",
+        "Analysis of plant scRNA-Seq Data with Scanpy",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-plant/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-scanpy-pbmc3k",
+        "Clustering 3K PBMCs with Scanpy",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/scanpy_plot": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.7.1+galaxy1",
+        "1.7.1+galaxy1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.7.1+galaxy0",
+        "1.7.1+galaxy0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.4.4.post1+galaxy1",
+        "1.4.4.post1+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
       ],
       [
         "single-cell/scrna-case_basic-pipeline",
@@ -4296,6 +4448,46 @@
         "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
         "Metagenomics",
         "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/collection_column_join": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3",
+        "0.0.3"
+      ]
+    ],
+    "tutorials": [
+      [
+        "assembly/metagenomics-assembly",
+        "Assembly of metagenomic sequencing data",
+        "Assembly",
+        "/topics/assembly/tutorials/metagenomics-assembly/tutorial.html"
+      ],
+      [
+        "assembly/vgp_genome_assembly",
+        "VGP assembly pipeline",
+        "Assembly",
+        "/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html"
+      ],
+      [
+        "metagenomics/metagenomics-assembly",
+        "Assembly of metagenomic sequencing data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-preprocessing",
+        "Pre-processing of Single-Cell RNA Data",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-preprocessing/tutorial.html"
+      ],
+      [
+        "transcriptomics/rna-seq-reads-to-counts",
+        "1: RNA-Seq reads to counts",
+        "Transcriptomics",
+        "/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html"
       ]
     ]
   },
@@ -4511,6 +4703,50 @@
       ]
     ]
   },
+  "iuc/kraken2": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1",
+        "2.1.1+galaxy1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.0.8_beta+galaxy0",
+        "2.0.8_beta+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/beer-data-analysis",
+        "Identification of the micro-organisms in a beer using Nanopore sequencing",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/beer-data-analysis/tutorial.html"
+      ],
+      [
+        "metagenomics/nanopore-16S-metagenomics",
+        "16S Microbial analysis with Nanopore data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html"
+      ],
+      [
+        "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
+        "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
+      ],
+      [
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
+      ],
+      [
+        "variant-analysis/tb-variant-analysis",
+        "M. tuberculosis Variant Analysis",
+        "Variant Analysis",
+        "/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html"
+      ]
+    ]
+  },
   "random_lines1": {
     "tool_id": [
       [
@@ -4719,6 +4955,106 @@
       ]
     ]
   },
+  "galaxyp/msconvert": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.2",
+        "3.0.20287.2"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.19052.1",
+        "3.0.19052.1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.19052.0",
+        "3.0.19052.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ],
+      [
+        "proteomics/DIA_Analysis_OSW",
+        "DIA Analysis using OpenSwathWorkflow",
+        "Proteomics",
+        "/topics/proteomics/tutorials/DIA_Analysis_OSW/tutorial.html"
+      ],
+      [
+        "proteomics/encyclopedia",
+        "EncyclopeDIA",
+        "Proteomics",
+        "/topics/proteomics/tutorials/encyclopedia/tutorial.html"
+      ],
+      [
+        "proteomics/metaquantome-data-creation",
+        "metaQuantome 1: Data creation",
+        "Proteomics",
+        "/topics/proteomics/tutorials/metaquantome-data-creation/tutorial.html"
+      ],
+      [
+        "proteomics/protein-id-oms",
+        "Peptide and Protein ID using OpenMS tools",
+        "Proteomics",
+        "/topics/proteomics/tutorials/protein-id-oms/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/macs2_callpeak": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.2.7.1+galaxy0",
+        "2.2.7.1+galaxy0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.6",
+        "2.1.1.20160309.6"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.4",
+        "2.1.1.20160309.4"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "2.1.1.20160309.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "epigenetics/atac-seq",
+        "ATAC-Seq data analysis",
+        "Epigenetics",
+        "/topics/epigenetics/tutorials/atac-seq/tutorial.html"
+      ],
+      [
+        "epigenetics/estrogen-receptor-binding-site-identification",
+        "Identification of the binding sites of the Estrogen receptor",
+        "Epigenetics",
+        "/topics/epigenetics/tutorials/estrogen-receptor-binding-site-identification/tutorial.html"
+      ],
+      [
+        "epigenetics/formation_of_super-structures_on_xi",
+        "Formation of the Super-Structures on the Inactive X",
+        "Epigenetics",
+        "/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html"
+      ],
+      [
+        "epigenetics/tal1-binding-site-identification",
+        "Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1)",
+        "Epigenetics",
+        "/topics/epigenetics/tutorials/tal1-binding-site-identification/tutorial.html"
+      ],
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ]
+    ]
+  },
   "iuc/bedtools_intersectbed": {
     "tool_id": [
       [
@@ -4866,8 +5202,8 @@
   "iuc/deseq2": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.7+galaxy1",
-        "2.11.40.7+galaxy1"
+        "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.7+galaxy2",
+        "2.11.40.7+galaxy2"
       ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6+galaxy1",
@@ -4999,55 +5335,43 @@
       ]
     ]
   },
-  "crs4/taxonomy_krona_chart": {
+  "csv_to_tabular": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.7.1+galaxy0",
-        "2.7.1+galaxy0"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.7.1",
-        "2.7.1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.6.1.1",
-        "2.6.1.1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.6.1",
-        "2.6.1"
+        "csv_to_tabular",
+        "csv_to_tabular"
       ]
     ],
     "tutorials": [
       [
-        "metagenomics/beer-data-analysis",
-        "Identification of the micro-organisms in a beer using Nanopore sequencing",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/beer-data-analysis/tutorial.html"
+        "ecology/obisindicators",
+        "Obis marine indicators",
+        "Ecology",
+        "/topics/ecology/tutorials/obisindicators/tutorial.html"
       ],
       [
-        "metagenomics/general-tutorial",
-        "Analyses of metagenomics data - The global picture",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/general-tutorial/tutorial.html"
+        "galaxy-interface/workflow-reports",
+        "Workflow Reports",
+        "Using Galaxy and Managing your Data",
+        "/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html"
       ],
       [
-        "metagenomics/metatranscriptomics-short",
-        "Metatranscriptomics analysis using microbiome RNA-seq data (short)",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html"
+        "introduction/galaxy-intro-101-everyone",
+        "Galaxy 101 for everyone",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html"
       ],
       [
-        "metagenomics/mothur-miseq-sop",
-        "16S Microbial Analysis with mothur (extended)",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/mothur-miseq-sop/tutorial.html"
+        "introduction/galaxy-reproduce",
+        "How to reproduce published Galaxy analyses",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/galaxy-reproduce/tutorial.html"
       ],
       [
-        "metagenomics/nanopore-16S-metagenomics",
-        "16S Microbial analysis with Nanopore data",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html"
+        "statistics/clustering_machinelearning",
+        "Clustering in Machine Learning",
+        "Statistics and machine learning",
+        "/topics/statistics/tutorials/clustering_machinelearning/tutorial.html"
       ]
     ]
   },
@@ -5175,6 +5499,196 @@
       ]
     ]
   },
+  "lecorguille/abims_xcms_xcmsSet": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.4.4.1",
+        "3.4.4.1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0",
+        "3.12.0+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ],
+      [
+        "metabolomics/gcms",
+        "Mass spectrometry : GC-MS analysis with metaMS package",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms",
+        "Mass spectrometry: LC-MS analysis",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms-preprocessing",
+        "Mass spectrometry: LC-MS preprocessing with XCMS",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
+      ]
+    ]
+  },
+  "lecorguille/xcms_merge": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.4.4.0",
+        "3.4.4.0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy0",
+        "3.12.0+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ],
+      [
+        "metabolomics/gcms",
+        "Mass spectrometry : GC-MS analysis with metaMS package",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms",
+        "Mass spectrometry: LC-MS analysis",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms-preprocessing",
+        "Mass spectrometry: LC-MS preprocessing with XCMS",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
+      ]
+    ]
+  },
+  "lecorguille/abims_xcms_group": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.4.4.0",
+        "3.4.4.0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0",
+        "3.12.0+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ],
+      [
+        "metabolomics/gcms",
+        "Mass spectrometry : GC-MS analysis with metaMS package",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms",
+        "Mass spectrometry: LC-MS analysis",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms-preprocessing",
+        "Mass spectrometry: LC-MS preprocessing with XCMS",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
+      ]
+    ]
+  },
+  "lecorguille/abims_xcms_fillPeaks": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.4.4.0",
+        "3.4.4.0"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.12.0+galaxy0",
+        "3.12.0+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ],
+      [
+        "metabolomics/gcms",
+        "Mass spectrometry : GC-MS analysis with metaMS package",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms",
+        "Mass spectrometry: LC-MS analysis",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms-preprocessing",
+        "Mass spectrometry: LC-MS preprocessing with XCMS",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
+      ]
+    ]
+  },
+  "lecorguille/msnbase_readmsdata": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.8.2.1",
+        "2.8.2.1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0",
+        "2.16.1+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ],
+      [
+        "metabolomics/gcms",
+        "Mass spectrometry : GC-MS analysis with metaMS package",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms",
+        "Mass spectrometry: LC-MS analysis",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms/tutorial.html"
+      ],
+      [
+        "metabolomics/lcms-preprocessing",
+        "Mass spectrometry: LC-MS preprocessing with XCMS",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
+      ]
+    ]
+  },
   "Paste1": {
     "tool_id": [
       [
@@ -5206,48 +5720,6 @@
         "Combining datasets after pre-processing",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/tutorial.html"
-      ]
-    ]
-  },
-  "iuc/scanpy_plot": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.7.1+galaxy1",
-        "1.7.1+galaxy1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.7.1+galaxy0",
-        "1.7.1+galaxy0"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.4.4.post1+galaxy1",
-        "1.4.4.post1+galaxy1"
-      ]
-    ],
-    "tutorials": [
-      [
-        "single-cell/scrna-case_basic-pipeline",
-        "Filter, Plot and Explore Single-cell RNA-seq Data",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-case_cell-cycle",
-        "Removing the effects of the cell cycle",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-plant",
-        "Analysis of plant scRNA-Seq Data with Scanpy",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-plant/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-scanpy-pbmc3k",
-        "Clustering 3K PBMCs with Scanpy",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.html"
       ]
     ]
   },
@@ -5302,18 +5774,6 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy4",
         "1.3+galaxy4"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy2",
-        "1.3+galaxy2"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy1",
-        "1.3+galaxy1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy0",
-        "1.3+galaxy0"
       ]
     ],
     "tutorials": [
@@ -5340,40 +5800,6 @@
         "VGP assembly pipeline - short version",
         "Assembly",
         "/topics/assembly/tutorials/vgp_workflow_training/tutorial.html"
-      ]
-    ]
-  },
-  "iuc/collection_column_join": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3",
-        "0.0.3"
-      ]
-    ],
-    "tutorials": [
-      [
-        "assembly/metagenomics-assembly",
-        "Assembly of metagenomic sequencing data",
-        "Assembly",
-        "/topics/assembly/tutorials/metagenomics-assembly/tutorial.html"
-      ],
-      [
-        "metagenomics/metagenomics-assembly",
-        "Assembly of metagenomic sequencing data",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-preprocessing",
-        "Pre-processing of Single-Cell RNA Data",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-preprocessing/tutorial.html"
-      ],
-      [
-        "transcriptomics/rna-seq-reads-to-counts",
-        "1: RNA-Seq reads to counts",
-        "Transcriptomics",
-        "/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html"
       ]
     ]
   },
@@ -5576,44 +6002,6 @@
         "Trio Analysis using Synthetic Datasets from RD-Connect GPAP",
         "Variant Analysis",
         "/topics/variant-analysis/tutorials/trio-analysis/tutorial.html"
-      ]
-    ]
-  },
-  "iuc/kraken2": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1",
-        "2.1.1+galaxy1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.0.8_beta+galaxy0",
-        "2.0.8_beta+galaxy0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metagenomics/beer-data-analysis",
-        "Identification of the micro-organisms in a beer using Nanopore sequencing",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/beer-data-analysis/tutorial.html"
-      ],
-      [
-        "metagenomics/nanopore-16S-metagenomics",
-        "16S Microbial analysis with Nanopore data",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html"
-      ],
-      [
-        "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
-        "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
-      ],
-      [
-        "variant-analysis/tb-variant-analysis",
-        "M. tuberculosis Variant Analysis",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html"
       ]
     ]
   },
@@ -5880,90 +6268,6 @@
         "Proteogenomics 2: Database Search",
         "Proteomics",
         "/topics/proteomics/tutorials/proteogenomics-dbsearch/tutorial.html"
-      ]
-    ]
-  },
-  "galaxyp/msconvert": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.2",
-        "3.0.20287.2"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.19052.1",
-        "3.0.19052.1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.19052.0",
-        "3.0.19052.0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "proteomics/DIA_Analysis_OSW",
-        "DIA Analysis using OpenSwathWorkflow",
-        "Proteomics",
-        "/topics/proteomics/tutorials/DIA_Analysis_OSW/tutorial.html"
-      ],
-      [
-        "proteomics/encyclopedia",
-        "EncyclopeDIA",
-        "Proteomics",
-        "/topics/proteomics/tutorials/encyclopedia/tutorial.html"
-      ],
-      [
-        "proteomics/metaquantome-data-creation",
-        "metaQuantome 1: Data creation",
-        "Proteomics",
-        "/topics/proteomics/tutorials/metaquantome-data-creation/tutorial.html"
-      ],
-      [
-        "proteomics/protein-id-oms",
-        "Peptide and Protein ID using OpenMS tools",
-        "Proteomics",
-        "/topics/proteomics/tutorials/protein-id-oms/tutorial.html"
-      ]
-    ]
-  },
-  "iuc/macs2_callpeak": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.6",
-        "2.1.1.20160309.6"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.4",
-        "2.1.1.20160309.4"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
-        "2.1.1.20160309.0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "epigenetics/atac-seq",
-        "ATAC-Seq data analysis",
-        "Epigenetics",
-        "/topics/epigenetics/tutorials/atac-seq/tutorial.html"
-      ],
-      [
-        "epigenetics/estrogen-receptor-binding-site-identification",
-        "Identification of the binding sites of the Estrogen receptor",
-        "Epigenetics",
-        "/topics/epigenetics/tutorials/estrogen-receptor-binding-site-identification/tutorial.html"
-      ],
-      [
-        "epigenetics/formation_of_super-structures_on_xi",
-        "Formation of the Super-Structures on the Inactive X",
-        "Epigenetics",
-        "/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html"
-      ],
-      [
-        "epigenetics/tal1-binding-site-identification",
-        "Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1)",
-        "Epigenetics",
-        "/topics/epigenetics/tutorials/tal1-binding-site-identification/tutorial.html"
       ]
     ]
   },
@@ -6238,12 +6542,12 @@
         "2.7.8a+galaxy0"
       ],
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.8a",
-        "2.7.8a"
-      ],
-      [
         "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.7a",
         "2.7.7a"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.10b+galaxy3",
+        "2.7.10b+galaxy3"
       ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.5.2b-2",
@@ -6279,6 +6583,10 @@
   },
   "iuc/featurecounts": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.0.3+galaxy1",
+        "2.0.3+galaxy1"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.0.1+galaxy2",
         "2.0.1+galaxy2"
@@ -6324,40 +6632,6 @@
         "1: RNA-Seq reads to counts",
         "Transcriptomics",
         "/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html"
-      ]
-    ]
-  },
-  "csv_to_tabular": {
-    "tool_id": [
-      [
-        "csv_to_tabular",
-        "csv_to_tabular"
-      ]
-    ],
-    "tutorials": [
-      [
-        "galaxy-interface/workflow-reports",
-        "Workflow Reports",
-        "Using Galaxy and Managing your Data",
-        "/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html"
-      ],
-      [
-        "introduction/galaxy-intro-101-everyone",
-        "Galaxy 101 for everyone",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html"
-      ],
-      [
-        "introduction/galaxy-reproduce",
-        "How to reproduce published Galaxy analyses",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/galaxy-reproduce/tutorial.html"
-      ],
-      [
-        "statistics/clustering_machinelearning",
-        "Clustering in Machine Learning",
-        "Statistics and machine learning",
-        "/topics/statistics/tutorials/clustering_machinelearning/tutorial.html"
       ]
     ]
   },
@@ -6565,6 +6839,38 @@
       ]
     ]
   },
+  "devteam/bwa": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.17.5",
+        "0.7.17.5"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.17.4",
+        "0.7.17.4"
+      ]
+    ],
+    "tutorials": [
+      [
+        "admin/reference-genomes",
+        "Reference Data with Data Managers",
+        "Galaxy Server administration",
+        "/topics/admin/tutorials/reference-genomes/tutorial.html"
+      ],
+      [
+        "ecology/ref-based-rad-seq",
+        "RAD-Seq Reference-based data analysis",
+        "Ecology",
+        "/topics/ecology/tutorials/ref-based-rad-seq/tutorial.html"
+      ],
+      [
+        "epigenetics/tal1-binding-site-identification",
+        "Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1)",
+        "Epigenetics",
+        "/topics/epigenetics/tutorials/tal1-binding-site-identification/tutorial.html"
+      ]
+    ]
+  },
   "imgteam/unzip": {
     "tool_id": [
       [
@@ -6685,151 +6991,23 @@
       ]
     ]
   },
-  "lecorguille/abims_xcms_xcmsSet": {
+  "lecorguille/abims_xcms_retcor": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.4.4.1",
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.4.4.1",
         "3.4.4.1"
       ],
       [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.12.0+galaxy0",
         "3.12.0+galaxy0"
       ]
     ],
     "tutorials": [
       [
-        "metabolomics/gcms",
-        "Mass spectrometry : GC-MS analysis with metaMS package",
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
         "Metabolomics",
-        "/topics/metabolomics/tutorials/gcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms",
-        "Mass spectrometry: LC-MS analysis",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms-preprocessing",
-        "Mass spectrometry: LC-MS preprocessing with XCMS",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
-      ]
-    ]
-  },
-  "lecorguille/xcms_merge": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.4.4.0",
-        "3.4.4.0"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy0",
-        "3.12.0+galaxy0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metabolomics/gcms",
-        "Mass spectrometry : GC-MS analysis with metaMS package",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/gcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms",
-        "Mass spectrometry: LC-MS analysis",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms-preprocessing",
-        "Mass spectrometry: LC-MS preprocessing with XCMS",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
-      ]
-    ]
-  },
-  "lecorguille/abims_xcms_group": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.4.4.0",
-        "3.4.4.0"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0",
-        "3.12.0+galaxy0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metabolomics/gcms",
-        "Mass spectrometry : GC-MS analysis with metaMS package",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/gcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms",
-        "Mass spectrometry: LC-MS analysis",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms-preprocessing",
-        "Mass spectrometry: LC-MS preprocessing with XCMS",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
-      ]
-    ]
-  },
-  "lecorguille/abims_xcms_fillPeaks": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.4.4.0",
-        "3.4.4.0"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.12.0+galaxy0",
-        "3.12.0+galaxy0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metabolomics/gcms",
-        "Mass spectrometry : GC-MS analysis with metaMS package",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/gcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms",
-        "Mass spectrometry: LC-MS analysis",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms-preprocessing",
-        "Mass spectrometry: LC-MS preprocessing with XCMS",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
-      ]
-    ]
-  },
-  "lecorguille/msnbase_readmsdata": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.8.2.1",
-        "2.8.2.1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0",
-        "2.16.1+galaxy0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metabolomics/gcms",
-        "Mass spectrometry : GC-MS analysis with metaMS package",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/gcms/tutorial.html"
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
       ],
       [
         "metabolomics/lcms",
@@ -7360,12 +7538,12 @@
   "iuc/genomescope": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0+galaxy1",
-        "2.0+galaxy1"
+        "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0+galaxy2",
+        "2.0+galaxy2"
       ],
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0",
-        "2.0"
+        "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0+galaxy1",
+        "2.0+galaxy1"
       ]
     ],
     "tutorials": [
@@ -7893,6 +8071,38 @@
       ]
     ]
   },
+  "iuc/bedtools_sortbed": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_sortbed/2.30.0+galaxy2",
+        "2.30.0+galaxy2"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_sortbed/2.27.0.0",
+        "2.27.0.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "assembly/ecoli_comparison",
+        "Making sense of a newly assembled genome",
+        "Assembly",
+        "/topics/assembly/tutorials/ecoli_comparison/tutorial.html"
+      ],
+      [
+        "epigenetics/formation_of_super-structures_on_xi",
+        "Formation of the Super-Structures on the Inactive X",
+        "Epigenetics",
+        "/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html"
+      ],
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ]
+    ]
+  },
   "bgruening/deeptools_bam_compare": {
     "tool_id": [
       [
@@ -7932,8 +8142,8 @@
   "iuc/ggplot2_heatmap2": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.1.1+galaxy1",
-        "3.1.1+galaxy1"
+        "toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.1.3+galaxy0",
+        "3.1.3+galaxy0"
       ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1",
@@ -9003,28 +9213,6 @@
       ]
     ]
   },
-  "devteam/bwa": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.17.4",
-        "0.7.17.4"
-      ]
-    ],
-    "tutorials": [
-      [
-        "ecology/ref-based-rad-seq",
-        "RAD-Seq Reference-based data analysis",
-        "Ecology",
-        "/topics/ecology/tutorials/ref-based-rad-seq/tutorial.html"
-      ],
-      [
-        "epigenetics/tal1-binding-site-identification",
-        "Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1)",
-        "Epigenetics",
-        "/topics/epigenetics/tutorials/tal1-binding-site-identification/tutorial.html"
-      ]
-    ]
-  },
   "ecology/spocc_occ": {
     "tool_id": [
       [
@@ -9078,6 +9266,14 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_predict/funannotate_predict/1.8.9+galaxy2",
         "1.8.9+galaxy2"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_predict/funannotate_predict/1.8.15+galaxy1",
+        "1.8.15+galaxy1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_predict/funannotate_predict/1.8.15+galaxy0",
+        "1.8.15+galaxy0"
       ]
     ],
     "tutorials": [
@@ -9142,12 +9338,8 @@
   "galaxyp/eggnog_mapper": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/galaxyp/eggnog_mapper/eggnog_mapper/2.1.8+galaxy2.1.8",
-        "2.1.8+galaxy2.1.8"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/galaxyp/eggnog_mapper/eggnog_mapper/2.1.6+galaxy1",
-        "2.1.6+galaxy1"
+        "toolshed.g2.bx.psu.edu/repos/galaxyp/eggnog_mapper/eggnog_mapper/2.1.8+galaxy3",
+        "2.1.8+galaxy3"
       ]
     ],
     "tutorials": [
@@ -9168,12 +9360,8 @@
   "bgruening/interproscan": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/interproscan/interproscan/5.55-88.0+galaxy3",
-        "5.55-88.0+galaxy3"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/interproscan/interproscan/5.54-87.0+galaxy2",
-        "5.54-87.0+galaxy2"
+        "toolshed.g2.bx.psu.edu/repos/bgruening/interproscan/interproscan/5.59-91.0+galaxy3",
+        "5.59-91.0+galaxy3"
       ]
     ],
     "tutorials": [
@@ -9194,8 +9382,8 @@
   "bgruening/repeatmasker_wrapper": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.2-p1+galaxy1",
-        "4.1.2-p1+galaxy1"
+        "toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.5+galaxy0",
+        "4.1.5+galaxy0"
       ],
       [
         "toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.2-p1+galaxy0",
@@ -9373,32 +9561,6 @@
       ]
     ]
   },
-  "lecorguille/abims_xcms_retcor": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.4.4.1",
-        "3.4.4.1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.12.0+galaxy0",
-        "3.12.0+galaxy0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metabolomics/lcms",
-        "Mass spectrometry: LC-MS analysis",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms/tutorial.html"
-      ],
-      [
-        "metabolomics/lcms-preprocessing",
-        "Mass spectrometry: LC-MS preprocessing with XCMS",
-        "Metabolomics",
-        "/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
-      ]
-    ]
-  },
   "lecorguille/xcms_plot_chromatogram": {
     "tool_id": [
       [
@@ -9473,11 +9635,37 @@
       ]
     ]
   },
-  "iuc/datamash_reverse": {
+  "iuc/metaphlan": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/datamash_reverse/datamash_reverse/1.1.0",
-        "1.1.0"
+        "toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.0.6+galaxy1",
+        "4.0.6+galaxy1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/3.0.9+galaxy0",
+        "3.0.9+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/metatranscriptomics-short",
+        "Metatranscriptomics analysis using microbiome RNA-seq data (short)",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html"
+      ],
+      [
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/krakentools_kreport2krona": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/krakentools_kreport2krona/krakentools_kreport2krona/1.2+galaxy0",
+        "1.2+galaxy0"
       ]
     ],
     "tutorials": [
@@ -9488,10 +9676,10 @@
         "/topics/metagenomics/tutorials/beer-data-analysis/tutorial.html"
       ],
       [
-        "metagenomics/nanopore-16S-metagenomics",
-        "16S Microbial analysis with Nanopore data",
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
         "Metagenomics",
-        "/topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html"
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
       ]
     ]
   },
@@ -9877,6 +10065,28 @@
       ]
     ]
   },
+  "iuc/kraken_biom": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/kraken_biom/kraken_biom/1.2.0+galaxy1",
+        "1.2.0+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
+        "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
+      ],
+      [
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
+      ]
+    ]
+  },
   "iuc/compose_text_param": {
     "tool_id": [
       [
@@ -9896,6 +10106,28 @@
         "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
         "Metagenomics",
         "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
+      ]
+    ]
+  },
+  "interactive_tool_phinch": {
+    "tool_id": [
+      [
+        "interactive_tool_phinch",
+        "interactive_tool_phinch"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
+        "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
+      ],
+      [
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
       ]
     ]
   },
@@ -10378,12 +10610,12 @@
   "bgruening/hifiasm": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.16.1+galaxy2",
-        "0.16.1+galaxy2"
+        "toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.18.8+galaxy1",
+        "0.18.8+galaxy1"
       ],
       [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.14+galaxy0",
-        "0.14+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.16.1+galaxy2",
+        "0.16.1+galaxy2"
       ]
     ],
     "tutorials": [
@@ -11279,11 +11511,33 @@
       ]
     ]
   },
+  "__UNZIP_COLLECTION__": {
+    "tool_id": [
+      [
+        "__UNZIP_COLLECTION__",
+        "__UNZIP_COLLECTION__"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
+      ],
+      [
+        "sequence-analysis/human-reads-removal",
+        "Removal of human reads from SARS-CoV-2 sequencing data",
+        "Sequence analysis",
+        "/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html"
+      ]
+    ]
+  },
   "iuc/tb_profiler_profile": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/4.4.0+galaxy0",
-        "4.4.0+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/4.4.1+galaxy0",
+        "4.4.1+galaxy0"
       ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/tbprofiler/tb_profiler_profile/3.0.8+galaxy0",
@@ -12101,30 +12355,12 @@
       ]
     ]
   },
-  "iuc/bedtools_sortbed": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_sortbed/2.27.0.0",
-        "2.27.0.0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "assembly/ecoli_comparison",
-        "Making sense of a newly assembled genome",
-        "Assembly",
-        "/topics/assembly/tutorials/ecoli_comparison/tutorial.html"
-      ],
-      [
-        "epigenetics/formation_of_super-structures_on_xi",
-        "Formation of the Super-Structures on the Inactive X",
-        "Epigenetics",
-        "/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html"
-      ]
-    ]
-  },
   "nilesh/rseqc_read_distribution": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_read_distribution/5.0.1+galaxy2",
+        "5.0.1+galaxy2"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_read_distribution/2.6.4.1",
         "2.6.4.1"
@@ -12148,6 +12384,10 @@
   "nilesh/rseqc_infer_experiment": {
     "tool_id": [
       [
+        "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.1+galaxy2",
+        "5.0.1+galaxy2"
+      ],
+      [
         "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1",
         "2.6.4.1"
       ]
@@ -12170,6 +12410,10 @@
   "nilesh/rseqc_geneBody_coverage": {
     "tool_id": [
       [
+        "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_geneBody_coverage/5.0.1+galaxy2",
+        "5.0.1+galaxy2"
+      ],
+      [
         "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_geneBody_coverage/2.6.4.3",
         "2.6.4.3"
       ]
@@ -12189,8 +12433,38 @@
       ]
     ]
   },
+  "iuc/pygenomeTracks": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/pygenometracks/pygenomeTracks/3.8+galaxy1",
+        "3.8+galaxy1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/pygenometracks/pygenomeTracks/3.6",
+        "3.6"
+      ]
+    ],
+    "tutorials": [
+      [
+        "epigenetics/atac-seq",
+        "ATAC-Seq data analysis",
+        "Epigenetics",
+        "/topics/epigenetics/tutorials/atac-seq/tutorial.html"
+      ],
+      [
+        "transcriptomics/ref-based",
+        "Reference-based RNA-Seq data analysis",
+        "Transcriptomics",
+        "/topics/transcriptomics/tutorials/ref-based/tutorial.html"
+      ]
+    ]
+  },
   "iuc/goseq": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/goseq/goseq/1.50.0+galaxy0",
+        "1.50.0+galaxy0"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/goseq/goseq/1.44.0+galaxy0",
         "1.44.0+galaxy0"
@@ -12311,28 +12585,6 @@
       ]
     ]
   },
-  "iuc/metaphlan2krona": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/metaphlan2krona/metaphlan2krona/2.6.0.0",
-        "2.6.0.0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metagenomics/beer-data-analysis",
-        "Identification of the micro-organisms in a beer using Nanopore sequencing",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/beer-data-analysis/tutorial.html"
-      ],
-      [
-        "metagenomics/general-tutorial",
-        "Analyses of metagenomics data - The global picture",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/general-tutorial/tutorial.html"
-      ]
-    ]
-  },
   "devteam/picard_MergeSamFiles": {
     "tool_id": [
       [
@@ -12387,19 +12639,19 @@
       ]
     ]
   },
-  "rnateam/rbc_mafft_add": {
+  "iuc/chopin2": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft_add/7.508+galaxy0",
-        "7.508+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/iuc/chopin2/chopin2/1.0.7+galaxy1",
+        "1.0.7+galaxy1"
       ]
     ],
     "tutorials": [
       [
-        "variant-analysis/aiv-analysis",
-        "Avian influenza viral strain analysis from gene segment sequencing data",
-        "Variant Analysis",
-        "/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html"
+        "statistics/hyperdimensional_computing",
+        "Supervised Learning with Hyperdimensional Computing",
+        "Statistics and machine learning",
+        "/topics/statistics/tutorials/hyperdimensional_computing/tutorial.html"
       ]
     ]
   },
@@ -12438,8 +12690,8 @@
   "iuc/ivar_consensus": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/ivar_consensus/ivar_consensus/1.3.1+galaxy0",
-        "1.3.1+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/iuc/ivar_consensus/ivar_consensus/1.4.2+galaxy0",
+        "1.4.2+galaxy0"
       ]
     ],
     "tutorials": [
@@ -12470,8 +12722,8 @@
   "iuc/bamtools_split_ref": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_ref/bamtools_split_ref/2.5.1+galaxy0",
-        "2.5.1+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_ref/bamtools_split_ref/2.5.2+galaxy1",
+        "2.5.2+galaxy1"
       ]
     ],
     "tutorials": [
@@ -12592,6 +12844,38 @@
         "SRA Aligned Read Format to Speed Up SARS-CoV-2 data Analysis",
         "Using Galaxy and Managing your Data",
         "/topics/galaxy-interface/tutorials/ncbi-sarf/tutorial.html"
+      ]
+    ]
+  },
+  "devteam/data_manager_fetch_genome_all_fasta_dbkey": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/devteam/data_manager_fetch_genome_dbkeys_all_fasta/data_manager_fetch_genome_all_fasta_dbkey/0.0.4",
+        "0.0.4"
+      ]
+    ],
+    "tutorials": [
+      [
+        "admin/reference-genomes",
+        "Reference Data with Data Managers",
+        "Galaxy Server administration",
+        "/topics/admin/tutorials/reference-genomes/tutorial.html"
+      ]
+    ]
+  },
+  "devteam/bwa_mem_index_builder_data_manager": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/devteam/data_manager_bwa_mem_index_builder/bwa_mem_index_builder_data_manager/0.0.5",
+        "0.0.5"
+      ]
+    ],
+    "tutorials": [
+      [
+        "admin/reference-genomes",
+        "Reference Data with Data Managers",
+        "Galaxy Server administration",
+        "/topics/admin/tutorials/reference-genomes/tutorial.html"
       ]
     ]
   },
@@ -12800,22 +13084,6 @@
         "DNA Methylation data analysis",
         "Epigenetics",
         "/topics/epigenetics/tutorials/methylation-seq/tutorial.html"
-      ]
-    ]
-  },
-  "iuc/pygenomeTracks": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/pygenometracks/pygenomeTracks/3.6",
-        "3.6"
-      ]
-    ],
-    "tutorials": [
-      [
-        "epigenetics/atac-seq",
-        "ATAC-Seq data analysis",
-        "Epigenetics",
-        "/topics/epigenetics/tutorials/atac-seq/tutorial.html"
       ]
     ]
   },
@@ -14307,6 +14575,26 @@
       ]
     ]
   },
+  "ecology/obisindicators": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/obisindicators/obisindicators/0.0.2",
+        "0.0.2"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/obisindicators/obisindicators/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/obisindicators",
+        "Obis marine indicators",
+        "Ecology",
+        "/topics/ecology/tutorials/obisindicators/tutorial.html"
+      ]
+    ]
+  },
   "iuc/stacks_genotypes": {
     "tool_id": [
       [
@@ -14327,6 +14615,22 @@
     "tool_id": [
       [
         "toolshed.g2.bx.psu.edu/repos/ecology/cb_ivr/cb_ivr/0.0.0",
+        "0.0.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/champs-blocs",
+        "Champs blocs indicators",
+        "Ecology",
+        "/topics/ecology/tutorials/champs-blocs/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/cb_div": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/cb_div/cb_div/0.0.0",
         "0.0.0"
       ]
     ],
@@ -14851,6 +15155,102 @@
       ]
     ]
   },
+  "ecology/srs_spectral_indices": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_spectral_indices/srs_spectral_indices/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_process_data": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_process_data/srs_process_data/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_preprocess_s2": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_preprocess_s2/srs_preprocess_s2/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_pca": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_pca/srs_pca/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_global_indices": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_global_indices/srs_global_indices/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_diversity_maps": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_diversity_maps/srs_diversity_maps/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
   "ecology/tool_anonymization": {
     "tool_id": [
       [
@@ -15091,43 +15491,15 @@
       ]
     ]
   },
-  "iuc/funannotate_sort": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_sort/funannotate_sort/1.8.9+galaxy2",
-        "1.8.9+galaxy2"
-      ]
-    ],
-    "tutorials": [
-      [
-        "genome-annotation/funannotate",
-        "Genome annotation with Funannotate",
-        "Genome Annotation",
-        "/topics/genome-annotation/tutorials/funannotate/tutorial.html"
-      ]
-    ]
-  },
   "iuc/funannotate_compare": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_compare/funannotate_compare/1.8.9+galaxy2",
-        "1.8.9+galaxy2"
-      ]
-    ],
-    "tutorials": [
+        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_compare/funannotate_compare/1.8.15+galaxy1",
+        "1.8.15+galaxy1"
+      ],
       [
-        "genome-annotation/funannotate",
-        "Genome annotation with Funannotate",
-        "Genome Annotation",
-        "/topics/genome-annotation/tutorials/funannotate/tutorial.html"
-      ]
-    ]
-  },
-  "iuc/funannotate_clean": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_clean/funannotate_clean/1.8.9+galaxy2",
-        "1.8.9+galaxy2"
+        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_compare/funannotate_compare/1.8.15+galaxy0",
+        "1.8.15+galaxy0"
       ]
     ],
     "tutorials": [
@@ -15142,8 +15514,12 @@
   "iuc/funannotate_annotate": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_annotate/funannotate_annotate/1.8.9+galaxy2",
-        "1.8.9+galaxy2"
+        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_annotate/funannotate_annotate/1.8.15+galaxy1",
+        "1.8.15+galaxy1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/funannotate_annotate/funannotate_annotate/1.8.15+galaxy0",
+        "1.8.15+galaxy0"
       ]
     ],
     "tutorials": [
@@ -15320,6 +15696,22 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_maskfastabed/2.30.0",
         "2.30.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "genome-annotation/repeatmasker",
+        "Masking repeats with RepeatMasker",
+        "Genome Annotation",
+        "/topics/genome-annotation/tutorials/repeatmasker/tutorial.html"
+      ]
+    ]
+  },
+  "csbl/repeatmodeler": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.4+galaxy1",
+        "2.0.4+galaxy1"
       ]
     ],
     "tutorials": [
@@ -15552,6 +15944,122 @@
         "Evaluating and ranking a set of pathways based on multiple metrics",
         "Synthetic Biology",
         "/topics/synthetic-biology/tutorials/pathway_analysis/tutorial.html"
+      ]
+    ]
+  },
+  "recetox/waveica": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/recetox/waveica/waveica/0.2.0+galaxy2",
+        "0.2.0+galaxy2"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ]
+    ]
+  },
+  "recetox/riassigner": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.4+galaxy1",
+        "0.3.4+galaxy1"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.2+galaxy1",
+        "0.3.2+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ]
+    ]
+  },
+  "recetox/ramclustr_define_experiment": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/recetox/ramclustr_define_experiment/ramclustr_define_experiment/1.0.2",
+        "1.0.2"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ]
+    ]
+  },
+  "recetox/ramclustr": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.2.4+galaxy2",
+        "1.2.4+galaxy2"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ]
+    ]
+  },
+  "recetox/matchms_formatter": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.4",
+        "0.1.4"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ]
+    ]
+  },
+  "recetox/matchms_filtering": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.17.0+galaxy0",
+        "0.17.0+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
+      ]
+    ]
+  },
+  "recetox/matchms": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.17.0+galaxy0",
+        "0.17.0+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metabolomics/gc_ms_with_xcms",
+        "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
+        "Metabolomics",
+        "/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
       ]
     ]
   },
@@ -15855,22 +16363,6 @@
       ]
     ]
   },
-  "iuc/metaphlan": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/3.0.9+galaxy0",
-        "3.0.9+galaxy0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metagenomics/metatranscriptomics-short",
-        "Metatranscriptomics analysis using microbiome RNA-seq data (short)",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html"
-      ]
-    ]
-  },
   "iuc/humann_unpack_pathways": {
     "tool_id": [
       [
@@ -16031,6 +16523,54 @@
       ]
     ]
   },
+  "iuc/est_abundance": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/bracken/est_abundance/2.7+galaxy1",
+        "2.7+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
+      ]
+    ]
+  },
+  "interactive_tool_pavian": {
+    "tool_id": [
+      [
+        "interactive_tool_pavian",
+        "interactive_tool_pavian"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/taxonomic-profiling",
+        "Taxonomic Profiling and Visualization of Metagenomic Data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/taxonomic-profiling/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/datamash_reverse": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/datamash_reverse/datamash_reverse/1.1.0",
+        "1.1.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/nanopore-16S-metagenomics",
+        "16S Microbial analysis with Nanopore data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html"
+      ]
+    ]
+  },
   "iuc/mothur_taxonomy_to_krona": {
     "tool_id": [
       [
@@ -16100,22 +16640,6 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/mlst/mlst/2.22.0",
         "2.22.0"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
-        "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
-      ]
-    ]
-  },
-  "iuc/kraken_biom": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/kraken_biom/kraken_biom/1.2.0+galaxy1",
-        "1.2.0+galaxy1"
       ]
     ],
     "tutorials": [
@@ -16216,22 +16740,6 @@
       [
         "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_multijoin_tool/1.1.1",
         "1.1.1"
-      ]
-    ],
-    "tutorials": [
-      [
-        "metagenomics/pathogen-detection-from-nanopore-foodborne-data",
-        "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html"
-      ]
-    ]
-  },
-  "interactive_tool_phinch": {
-    "tool_id": [
-      [
-        "interactive_tool_phinch",
-        "interactive_tool_phinch"
       ]
     ],
     "tutorials": [
@@ -16477,7 +16985,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16493,7 +17001,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16509,7 +17017,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16525,7 +17033,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16541,7 +17049,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16557,7 +17065,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16573,7 +17081,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16589,7 +17097,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16605,7 +17113,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Inferring trajectories using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16821,6 +17329,10 @@
   },
   "bgruening/alevin": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/alevin/alevin/1.9.0+galaxy2",
+        "1.9.0+galaxy2"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/bgruening/alevin/alevin/1.5.1+galaxy0",
         "1.5.1+galaxy0"
@@ -17088,6 +17600,70 @@
         "Bulk RNA Deconvolution with MuSiC",
         "Single Cell",
         "/topics/single-cell/tutorials/bulk-music/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/sinto_fragments": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/sinto_fragments/sinto_fragments/0.9.0+galaxy1",
+        "0.9.0+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/sinto_barcode": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/sinto_barcode/sinto_barcode/0.9.0+galaxy1",
+        "0.9.0+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/episcanpy_preprocess": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/episcanpy_preprocess/episcanpy_preprocess/0.3.2+galaxy1",
+        "0.3.2+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/episcanpy_build_matrix": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/episcanpy_build_matrix/episcanpy_build_matrix/0.3.2+galaxy1",
+        "0.3.2+galaxy1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "single-cell/scatac-preprocessing-tenx",
+        "Pre-processing of 10X Single-Cell ATAC-seq Datasets",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html"
       ]
     ]
   },
@@ -17500,6 +18076,22 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy0",
         "2.2.1+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "assembly/vgp_genome_assembly",
+        "VGP assembly pipeline",
+        "Assembly",
+        "/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html"
+      ]
+    ]
+  },
+  "bgruening/gfastats": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.6+galaxy0",
+        "1.3.6+galaxy0"
       ]
     ],
     "tutorials": [
@@ -18958,6 +19550,10 @@
   "iuc/pyega3": {
     "tool_id": [
       [
+        "toolshed.g2.bx.psu.edu/repos/iuc/ega_download_client/pyega3/4.0.5+galaxy2",
+        "4.0.5+galaxy2"
+      ],
+      [
         "toolshed.g2.bx.psu.edu/repos/iuc/ega_download_client/pyega3/4.0.0+galaxy0",
         "4.0.0+galaxy0"
       ]
@@ -19096,22 +19692,6 @@
         "Creating a new tutorial",
         "Contributing to the Galaxy Training Material",
         "/topics/contributing/tutorials/create-new-tutorial/tutorial.html"
-      ]
-    ]
-  },
-  "__UNZIP_COLLECTION__": {
-    "tool_id": [
-      [
-        "__UNZIP_COLLECTION__",
-        "__UNZIP_COLLECTION__"
-      ]
-    ],
-    "tutorials": [
-      [
-        "sequence-analysis/human-reads-removal",
-        "Removal of human reads from SARS-CoV-2 sequencing data",
-        "Sequence analysis",
-        "/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html"
       ]
     ]
   },
@@ -20410,12 +20990,8 @@
   "iuc/pathview": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/pathview/pathview/1.24.0+galaxy2",
-        "1.24.0+galaxy2"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/pathview/pathview/1.24.0+galaxy0",
-        "1.24.0+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/iuc/pathview/pathview/1.34.0+galaxy0",
+        "1.34.0+galaxy0"
       ]
     ],
     "tutorials": [
@@ -20574,6 +21150,10 @@
   "devteam/velveth": {
     "tool_id": [
       [
+        "toolshed.g2.bx.psu.edu/repos/devteam/velvet/velveth/1.2.10.3",
+        "1.2.10.3"
+      ],
+      [
         "toolshed.g2.bx.psu.edu/repos/devteam/velvet/velveth/1.2.10.1",
         "1.2.10.1"
       ]
@@ -20589,6 +21169,10 @@
   },
   "devteam/velvetg": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/devteam/velvet/velvetg/1.2.10.2",
+        "1.2.10.2"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/devteam/velvet/velvetg/1.2.10.1",
         "1.2.10.1"
@@ -20640,6 +21224,22 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_group/mothur_make_group/1.36.1.0",
         "1.36.1.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "metagenomics/general-tutorial",
+        "Analyses of metagenomics data - The global picture",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/general-tutorial/tutorial.html"
+      ]
+    ]
+  },
+  "iuc/metaphlan2krona": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/metaphlan2krona/metaphlan2krona/2.6.0.0",
+        "2.6.0.0"
       ]
     ],
     "tutorials": [

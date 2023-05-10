@@ -24,6 +24,12 @@
       "orcid": "0000-0002-1964-4960",
       "joined": "2019-08",
       "elixir_node": "ch",
+      "contact_for_training": true,
+      "location": {
+        "country": "CH",
+        "lat": 46.52,
+        "lon": 6.56
+      },
       "id": "lldelisle",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/lldelisle.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/lldelisle/"
@@ -173,9 +179,5 @@
     ],
     "video": true
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//epigenetics/tutorials/atac-seq/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//epigenetics/tutorials/atac-seq/tutorial.json"
-  }
+  "type": "tutorial"
 }

@@ -30,6 +30,13 @@
       "orcid": "0000-0001-9852-1987",
       "joined": "2017-09",
       "elixir_node": "de",
+      "contact_for_training": true,
+      "location": {
+        "country": "FR",
+        "lat": 45.77,
+        "lon": 3.08
+      },
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -40,7 +47,9 @@
       "layout": "base_slides",
       "logo": "GTN",
       "redirect_from": [
-        "/topics/instructors/tutorials/workshop-intro/slides"
+        "/topics/instructors/tutorials/workshop-intro/slides",
+        "/short/teaching/workshop-intro/slides",
+        "/short/S00093"
       ],
       "title": "Workshop Kickoff",
       "subtopic": "prepare",
@@ -57,6 +66,12 @@
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
           "elixir_node": "nl",
+          "contact_for_training": true,
+          "location": {
+            "country": "NL",
+            "lat": 51.912,
+            "lon": 4.462
+          },
           "id": "shiltemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/"
@@ -92,8 +107,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/workshop-intro/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/workshop-intro/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/workshop-intro/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/workshop-intro/slides.json"
       }
     },
     {
@@ -152,20 +167,29 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/gtn-for-instructors/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/gtn-for-instructors/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/gtn-for-instructors/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/gtn-for-instructors/slides.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/instructors/tutorials/organize-workshop/tutorial"
+        "/topics/instructors/tutorials/organize-workshop/tutorial",
+        "/short/teaching/organize-workshop",
+        "/short/T00283"
       ],
       "title": "Organizing a workshop",
       "subtopic": "prepare",
@@ -189,6 +213,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -201,6 +232,13 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -236,14 +274,16 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/organize-workshop/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/organize-workshop/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/organize-workshop/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/organize-workshop/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/instructors/philosophies/"
+        "/topics/instructors/philosophies/",
+        "/short/teaching/experiences",
+        "/short/T00277"
       ],
       "title": "Teaching experiences",
       "subtopic": "practises",
@@ -268,6 +308,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -316,14 +363,16 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/experiences/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/experiences/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/experiences/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/experiences/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/instructors/tutorials/setup-galaxy-for-training/tutorial"
+        "/topics/instructors/tutorials/setup-galaxy-for-training/tutorial",
+        "/short/teaching/setup-galaxy-for-training",
+        "/short/T00285"
       ],
       "title": "Set up a Galaxy for Training",
       "subtopic": "prepare",
@@ -354,6 +403,12 @@
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
           "elixir_node": "nl",
+          "contact_for_training": true,
+          "location": {
+            "country": "NL",
+            "lat": 51.912,
+            "lon": 4.462
+          },
           "id": "shiltemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/"
@@ -367,6 +422,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -402,14 +464,16 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/setup-galaxy-for-training/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/setup-galaxy-for-training/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/setup-galaxy-for-training/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/setup-galaxy-for-training/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/instructors/tutorials/galaxy-admin-training/tutorial"
+        "/topics/instructors/tutorials/galaxy-admin-training/tutorial",
+        "/short/teaching/galaxy-admin-training",
+        "/short/T00278"
       ],
       "title": "Galaxy Admin Training",
       "subtopic": "prepare",
@@ -447,6 +511,13 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -482,8 +553,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/galaxy-admin-training/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/galaxy-admin-training/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/galaxy-admin-training/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/galaxy-admin-training/tutorial.json"
       }
     },
     {
@@ -554,6 +625,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -585,14 +663,16 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/teaching-online/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/teaching-online/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/teaching-online/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/teaching-online/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/instructors/tutorials/running-workshop/tutorial"
+        "/topics/instructors/tutorials/running-workshop/tutorial",
+        "/short/teaching/running-workshop",
+        "/short/T00284"
       ],
       "title": "Running a workshop as instructor",
       "subtopic": "prepare",
@@ -613,6 +693,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -641,6 +728,12 @@
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
           "elixir_node": "nl",
+          "contact_for_training": true,
+          "location": {
+            "country": "NL",
+            "lat": 51.912,
+            "lon": 4.462
+          },
           "id": "shiltemann",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/"
@@ -653,6 +746,13 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -688,8 +788,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/running-workshop/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/running-workshop/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/running-workshop/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/running-workshop/tutorial.json"
       }
     },
     {
@@ -721,6 +821,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -779,8 +886,8 @@
         "work-in-progress"
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/live-coding/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/live-coding/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/live-coding/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/live-coding/tutorial.json"
       }
     },
     {
@@ -878,6 +985,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -930,8 +1044,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/motivation_demotivation/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/motivation_demotivation/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/motivation_demotivation/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/motivation_demotivation/tutorial.json"
       }
     },
     {
@@ -992,9 +1106,9 @@
       "slides": false,
       "quiz": [
         {
-          "id": "frequency_formative_assessment.yaml",
-          "path": "topics/teaching/tutorials/assessment/quiz/frequency_formative_assessment.yaml",
-          "title": "How frequent should formative feedback be?",
+          "id": "diagnostic_assessment.yaml",
+          "path": "topics/teaching/tutorials/assessment/quiz/diagnostic_assessment.yaml",
+          "title": "Diagnostic Assessment",
           "contributors": [
             "bebatut"
           ]
@@ -1008,17 +1122,17 @@
           ]
         },
         {
-          "id": "integrate_formative_assessment.yaml",
-          "path": "topics/teaching/tutorials/assessment/quiz/integrate_formative_assessment.yaml",
-          "title": "How to integrate the result of formative assessment / feedback in your course?",
+          "id": "frequency_formative_assessment.yaml",
+          "path": "topics/teaching/tutorials/assessment/quiz/frequency_formative_assessment.yaml",
+          "title": "How frequent should formative feedback be?",
           "contributors": [
             "bebatut"
           ]
         },
         {
-          "id": "diagnostic_assessment.yaml",
-          "path": "topics/teaching/tutorials/assessment/quiz/diagnostic_assessment.yaml",
-          "title": "Diagnostic Assessment",
+          "id": "integrate_formative_assessment.yaml",
+          "path": "topics/teaching/tutorials/assessment/quiz/integrate_formative_assessment.yaml",
+          "title": "How to integrate the result of formative assessment / feedback in your course?",
           "contributors": [
             "bebatut"
           ]
@@ -1049,6 +1163,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1101,14 +1222,16 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/assessment/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/assessment/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/assessment/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/assessment/tutorial.json"
       }
     },
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/instructors/tutorials/setup-tiaas-for-training/tutorial"
+        "/topics/instructors/tutorials/setup-tiaas-for-training/tutorial",
+        "/short/teaching/setup-tiaas-for-training",
+        "/short/T00286"
       ],
       "title": "Training Infrastructure as a Service",
       "subtopic": "prepare",
@@ -1134,6 +1257,13 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -1172,8 +1302,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/setup-tiaas-for-training/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/setup-tiaas-for-training/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/setup-tiaas-for-training/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/setup-tiaas-for-training/tutorial.json"
       }
     },
     {
@@ -1246,6 +1376,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1277,8 +1414,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/hybrid-training/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/hybrid-training/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/hybrid-training/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/hybrid-training/tutorial.json"
       }
     },
     {
@@ -1339,6 +1476,14 @@
       "slides": false,
       "quiz": [
         {
+          "id": "active_learning_strategies.yaml",
+          "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/active_learning_strategies.yaml",
+          "title": "Which strategies for active learning training did you use?",
+          "contributors": [
+            "bebatut"
+          ]
+        },
+        {
           "id": "active_learning_strategies_bloom_levels.yaml",
           "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/active_learning_strategies_bloom_levels.yaml",
           "title": "What is the highest Bloom's level supported by each teaching technique?",
@@ -1355,25 +1500,17 @@
           ]
         },
         {
-          "id": "trainer_skills.yaml",
-          "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/trainer_skills.yaml",
-          "title": "Reflect on your skills as a trainer",
-          "contributors": [
-            "bebatut"
-          ]
-        },
-        {
-          "id": "active_learning_strategies.yaml",
-          "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/active_learning_strategies.yaml",
-          "title": "Which strategies for active learning training did you use?",
-          "contributors": [
-            "bebatut"
-          ]
-        },
-        {
           "id": "mazur_interview.yaml",
           "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/mazur_interview.yaml",
           "title": "Reflect on Mazur's interview",
+          "contributors": [
+            "bebatut"
+          ]
+        },
+        {
+          "id": "trainer_skills.yaml",
+          "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/trainer_skills.yaml",
+          "title": "Reflect on your skills as a trainer",
           "contributors": [
             "bebatut"
           ]
@@ -1404,6 +1541,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1456,8 +1600,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/learner_participation_engagement/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//teaching/tutorials/learner_participation_engagement/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/learner_participation_engagement/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/teaching/tutorials/learner_participation_engagement/tutorial.json"
       }
     }
   ]

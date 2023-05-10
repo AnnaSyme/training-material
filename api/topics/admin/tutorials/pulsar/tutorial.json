@@ -1,7 +1,9 @@
 {
   "layout": "tutorial_hands_on",
   "redirect_from": [
-    "/topics/admin/tutorials/heterogeneous-compute/tutorial"
+    "/topics/admin/tutorials/heterogeneous-compute/tutorial",
+    "/short/admin/pulsar",
+    "/short/T00017"
   ],
   "title": "Running Jobs on Remote Resources with Pulsar",
   "questions": [
@@ -57,6 +59,13 @@
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
+      "contact_for_training": false,
+      "location": {
+        "country": "NL",
+        "lat": 51.91,
+        "lon": 4.46
+      },
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -69,6 +78,17 @@
       "id": "gmauro",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/gmauro.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/gmauro/"
+    },
+    {
+      "name": "Mira Kuntz",
+      "orcid": "0000-0003-4302-5091",
+      "gitter": "mira-miracoli:matrix.org",
+      "email": "kuntzm@informatik.uni-freiburg.de",
+      "joined": "2022-07",
+      "elixir_node": "de",
+      "id": "mira-miracoli",
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/mira-miracoli.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mira-miracoli/"
     }
   ],
   "subtopic": "jobs",
@@ -200,9 +220,5 @@
     ],
     "video": false
   },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//admin/tutorials/pulsar/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//admin/tutorials/pulsar/tutorial.json"
-  }
+  "type": "tutorial"
 }
