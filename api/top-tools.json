@@ -4844,10 +4844,6 @@
       [
         "toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.6",
         "2.6"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.3.7",
-        "2.3.7"
       ]
     ],
     "tutorials": [
@@ -6638,6 +6634,10 @@
   "bgruening/sklearn_ensemble": {
     "tool_id": [
       [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_ensemble/sklearn_ensemble/1.0.8.4",
+        "1.0.8.4"
+      ],
+      [
         "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_ensemble/sklearn_ensemble/1.0.8.2",
         "1.0.8.2"
       ],
@@ -7398,6 +7398,10 @@
   "bgruening/sklearn_searchcv": {
     "tool_id": [
       [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_searchcv/sklearn_searchcv/1.0.8.4",
+        "1.0.8.4"
+      ],
+      [
         "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_searchcv/sklearn_searchcv/1.0.8.2",
         "1.0.8.2"
       ],
@@ -7429,6 +7433,10 @@
   },
   "bgruening/sklearn_build_pipeline": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_build_pipeline/sklearn_build_pipeline/1.0.8.4",
+        "1.0.8.4"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_build_pipeline/sklearn_build_pipeline/1.0.8.2",
         "1.0.8.2"
@@ -8177,6 +8185,10 @@
   },
   "bgruening/sklearn_svm_classifier": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_svm_classifier/sklearn_svm_classifier/1.0.8.4",
+        "1.0.8.4"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_svm_classifier/sklearn_svm_classifier/1.0.8.2",
         "1.0.8.2"
@@ -10503,6 +10515,10 @@
   },
   "bgruening/sklearn_generalized_linear": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_generalized_linear/sklearn_generalized_linear/1.0.8.4",
+        "1.0.8.4"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_generalized_linear/sklearn_generalized_linear/1.0.8.2",
         "1.0.8.2"
@@ -18553,6 +18569,10 @@
   },
   "bgruening/sklearn_nn_classifier": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_nn_classifier/sklearn_nn_classifier/1.0.8.4",
+        "1.0.8.4"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_nn_classifier/sklearn_nn_classifier/1.0.8.2",
         "1.0.8.2"

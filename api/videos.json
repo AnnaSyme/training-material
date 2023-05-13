@@ -251,9 +251,18 @@
                        
                                
 			{
-				"id": "ai4life/tutorials/example-slides/slides",
+				"id": "ai4life/tutorials/welcome-bioimageio/slides",
 				"topic": "Image analysis using Deep Learning",
-				"title": "Example Slide Deck"
+				"title": "Welcome to the BioImage Model Zoo"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "ai4life/tutorials/getting-started/slides",
+				"topic": "Image analysis using Deep Learning",
+				"title": "BioImage Model Zoo: Advanced models in one-click"
 			},
 								
                                
@@ -656,6 +665,21 @@
 					
                        
                        
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
                        
