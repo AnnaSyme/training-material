@@ -3,36 +3,6 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
-- name: fastqc
-  owner: devteam
-  revisions:
-  - e7b2202befea
-  tool_panel_section_label: metatranscriptomics-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: cutadapt
-  owner: lparsons
-  revisions:
-  - 288f97432497
-  tool_panel_section_label: metatranscriptomics-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: sortmerna
-  owner: rnateam
-  revisions:
-  - eb35257d2e29
-  tool_panel_section_label: metatranscriptomics-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: multiqc
-  owner: iuc
-  revisions:
-  - b2f1f75d49c4
-  tool_panel_section_label: metatranscriptomics-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastq_paired_end_interlacer
-  owner: devteam
-  revisions:
-  - 2ccb8dcabddc
-  tool_panel_section_label: metatranscriptomics-short
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: humann_regroup_table
   owner: iuc
   revisions:
@@ -61,6 +31,36 @@ tools:
   owner: iuc
   revisions:
   - 4033827c76b8
+  tool_panel_section_label: metatranscriptomics-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastqc
+  owner: devteam
+  revisions:
+  - e7b2202befea
+  tool_panel_section_label: metatranscriptomics-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: cutadapt
+  owner: lparsons
+  revisions:
+  - 288f97432497
+  tool_panel_section_label: metatranscriptomics-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: sortmerna
+  owner: rnateam
+  revisions:
+  - eb35257d2e29
+  tool_panel_section_label: metatranscriptomics-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: multiqc
+  owner: iuc
+  revisions:
+  - b2f1f75d49c4
+  tool_panel_section_label: metatranscriptomics-short
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastq_paired_end_interlacer
+  owner: devteam
+  revisions:
+  - 2ccb8dcabddc
   tool_panel_section_label: metatranscriptomics-short
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: humann
