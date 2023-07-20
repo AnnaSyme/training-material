@@ -129,12 +129,6 @@ tools:
   - 3d059e9c2fba
   tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: kraken_biom
-  owner: iuc
-  revisions:
-  - 65eb9962d272
-  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: flye
   owner: bgruening
   revisions:
@@ -200,5 +194,11 @@ tools:
   owner: devteam
   revisions:
   - 0a7799698fe5
+  tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: kraken_biom
+  owner: iuc
+  revisions:
+  - 65eb9962d272
   tool_panel_section_label: pathogen-detection-from-nanopore-foodborne-data
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
