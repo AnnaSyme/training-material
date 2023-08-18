@@ -3,16 +3,28 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
-- name: collection_element_identifiers
-  owner: iuc
-  revisions:
-  - d3c07d270a50
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: length_and_gc_content
   owner: iuc
   revisions:
   - e3ba567abdf5
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: gtftobed12
+  owner: iuc
+  revisions:
+  - b026dae67fba
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastqc
+  owner: devteam
+  revisions:
+  - 3d0c7bdf12f5
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: rgrnastar
+  owner: iuc
+  revisions:
+  - 3ea5a2a63fa2
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: text_processing
@@ -20,6 +32,30 @@ tools:
   revisions:
   - ddf54b12c295
   - d698c222f354
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: samtools_idxstats
+  owner: devteam
+  revisions:
+  - 7def34e6cf4d
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: picard
+  owner: devteam
+  revisions:
+  - 585027e65f3b
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: pygenometracks
+  owner: iuc
+  revisions:
+  - 360df4999907
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: collection_element_identifiers
+  owner: iuc
+  revisions:
+  - d3c07d270a50
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: deseq2
@@ -70,12 +106,6 @@ tools:
   - 135b80fb1ac2
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: gtftobed12
-  owner: iuc
-  revisions:
-  - b026dae67fba
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: rgrnastar
   owner: iuc
   revisions:
@@ -88,10 +118,10 @@ tools:
   - 6f66ae7c5f7a
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: fastqc
-  owner: devteam
+- name: rseqc
+  owner: nilesh
   revisions:
-  - 3d0c7bdf12f5
+  - 473382134e56
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: samtools_view
@@ -100,40 +130,16 @@ tools:
   - 5826298f6a73
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: samtools_idxstats
-  owner: devteam
-  revisions:
-  - 7def34e6cf4d
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: picard
-  owner: devteam
-  revisions:
-  - 585027e65f3b
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: pygenometracks
-  owner: iuc
-  revisions:
-  - 360df4999907
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: multiqc
   owner: iuc
   revisions:
   - abfd8a6544d7
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: rseqc
-  owner: nilesh
+- name: text_processing
+  owner: bgruening
   revisions:
-  - 473382134e56
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: multiqc
-  owner: iuc
-  revisions:
-  - abfd8a6544d7
+  - ddf54b12c295
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: multiqc
