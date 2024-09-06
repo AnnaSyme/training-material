@@ -287,15 +287,39 @@
         all_topics: [
             {
                 label: "All topic",
-                data: [{x:"2024-06", y: 1 } ],
+                data: [{x:"2024-06", y: 1 } ,{x:"2024-09", y: 2 } ],
                 fill: false,
             }
         ]
     };
     var data_notes = {
-        all_topics: [0,0,0,0,1,0]
+        all_topics: [0,0,0,0,1,1]
     };
     var labels_notes = ["0","1","2","3","4","5"];
+</script>
+
+<script>
+    var topic_data =
+    {
+        label: "Introduction to Galaxy Analyses",
+        data: [{x:"2024-09", y: 1 } ],
+        fill: false,
+    };
+    fdbk_over_month['topic-introduction'] = [topic_data];
+    fdbk_over_month['all_topics'].push(topic_data);
+    data_notes['topic-introduction'] = [0,0,0,0,0,1];
+</script>
+
+<script>
+    var tuto_data =
+    {
+        label: "Introduction to Genomics and Galaxy",
+        data: [{x:"2024-09", y: 1 } ],
+        fill: false,
+    };
+    fdbk_over_month['tuto-galaxy-intro-strands'] = [tuto_data];
+    fdbk_over_month['topic-introduction'].push(tuto_data);
+    data_notes['tuto-galaxy-intro-strands'] = [0,0,0,0,0,1];
 </script>
 
 <script>
@@ -337,7 +361,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">1 responses</h5>
+                            <h5 class="card-title">2 responses</h5>
                             
                             <canvas id="allFdbkOverMonthGraph" width="400" height="400">
 <script>
@@ -365,6 +389,153 @@
             </div>
 
             <h2>By topic</h2>
+            
+                
+                
+                
+                <h3 id="topic-introduction">Introduction to Galaxy Analyses  <a href="/training-material/topics/introduction"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy_instance</span></a></h3>
+                <div class="row">
+                    <!-- feedback over time  -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">1 responses</h5>
+                                
+                                <canvas id="introduction-topic-fdbkOverMonthGraph" width="400" height="400">
+<script>
+    if ( counter > 4) {
+        window.addEventListener('DOMContentLoaded', (event) => {
+            drawFdbkOverMonthGraph("introduction-topic-fdbkOverMonthGraph", fdbk_over_month['topic-introduction']);
+        });
+    } else {
+        drawFdbkOverMonthGraph("introduction-topic-fdbkOverMonthGraph", fdbk_over_month['topic-introduction']);
+    }
+</script>
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- feedback notes  -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Rating Distribution</h5>
+                                
+                                <canvas id="introduction-topic-fdbkNoteGraph" width="400" height="400">
+<script>
+    if ( counter > 4) {
+        window.addEventListener('DOMContentLoaded', (event) => {
+            drawFdbkNoteGraph("introduction-topic-fdbkNoteGraph", data_notes['topic-introduction'], labels_notes);
+        });
+    } else {
+        drawFdbkNoteGraph("introduction-topic-fdbkNoteGraph", data_notes['topic-introduction'], labels_notes);
+    }
+    counter = counter + 1;
+</script>
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="accordion" id="accordion-introduction">
+                
+                    
+                    
+                    
+                        
+                        
+                        <div class="accordion-card card" id="tutorial-galaxy-intro-strands">
+                            <div class="card-header" id="heading-galaxy-intro-strands">
+                                <div class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-galaxy-intro-strands" aria-expanded="false" aria-controls="collapse-galaxy-intro-strands">
+                                        Introduction to Genomics and Galaxy
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="collapse-galaxy-intro-strands" class="collapse" aria-labelledby="heading-galaxy-intro-strands" data-parent="#accordion-introduction">
+                                <div class="card-body">
+                                    
+                                    <div class="row">
+                                        <!-- feedback over time  -->
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">1 responses</h5>
+                                                    
+                                                    <canvas id="galaxy-intro-strands-tutorial-fdbkOverMonthGraph" width="400" height="400">
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        drawFdbkOverMonthGraph("galaxy-intro-strands-tutorial-fdbkOverMonthGraph", fdbk_over_month['tuto-galaxy-intro-strands']);
+    });
+</script>
+                                                    </canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- feedback notes  -->
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Rating Distribution</h5>
+                                                    
+                                                    <canvas id="galaxy-intro-strands-tutorial-fdbkNoteGraph" width="400" height="400">
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        drawFdbkNoteGraph("galaxy-intro-strands-tutorial-fdbkNoteGraph", data_notes['tuto-galaxy-intro-strands'], labels_notes);
+    });
+</script>
+                                                    </canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="/training-material/topics/introduction/tutorials/galaxy-intro-strands/tutorial.html">View this Tutorial</a>
+                                    
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+
+                                                    <h5 class="card-title">Detailed feedback</h5>
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Date</th>
+                                                                <th>What did you like?</th>
+                                                                <th>What could be improved?</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            
+                                                            
+                                                                
+                                                                    
+                                                                    <tr>
+                                                                        <td>Sep 5, 2024</td>
+                                                                        <td>examples and step by step guide</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    
+                                                                
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                </div>
+                
             
                 
                 
