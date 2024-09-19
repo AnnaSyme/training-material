@@ -3,10 +3,65 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
+- name: collection_element_identifiers
+  owner: iuc
+  revisions:
+  - d3c07d270a50
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: length_and_gc_content
   owner: iuc
   revisions:
   - e3ba567abdf5
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - d698c222f354
+  - ddf54b12c295
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: deseq2
+  owner: iuc
+  revisions:
+  - 8fe98f7094de
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: column_maker
+  owner: devteam
+  revisions:
+  - 6595517c2dd8
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: deg_annotate
+  owner: iuc
+  revisions:
+  - e98d4ab5b5bc
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: table_compute
+  owner: iuc
+  revisions:
+  - 3bf5661c0280
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: goseq
+  owner: iuc
+  revisions:
+  - 602de62d995b
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: pathview
+  owner: iuc
+  revisions:
+  - f1691de443a7
+  tool_panel_section_label: ref-based
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: ggplot2_heatmap2
+  owner: iuc
+  revisions:
+  - 53460afd5115
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: gtftobed12
@@ -91,60 +146,5 @@ tools:
   owner: iuc
   revisions:
   - abfd8a6544d7
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: collection_element_identifiers
-  owner: iuc
-  revisions:
-  - d3c07d270a50
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: text_processing
-  owner: bgruening
-  revisions:
-  - ddf54b12c295
-  - d698c222f354
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: deseq2
-  owner: iuc
-  revisions:
-  - 8fe98f7094de
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: column_maker
-  owner: devteam
-  revisions:
-  - 6595517c2dd8
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: deg_annotate
-  owner: iuc
-  revisions:
-  - e98d4ab5b5bc
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: table_compute
-  owner: iuc
-  revisions:
-  - 3bf5661c0280
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: goseq
-  owner: iuc
-  revisions:
-  - 602de62d995b
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: pathview
-  owner: iuc
-  revisions:
-  - f1691de443a7
-  tool_panel_section_label: ref-based
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: ggplot2_heatmap2
-  owner: iuc
-  revisions:
-  - 53460afd5115
   tool_panel_section_label: ref-based
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
